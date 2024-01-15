@@ -1,0 +1,348 @@
+/* Table Styles */
+/* Table Styles */
+table {
+  margin: .4px auto 0; /* Center the table and remove top margin */
+  border-collapse: collapse;
+  width:100%; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+th, td {
+  padding: 12px; /* Increase padding for better spacing */
+  border: 1.5px solid #84631a;
+  background-color: rgb(252, 237, 225);
+}
+
+th {
+  text-align: left;
+  background-color: #C78442;
+  color: rgb(235, 233, 233);
+}
+
+/* Add hover effect for better user interaction */
+th:hover, td:hover {
+  background-color: #fcd395;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Add rounded corners to the table */
+table {
+  border-radius: 8px;
+}
+
+/* Optional: Style the header row differently */
+thead th {
+  background-color: #ae5a1f;
+  color: #fff;
+}
+
+/* Optional: Add a subtle border to the table */
+table {
+  border: 2px solid #e8821ccb;
+}
+
+/* Optional: Adjust spacing for better aesthetics */
+th, td {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: Add a subtle border radius to cells */
+th, td {
+  border-radius: 4px;
+}
+
+/* Logo and Navbar Styles */
+.left-logo {
+  margin-left: 0.10rem;
+  size: 10rem;
+}
+
+.right-logo {
+  margin-right: 0.6rem;
+  height: 100%;
+}
+
+/* .navbar {
+  border: 2.5px solid rgba(124, 11, 11, 0.495);
+  background-color: #1d0e0ed1; */
+ 
+  
+
+
+.title {
+  color: rgb(178, 0, 0);
+  align-items: center;
+}
+
+.li {
+  list-style: none;
+}
+
+.leo {
+  background-color: #cfc4b8;
+}
+
+/* NavBar 2 Styles */
+/* .myNavBar {
+  text-align: left;
+  background-color: rgb(204, 228, 246);
+} */
+
+.myNavBar label,
+.myNavBar input,
+.myNavBar button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.myDiv1,
+.myDiv2 {
+  display: inline-block;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+/* .myButton {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 2.5px 10px;
+  font-size: 16px;
+  border: burlywood;
+  border-radius: 4%;
+  cursor: pointer;
+} */
+
+/* .myNavBar label {
+  font-weight: bold;
+} */
+
+/* Graph Styles */
+.container {
+  display: flex;
+  background-color: #fff;
+}
+#id1{
+  color: aqua;
+}
+#id1{
+  color: rgb(107, 183, 144);
+}
+.box {
+  width: 50%; /* Each box takes up half of the container */
+  border: 1px solid #e1b3b3;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+.roz {
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adds some spacing between the boxes */
+}
+
+/* Column Styles */
+/* .col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; } */
+
+/* Color Styles */
+.color {
+  border-color: rgb(245, 245, 245);
+  border: thick;
+}
+
+.backend {
+  background: url('https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?q=80&w=1449&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Replace 'your-image-url.jpg' with the actual image URL */
+  background-color: #8B4513;
+  /* Set the opacity to 50% */
+  background-color: rgba(139, 69, 19, 0.5);
+}
+
+.center2{
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(103, 68, 11);
+  padding: 5px;
+}
+
+.Backenddd{
+  background-image: url("https://images.unsplash.com/photo-1599090724927-e7745deeeb94?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+
+
+  .Runn {
+    border: 3px solid #3e3b3b; /* You can adjust the width and color as needed */
+    padding: 10px; /* Optional: Add padding for better appearance */
+  }
+
+  .Runn1{
+    border: 4px solid #656461; /* You can adjust the width and color as needed */
+    padding: 5px; /* Optional: Add padding for better appearance */
+    background-color: hsl(78, 70%, 69%);
+  }
+
+  .Runn2{
+    border: 4px solid #817e76; /* You can adjust the width and color as needed */
+    padding: 5px; /* Optional: Add padding for better appearance */
+    background-color: hsl(78, 70%, 69%);
+  }
+
+  
+.RM {
+  border: 2px solid #686868;
+  background-color: #de692a;
+  padding: 6px;
+}
+
+/* .navbarOGM {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+} */
+
+/* .navbar-brand img {
+  width: 78px;
+  height: 78px;
+  object-fit: cover; /* Ensure the image retains its aspect ratio */
+  /* margin: 0%;
+  padding: 0%; */
+/* } */
+/* .navbar-brand2 img {
+  width: 78px;
+  height: 78px;
+  object-fit: cover; /* Ensure the image retains its aspect ratio */
+  /* margin: 0%;
+  /* padding: 0%; */ 
+/* } */
+.bar{
+  padding: 2px;
+}
+/* .logbtn1{
+  width: 23px;
+margin-left: 1165px;
+margin-top: 52px;
+} */
+.navclr{
+  background-color: rgb(0, 0, 0);
+}
+
+/* .img2{
+  max-width: 136%;
+}
+.img3{
+  max-width: 136%;
+  margin-right: 10px;
+} */
+
+
+/* sanket csssss */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  height: 79px;
+}
+
+
+
+.left-components {
+  float: left;
+}
+
+.right-components {
+  float: right;
+}
+
+/* Add the following styles to clear the float and start on a new line */
+.right-components img {
+  clear: both;
+}
+
+
+
+.logbtn:hover {
+  text-decoration: underline;
+}
+.imgs{
+    width: 78px;
+    height: 78px;
+    margin: 0;
+   
+}
+.imgsL{
+    margin-right: 10px;
+}
+ p{
+    background-color: white;
+  color: #000000; /* Replace with the desired text color */
+  border: 1px solid rgb(199, 199, 199);
+  padding: 1px;
+  margin: 7px;
+}
+
+.ongcbtnmain{
+  margin-top: 54px;
+    margin-right: 16px;
+}
+.nav2flex{
+  margin-top: 7px;
+  margin-left: 47.5625rem;
+
+}
+/* -----hover------ */
+.text-gray-900 {
+  color: #000000; /* Replace with your desired text color */
+  /* other styles */
+}
+
+/* Hover effect */
+.text-gray-900:hover {
+  color: #ffffff; /* Replace with your desired hover text color */
+  text-decoration: underline; /* You can customize the underline or remove it */
+}
+
+.roz .and canvas {
+ width: 10.875rem;
+ height: 10.875rem;
+ margin-left: 1.4375rem;
+}
+
+/* canvas {
+  
+} */
