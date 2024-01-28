@@ -38,7 +38,7 @@ function Home() {
                   <td align='center'>{innerdata.PID}</td>
                   <td>{innerdata.ParameterName}</td>
                   <td align='right'>{innerdata.ParameterValue}</td>
-                  <td key={index}>{Parameter_unit[innerdata.ParameterName]}</td>
+                  <td key={innerdata.PID}>{Parameter_unit[innerdata.ParameterName]}</td>
                 </tr>
               ))}
             </tbody>
