@@ -9,19 +9,19 @@ table {
 
 th, td {
   padding: 12px; /* Increase padding for better spacing */
-  border: 1.5px solid #84631a;
-  background-color: rgb(252, 237, 225);
+  border: 1.9px solid #000000;
+  background-color: white
 }
 
 th {
   text-align: left;
-  background-color: #C78442;
-  color: rgb(235, 233, 233);
+  background-color: #2d2d2d;
+  color: white;
 }
 
 /* Add hover effect for better user interaction */
 th:hover, td:hover {
-  background-color: #fcd395;
+  background-color: #bbbbbb;
   transition: background-color 0.3s ease;
 }
 
@@ -32,19 +32,20 @@ table {
 
 /* Optional: Style the header row differently */
 thead th {
-  background-color: #ae5a1f;
+  background-color: #ffffff;
   color: #fff;
 }
 
 /* Optional: Add a subtle border to the table */
 table {
-  border: 2px solid #e8821ccb;
+  border: 2px solid #999999cb;
 }
 
 /* Optional: Adjust spacing for better aesthetics */
 th, td {
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 /* Optional: Add a subtle border radius to cells */
@@ -63,31 +64,19 @@ th, td {
   height: 100%;
 }
 
-/* .navbar {
-  border: 2.5px solid rgba(124, 11, 11, 0.495);
-  background-color: #1d0e0ed1; */
- 
-  
 
 
-.title {
+/* .title {
   color: rgb(178, 0, 0);
   align-items: center;
-}
+} */
 
 .li {
   list-style: none;
 }
 
-.leo {
-  background-color: #cfc4b8;
-}
 
-/* NavBar 2 Styles */
-/* .myNavBar {
-  text-align: left;
-  background-color: rgb(204, 228, 246);
-} */
+
 
 .myNavBar label,
 .myNavBar input,
@@ -120,24 +109,13 @@ a:active {
 }
 
 
-/* .myButton {
-  background-color: #8B4513;
-  color: #fff;
-  padding: 2.5px 10px;
-  font-size: 16px;
-  border: burlywood;
-  border-radius: 4%;
-  cursor: pointer;
-} */
 
-/* .myNavBar label {
-  font-weight: bold;
-} */
 
 /* Graph Styles */
 .container {
   display: flex;
   background-color: #fff;
+  padding: 0%;
 }
 #id1{
   color: aqua;
@@ -147,31 +125,19 @@ a:active {
 }
 .box {
   width: 50%; /* Each box takes up half of the container */
-  border: 1px solid #e1b3b3;
+  border: 1px solid #000000;
   padding: 20px;
   box-sizing: border-box;
-  
 }
+ 
+
 .roz {
-  border: 1px solid #ddd;
+  border: 2px solid #0a0a0a;
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 10px; /* Adds some spacing between the boxes */
 }
 
-/* Column Styles */
-/* .col-1 { width: 8.33%; }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.33%; }
-.col-8 { width: 66.66%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.33%; }
-.col-11 { width: 91.66%; }
-.col-12 { width: 100%; } */
 
 /* Color Styles */
 .color {
@@ -180,7 +146,7 @@ a:active {
 }
 
 .backend {
-  background: url('https://images.unsplash.com/photo-1516199423456-1f1e91b06f25?q=80&w=1449&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Replace 'your-image-url.jpg' with the actual image URL */
+  background: url('https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Replace 'your-image-url.jpg' with the actual image URL */
   background-color: #8B4513;
   /* Set the opacity to 50% */
   background-color: rgba(139, 69, 19, 0.5);
@@ -188,13 +154,16 @@ a:active {
 
 .center2{
   margin: auto;
-  width: 50%;
-  border: 3px solid rgb(103, 68, 11);
-  padding: 5px;
+  width: 65%;
+  border: 3px solid rgb(3, 3, 3);
+  padding: 3px;
 }
 
 .Backenddd{
   background-image: url("https://images.unsplash.com/photo-1599090724927-e7745deeeb94?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.card-body{
+  background-color: #0a0a0a;
 }
 
 
@@ -219,52 +188,13 @@ a:active {
   
 .RM {
   border: 2px solid #686868;
-  background-color: #de692a;
+  background-color: #d7d7d7;
   padding: 6px;
 }
 
-/* .navbarOGM {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1px;
-  padding-bottom: 1px;
-} */
-
-/* .navbar-brand img {
-  width: 78px;
-  height: 78px;
-  object-fit: cover; /* Ensure the image retains its aspect ratio */
-  /* margin: 0%;
-  padding: 0%; */
-/* } */
-/* .navbar-brand2 img {
-  width: 78px;
-  height: 78px;
-  object-fit: cover; /* Ensure the image retains its aspect ratio */
-  /* margin: 0%;
-  /* padding: 0%; */ 
-/* } */
-.bar{
-  padding: 2px;
-}
-/* .logbtn1{
-  width: 23px;
-margin-left: 1165px;
-margin-top: 52px;
-} */
 .navclr{
   background-color: rgb(0, 0, 0);
 }
-
-/* .img2{
-  max-width: 136%;
-}
-.img3{
-  max-width: 136%;
-  margin-right: 10px;
-} */
-
 
 /* sanket csssss */
 
@@ -274,7 +204,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #040404;
   overflow: hidden;
   height: 79px;
 }
@@ -346,3 +276,18 @@ nav {
 /* canvas {
   
 } */
+.Paragraph{
+  background-color: whitesmoke;
+
+}
+.timt{
+  color: rgb(242, 242, 242);
+}
+
+/* login signup bg */
+.containerStyle{
+  background-image: url('https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.upacity{
+  opacity: 93%;
+}

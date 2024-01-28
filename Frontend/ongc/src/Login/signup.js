@@ -33,8 +33,8 @@ function Signup() {
   };
 
   return (
-    <div className='Signup template d-flex justify-content-center w-100 vh-100 bg-success justify-content-center align-items-center'>
-      <div className='bg-white p-5 rounded bg-white'>
+    <div className='Signup template d-flex justify-content-center w-100 vh-100 justify-content-center align-items-center containerStyle'>
+      <div className='bg-white p-5 rounded upacity'>
         <form onSubmit={handleSubmit}>
           <h2>Sign-up</h2>
           <div className='mb-3'>
@@ -54,7 +54,7 @@ function Signup() {
             {error.password && <span className='text-danger'>{error.password}</span>}
           </div>
           <button type='submit' className='btn btn-success w-100 rounded-0'>Signup</button>
-          <p>You agree to the terms and policies of Protove Tech</p>
+          <p className='Paragraph'>You agree to the terms and policies.</p>
           <Link to='/' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Back to Login</Link>
         </form>
       </div>

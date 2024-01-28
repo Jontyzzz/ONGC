@@ -1,9 +1,8 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-// import Navbar from './Navbar/Navbar2'
 import Navbar2 from './Navbar/Navbar2'
 import Parameter_unit from './Parameter_unit.json' 
-// import {  useNavigate } from 'react-router-dom'
+
 
 
 function Home() {
@@ -35,14 +34,13 @@ function Home() {
             </tr>
             <tbody>
               {Data.map((innerdata, index) => (
-                <tr key={index}>
+                <tr key={innerdata.PID}>
                   <td align='center'>{innerdata.PID}</td>
                   <td>{innerdata.ParameterName}</td>
                   <td align='right'>{innerdata.ParameterValue}</td>
                   <td key={index}>{Parameter_unit[innerdata.ParameterName]}</td>
                 </tr>
               ))}
-
             </tbody>
           </table>
         </div>
@@ -50,7 +48,7 @@ function Home() {
       </div>
       <div class="card bg-warning-subtle">
         <div class="card-body">
-          <i>copyright &#169; Protovec Technology Pvt Ltd.All right reserved 2023</i>
+          <i className='timt'>copyright &#169; Protovec Technology Pvt Ltd.All right reserved 2023</i>
         </div>
       </div>
     </div>

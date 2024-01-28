@@ -37,8 +37,8 @@ function Login() {
         }
     }
     return (
-        <div className='Signup template d-flex justify-content-center w-100 vh-100 bg-primary justify-content-center align-items-center'>
-            <div className='bg-white p-5 rounded bg-white'>
+        <div className='Signup template d-flex justify-content-center w-100 vh-100  justify-content-center align-items-center containerStyle'>
+            <div className='bg-white p-5 rounded  upacity'>
                 <form onSubmit={handleSubmit}>
                     <h2>Login</h2>
                     <div className='mb-3'>
@@ -63,9 +63,9 @@ function Login() {
                         />
                         {error.password && <span className='text-danger'>{error.password}</span>}
                     </div>
-                    <p>You agree to the terms and conditions + policies</p>
+                    <p className='Paragraph'>You agree to the terms and conditions + policies</p>
                     <button type='submit' className='btn btn-success w-100 rounded-0 text-decoration-none'>Login.</button>
-                    <p>you need to create account</p>
+                    <p className='Paragraph'>you need to create account</p>
                     <Link to='/signup' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
                 </form>
             </div>

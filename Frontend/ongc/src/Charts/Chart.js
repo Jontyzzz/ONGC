@@ -21,11 +21,45 @@ defaults.maintainAspectRatio = true;
 defaults.responsive = true;
 defaults.plugins.title.display = true;
 defaults.plugins.title.align = "center";
-defaults.plugins.title.font.size = 20;
+defaults.plugins.title.font.size = 23;
 defaults.plugins.title.color = "black";
 // utilites end//
 // component start //
 function Chart(props) {
+
+    // const barThickness = props.data.datasets && props.data.datasets.length === 1 ? 0.5 : undefined;
+
+    // // Set the barThickness in the chart options
+    // const options = {
+    //     ...props.options,
+    //     scales: {
+    //         ...props.options?.scales,
+    //         x: {
+    //             ...props.options?.scales?.x,
+    //             barThickness: barThickness,
+    //         },
+    //     },
+    // };
+
+//new method fro reducing bar sixze//
+// const categoryPercentage = props.data.datasets && props.data.datasets.length === 1 ? 0.5 : 0.8;
+
+// // Set the categoryPercentage in the chart options
+// const options = {
+//     ...props.options,
+//     scales: {
+//         ...props.options?.scales,
+//         x: {
+//             ...props.options?.scales?.x,
+//             categoryPercentage: categoryPercentage,
+//         },
+//     },
+// };
+
+    
+
+
+
     return (
         <div>
                 {ChartComponent(props.chartType,props.data,props.options)}

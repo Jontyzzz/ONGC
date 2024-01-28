@@ -1,13 +1,13 @@
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom';
 import Chart from './Charts/Chart';
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { getDataset, getOptionsets } from './Utility/utilites'
-// import Navbar from './Navbar/Navbar';
+import { generateTimestamps, getDataset, getOptionsets } from './Utility/utilites'
 import Navbar2 from './Navbar/Navbar2';
 
 
+const startTime = new Date('2024-01-19T00:00:00'); // Assuming YYYY-MM-DDTHH:mm:ss format
+const endTime = new Date('2024-01-19T23:59:59');
+const timestamps = generateTimestamps(startTime.getTime(), endTime.getTime(), 1);
 
 function Report() {
 
@@ -18,8 +18,6 @@ function Report() {
     axios.get('/api/getdata')
       .then(res => {
         setData(res.data)
-        // console.log(res.data)
-
       })
       .catch(err => console.log(err))
   }, [])
@@ -39,6 +37,17 @@ function Report() {
       return obj.ParameterName === "Running_Hour"
     })
     return runninghour.ParameterValue
+    // let runningHourInSeconds = Data.find((obj) => obj.ParameterName === "Running_Hour")?.ParameterValue || 0;
+
+    // // Convert seconds to hh:mm:ss format
+    // const hours = Math.floor(runningHourInSeconds / 3600);
+    // const minutes = Math.floor((runningHourInSeconds % 3600) / 60);
+    // const seconds = runningHourInSeconds % 60;
+
+    // // Format the result
+    // const formattedRunningHour = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+    // return formattedRunningHour;
   }
   const getRunningTime = () => {
     let runningtime = Data.find((obj, i) => {
@@ -50,6 +59,7 @@ function Report() {
   return (
     <div className='Backenddd'>
       <Navbar2 />
+      <h1>hello sir iam doing something</h1>
       <div class="container">
         <div id="box1" class="box">
           <div class="roz">
@@ -100,37 +110,39 @@ function Report() {
               />
             </div>
             <hr />
-            <Chart
-              chartType="bar"
-              data={getDataset(['Totalizer_SFM_2'], Data, "Ton", 'bar', customBarColorssssss)}
-              options={getOptionsets(" PARAMETERS of Totalizer SFM_2 ", 99999999)}
-            />
+            <div className='roz'>
+              <Chart
+                chartType="bar"
+                data={getDataset(['Totalizer_SFM_2'], Data, "Ton", 'bar', customBarColorssssss)}
+                options={getOptionsets(" PARAMETERS of Totalizer SFM_2 ", 99999999)}
+              />
+            </div>
           </div>
           <hr />
           {Data && Data.length > 0 && <div class="roz">
-            <div className='Runn'>
-              <div className='Runn1'>
-                <p><b> RunningHour </b> : <input
-                  type="text"
-                  value={getRunningHour()}
-                  readOnly
-                /></p>
-              </div>
-              <br />
-              <div className='Runn2'>
-                <p><b>RunningTime</b>: <input
-                  type="text"
-                  value={getRunningTime()}
-                  readOnly
-                /></p>
-              </div>
+            {/* <div className='Runn'> */}
+            <div className='Runn1'>
+              <p><b> RunningHour </b> : <input
+                type="text"
+                value={getRunningHour()}
+                readOnly
+              /></p>
             </div>
+            <br />
+            <div className='Runn2'>
+              <p><b>RunningTime</b>: <input
+                type="text"
+                value={getRunningTime()}
+                readOnly
+              /></p>
+            </div>
+            {/* </div> */}
           </div>}
           <hr />
-          <div>
+          <div className='roz'>
             <Chart
               chartType="line"
-              data={getDataset(['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7'], Data, 'Deg.C', 'line')}
+              data={getDataset(['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7'], Data, 'Deg.C', 'line', customBarColorss, 'timestamps')}
               options={getOptionsets('PARAMETERS OF TT1 to TT7', 500)}
             />
           </div>

@@ -1,6 +1,21 @@
+function generateTimestamps(startTime, endTime, interval = 1) {
+  const timestamps = [];
+  let currentTimestamp = startTime;
+
+  while (currentTimestamp <= endTime) {
+    timestamps.push(currentTimestamp);
+    currentTimestamp += interval * 60 * 60 * 1000; // Convert hours to milliseconds
+  }
+
+  return timestamps;
+}
+
+
 function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors) {
   const filteredData = rawData.filter((data) => filter_Data.includes(data.ParameterName.trim()));
-
+  const startTime = new Date('2024-01-19T00:00:00'); // Assuming YYYY-MM-DDTHH:mm:ss format
+  const endTime = new Date('2024-01-19T23:59:59');
+  const timestamps = generateTimestamps(startTime.getTime(), endTime.getTime(), 1);
   if (chartType === 'bar') {
     return {
       labels: filteredData.map(data => data.ParameterName),
@@ -15,6 +30,7 @@ function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors
             "rgba(253, 135, 135, 0.8)",
           ],
           borderRadius: 5,
+          maxBarThickness: 80
         },
       ],
     };
@@ -29,14 +45,19 @@ function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors
             "rgba(43, 63, 229, 0.8)",
             "rgba(250, 192, 19, 0.8)",
             "rgba(253, 135, 135, 0.8)",
+
           ],
-          hoverOffset: 5
+          hoverOffset: 5,
+          borderWidth: 10,
+          padding:2
         },
       ],
     };
   } else if (chartType === 'line') {
     return {
-      labels: filteredData.map(data => data.ParameterName),
+      // labels: filteredData.map(data => data.ParameterName),
+          labels:timestamps,
+          // labels: timestamps.map(timestamp => new Date(timestamp).toLocaleString()), // Format timestamp to a human-readable date
       datasets: [
         {
           type: 'line',
@@ -49,8 +70,20 @@ function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors
         },
       ],
     };
+  }else if (chartType === 'doughnut') {
+    return {
+      labels: filteredData.map(data => data.ParameterName),
+      datasets: [
+        {
+          data: filteredData.map(data => parseFloat(data.ParameterValue)),
+          backgroundColor: colors || ["rgba(43, 63, 229, 1)", "rgba(255, 99, 132, 1)", "rgba(75, 192, 192, 1)"],
+          hoverOffset: 10,
+          // circumference: 180,// Optional: increase space when hovering over a segment
+        },
+      ],
+    };
   }
-}
+} 
 
 
 function getOptionsets(graph_title, max_range, index_Axis = 'x') {
@@ -58,17 +91,6 @@ function getOptionsets(graph_title, max_range, index_Axis = 'x') {
     x: { max: max_range },
     y: { max: max_range } // Include both x and y scales
   };
-
-  if (index_Axis === 'y') {
-    scale_value = {
-      y: { max: max_range }
-    };
-  }
-  if (index_Axis === 'x') {
-    scale_value = {
-      x: { max: max_range }
-    };
-  }
 
   return {
     plugins: {
@@ -82,43 +104,4 @@ function getOptionsets(graph_title, max_range, index_Axis = 'x') {
 }
 
 
-
-
-
-
-// function getOptionsets(graph_title, max_range, index_Axis = 'x') {
-//   let scale_value = {
-//     x: { max: max_range },
-//   };
-//   if (index_Axis === 'y') {
-//     scale_value = {
-//       y: { max: max_range },   //[0] to give it in array//
-//     };
-//   }
-//   return {
-//     plugins: {
-//       title: {
-//         text: graph_title,
-//       },
-//     },
-//     indexAxis: index_Axis,
-//     scales: {
-//       xAxes: [{
-//           ticks: {
-//               beginAtZero: true,
-//               max: 10,
-//               min: 0
-//           }
-//       }],
-//       yAxes: [{
-//           ticks: {
-//               beginAtZero: false,
-//               max: 1500,
-//               min: 0
-//           }
-//       }]
-//   },
-//   };
-// }
-
-module.exports = { getDataset, getOptionsets };
+module.exports = {generateTimestamps,getDataset, getOptionsets };
