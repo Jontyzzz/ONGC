@@ -35,7 +35,7 @@ app.get("/api/getdate",async(req,res)=>{
 })
 
 
-app.post('/signup',async(req, res) => {
+app.post('/api/signup',async(req, res) => {
     let sql = "INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)";
     let values = [
         req.body.name,
@@ -46,7 +46,7 @@ app.post('/signup',async(req, res) => {
     return res.json(data)
 });
 
-app.post('/login',async (req, res) => {
+app.post('/api/login',async (req, res) => {
     let sql = "SELECT * from login where `email`=? AND `password`=?";
     let values = [
         req.body.email,
