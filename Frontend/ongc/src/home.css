@@ -1,14 +1,19 @@
 /* Table Styles */
 /* Table Styles */
 table {
-  margin: .4px auto 0; /* Center the table and remove top margin */
+  margin: .4px auto 0;
+  /* Center the table and remove top margin */
   border-collapse: collapse;
-  width:100%; /* Adjust the width as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  width: 100%;
+  /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
 }
 
-th, td {
-  padding: 12px; /* Increase padding for better spacing */
+th,
+td {
+  padding: 12px;
+  /* Increase padding for better spacing */
   border: 1.9px solid #000000;
   background-color: white
 }
@@ -20,7 +25,8 @@ th {
 }
 
 /* Add hover effect for better user interaction */
-th:hover, td:hover {
+th:hover,
+td:hover {
   background-color: #bbbbbb;
   transition: background-color 0.3s ease;
 }
@@ -42,15 +48,19 @@ table {
 }
 
 /* Optional: Adjust spacing for better aesthetics */
-th, td {
+th,
+td {
   margin: 0;
   box-sizing: border-box;
-  
+  text-align: center;
+
 }
 
 /* Optional: Add a subtle border radius to cells */
-th, td {
+th,
+td {
   border-radius: 4px;
+  text-align: center;
 }
 
 /* Logo and Navbar Styles */
@@ -117,25 +127,30 @@ a:active {
   background-color: #fff;
   padding: 0%;
 }
-#id1{
+
+#id1 {
   color: aqua;
 }
-#id1{
+
+#id1 {
   color: rgb(107, 183, 144);
 }
+
 .box {
-  width: 50%; /* Each box takes up half of the container */
+  width: 50%;
+  /* Each box takes up half of the container */
   border: 1px solid #000000;
   padding: 20px;
   box-sizing: border-box;
 }
- 
+
 
 .roz {
   border: 2px solid #0a0a0a;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 10px; /* Adds some spacing between the boxes */
+  margin-bottom: 10px;
+  /* Adds some spacing between the boxes */
 }
 
 
@@ -146,53 +161,60 @@ a:active {
 }
 
 .backend {
-  background: url('https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; /* Replace 'your-image-url.jpg' with the actual image URL */
+  background: url('https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
   background-color: #8B4513;
   /* Set the opacity to 50% */
   background-color: rgba(139, 69, 19, 0.5);
 }
 
-.center2{
+.center2 {
   margin: auto;
   width: 65%;
   border: 3px solid rgb(3, 3, 3);
   padding: 3px;
 }
 
-.Backenddd{
-  background-image: url("https://images.unsplash.com/photo-1599090724927-e7745deeeb94?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.Backenddd {
+  background-image: url("https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
-.card-body{
+
+.card-body {
   background-color: #0a0a0a;
 }
 
 
 
-  .Runn {
-    border: 3px solid #3e3b3b; /* You can adjust the width and color as needed */
-    padding: 10px; /* Optional: Add padding for better appearance */
-  }
+.Runn {
+  border: 3px solid #3e3b3b;
+  /* You can adjust the width and color as needed */
+  padding: 10px;
+  /* Optional: Add padding for better appearance */
+}
 
-  .Runn1{
-    border: 4px solid #656461; /* You can adjust the width and color as needed */
-    padding: 5px; /* Optional: Add padding for better appearance */
-    background-color: hsl(78, 70%, 69%);
-  }
+.Runn1 {
+  border: 4px solid #656461;
+  /* You can adjust the width and color as needed */
+  padding: 5px;
+  /* Optional: Add padding for better appearance */
+  background-color: hsl(78, 70%, 69%);
+}
 
-  .Runn2{
-    border: 4px solid #817e76; /* You can adjust the width and color as needed */
-    padding: 5px; /* Optional: Add padding for better appearance */
-    background-color: hsl(78, 70%, 69%);
-  }
+.Runn2 {
+  border: 4px solid #817e76;
+  /* You can adjust the width and color as needed */
+  padding: 5px;
+  /* Optional: Add padding for better appearance */
+  background-color: hsl(78, 70%, 69%);
+}
 
-  
+
 .RM {
   border: 2px solid #686868;
   background-color: #d7d7d7;
   padding: 6px;
 }
 
-.navclr{
+.navclr {
   background-color: rgb(0, 0, 0);
 }
 
@@ -229,65 +251,131 @@ nav {
 .logbtn:hover {
   text-decoration: underline;
 }
-.imgs{
-    width: 78px;
-    height: 78px;
-    margin: 0;
-   
+
+.imgs {
+  width: 78px;
+  height: 78px;
+  margin: 0;
+
 }
-.imgsL{
-    margin-right: 10px;
+
+.imgsL {
+  margin-right: 10px;
 }
- p{
-    background-color: white;
-  color: #000000; /* Replace with the desired text color */
+
+p {
+  background-color: white;
+  color: #000000;
+  /* Replace with the desired text color */
   border: 1px solid rgb(199, 199, 199);
   padding: 1px;
   margin: 7px;
 }
 
-.ongcbtnmain{
+.ongcbtnmain {
   margin-top: 54px;
-    margin-right: 16px;
+  margin-right: 16px;
 }
-.nav2flex{
+
+.nav2flex {
   margin-top: 7px;
-  margin-left: 47.5625rem;
+  margin-left: 42.5625rem;
 
 }
+
 /* -----hover------ */
 .text-gray-900 {
-  color: #000000; /* Replace with your desired text color */
+  color: #000000;
+  /* Replace with your desired text color */
   /* other styles */
 }
 
 /* Hover effect */
 .text-gray-900:hover {
-  color: #ffffff; /* Replace with your desired hover text color */
-  text-decoration: underline; /* You can customize the underline or remove it */
+  color: #ffffff;
+  /* Replace with your desired hover text color */
+  text-decoration: underline;
+  /* You can customize the underline or remove it */
 }
 
 .roz .and canvas {
- width: 10.875rem;
- height: 10.875rem;
- margin-left: 1.4375rem;
+  width: 10.875rem;
+  height: 10.875rem;
+  margin-left: 1.4375rem;
 }
 
 /* canvas {
   
 } */
-.Paragraph{
+.Paragraph {
   background-color: whitesmoke;
 
 }
-.timt{
+
+.timt {
   color: rgb(242, 242, 242);
 }
 
 /* login signup bg */
-.containerStyle{
-  background-image: url('https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+.containerStyle {
+  background-image: url('https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1470&auto=foyat&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
-.upacity{
+
+.upacity {
   opacity: 93%;
+}
+
+
+
+
+/* media query */
+@media (max-width: 768px) {
+  .nav2flex {
+    margin-left: 0.5625rem;
+    margin-top: 6px;
+  }
+
+  .tablet {
+    margin-left: 8.6875rem;
+  }
+}
+
+.TDCSS {
+  border: none;
+  text-align: right;
+  padding: 0px;
+  width: 186px;
+}
+
+.tablet {
+  margin-left: 13.6875rem;
+
+  
+}
+
+.park{
+  background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+.bark{
+  border:1px solid black;
+}
+.RM2{
+  border: 2px solid #686868;
+  background-color: #FFA500;
+  padding: 6px;
+}
+.Tempp{
+  margin-left: 90px;
+  border: 2px solid #000; /* Replace #000 with the color of your choice */
+  padding: 10px; /* Optional: Add padding to create space between content and border */
+}
+.buttonDecorative {
+  padding: 5px 4px;
+  font-size: 15px;
+  background-color: #708091;
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
 }

@@ -1,6 +1,8 @@
 import React from 'react'
-import { Bar, Line, Doughnut, Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, defaults } from "chart.js/auto";
+import { Bar, Line, Doughnut, Pie, Radar } from 'react-chartjs-2';
+// import { Chart as ChartJS, defaults } from "chart.js/auto";
+import { defaults } from "chart.js/auto";
+
 // utility start //
 
 const ChartComponent = (chartType, chartData, chartOptions) => {
@@ -12,11 +14,13 @@ const ChartComponent = (chartType, chartData, chartOptions) => {
         case 'doughnut':
             return <Doughnut data={chartData} options={chartOptions} />;
         case 'pie': 
-            return <Pie data={chartData} />; 
+            return <Pie data={chartData} />;
+        case 'gauge':
+            return <Radar data={chartData} options={chartOptions} />;
         default:
             return null;
     }
-}
+};
 defaults.maintainAspectRatio = true;
 defaults.responsive = true;
 defaults.plugins.title.display = true;

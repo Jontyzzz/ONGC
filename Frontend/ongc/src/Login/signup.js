@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import validation from '../Utility/signupvalidation';
+import sha256 from 'crypto-js/sha256'
 
 
 function Signup() {
@@ -23,7 +24,11 @@ function Signup() {
     setErrors(validation(values))
     // if (Object.keys(error).length === 0) {
     if (error.name === "" && error.email === "" && error.password === "") {
-      axios.post('http://localhost:9000/signup', values)
+      setValues(prev => ({
+        ...prev, password: sha256(values.password)
+      }))
+      console.log(values)
+      axios.post('/api/signup', values)
         .then(res => {
           console.log("Registered successfully...");
           navigate('/');

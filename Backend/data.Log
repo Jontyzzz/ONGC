@@ -151,3 +151,1575 @@
 {"level":"info","message":"Connection created","timestamp":"2024-01-28T09:45:07.126Z"}
 {"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-28T09:45:07.558Z"}
 {"level":"info","message":"Connection Closed","timestamp":"2024-01-28T09:45:07.559Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:42.558Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T04:56:42.706Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:42.707Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:44.639Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T04:56:44.724Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:44.725Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:48.617Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T04:56:48.779Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:48.780Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:54.019Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T04:56:54.111Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:54.112Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:58.247Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T04:56:58.323Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:58.323Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T04:56:59.047Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T04:56:59.147Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T04:56:59.148Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:07:11.744Z"}
+{"level":"info","message":"Query is SELECT * from login where `email`=? AND `password`=? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-01-29T05:07:12.091Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:07:12.092Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:07:45.306Z"}
+{"level":"info","message":"Query is INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?) and parameters are Soham Raju Desai,SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:07:45.383Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:07:45.384Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:07:52.900Z"}
+{"level":"info","message":"Query is SELECT * from login where `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:07:52.976Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:07:52.978Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:15:05.671Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:15:05.789Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:15:05.790Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:15:17.758Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:15:17.794Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-01-29T05:15:17.848Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:15:17.850Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-01-29T05:15:17.876Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:15:17.878Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:28:04.021Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:28:04.117Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:28:04.118Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:30:22.451Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:30:22.530Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:30:22.532Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:30:22.609Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:30:22.689Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:30:22.690Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:35:58.074Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T05:35:58.171Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:35:58.172Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:36:09.689Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'SohamRaju44@gmail.com' for key 'email'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry 'SohamRaju44@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-01-29T05:36:09.771Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:37:10.328Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T05:37:10.444Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:37:10.446Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:37:13.816Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T05:37:13.909Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:37:13.910Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:37:20.824Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T05:37:20.902Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:37:20.903Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T05:37:24.784Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T05:37:24.884Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T05:37:24.885Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:24:49.727Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T08:24:49.829Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:24:49.836Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:24:50.318Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T08:24:50.411Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:24:50.413Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:25:08.340Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T08:25:08.437Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:29:35.702Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T08:29:35.800Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:29:35.801Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:29:45.544Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T08:29:45.632Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:29:45.633Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:29:49.553Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T08:29:49.653Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:29:49.654Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T08:29:49.801Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T08:29:49.917Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T08:29:49.918Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T09:38:50.107Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-29T09:38:50.191Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T09:38:50.192Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:29:46.476Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T12:29:46.565Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:29:46.566Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:29:50.688Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T12:29:50.805Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:29:50.806Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:29:54.575Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T12:29:54.723Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:29:54.724Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:29:59.518Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T12:29:59.661Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:29:59.661Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:37:11.278Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T12:37:11.364Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:37:11.365Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:37:15.078Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T12:37:15.161Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:37:15.162Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T12:37:16.131Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T12:37:16.221Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T12:37:16.222Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:02:30.864Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-29","timestamp":"2024-01-29T13:02:30.973Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:02:30.974Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:02:32.293Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:02:32.382Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:02:32.382Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:05:46.111Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:05:46.246Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:05:46.247Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:08:18.420Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:08:18.502Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:08:18.503Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:08:20.307Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:08:20.390Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:08:20.390Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:10:25.662Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:10:26.331Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:10:26.332Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-29T13:10:27.260Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-29T13:10:27.341Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-29T13:10:27.341Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:39:58.512Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T04:39:58.608Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:39:58.609Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:40:02.638Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T04:40:02.731Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:40:02.733Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:41:14.297Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T04:41:14.376Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:41:14.380Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:42:15.201Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T04:42:15.285Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:42:15.286Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:42:21.556Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T04:42:21.649Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:42:21.654Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T04:43:24.794Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T04:43:24.874Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T04:43:24.875Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:15:39.013Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T05:15:39.130Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:15:39.133Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:15:42.365Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T05:15:42.452Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:15:42.454Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:44:38.939Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T05:44:39.040Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:44:39.042Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:44:41.840Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T05:44:41.925Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:44:41.925Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:44:45.293Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T05:44:45.381Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:44:45.386Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:44:50.237Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T05:44:50.321Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:44:50.323Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T05:44:50.476Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T05:44:50.557Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T05:44:50.558Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:04:39.792Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:04:39.889Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:06:26.430Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:06:26.524Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:06:26.525Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:06:26.525Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:14:48.195Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:14:48.295Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:14:48.296Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:14:48.296Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:14:50.149Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:14:50.239Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:14:50.239Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:14:50.239Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:14:53.939Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:14:54.029Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:14:54.030Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:14:54.031Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:14:58.721Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:14:58.803Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:14:58.805Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:14:58.806Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:06.884Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:06.965Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:06.965Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:06.965Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:08.118Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:08.210Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:08.211Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:08.211Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:14.472Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:14.616Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:14.617Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:14.617Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:22.734Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:22.843Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:22.844Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:22.844Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:44.808Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:45.157Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:45.158Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:45.158Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:51.367Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:51.449Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:51.450Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:51.450Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:15:51.590Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:15:51.682Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:15:51.683Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:15:51.684Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:37.662Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:20:37.759Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:37.759Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:37.759Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:37.905Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:20:37.999Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:38.000Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:38.000Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:47.034Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-12","timestamp":"2024-01-30T07:20:47.111Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:47.112Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:47.112Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:47.245Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-12","timestamp":"2024-01-30T07:20:47.326Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:47.326Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:47.326Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:48.934Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:20:49.018Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:49.018Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:49.018Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:20:49.207Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:20:49.291Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:20:49.291Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:20:49.292Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:30:45.001Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:30:45.233Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:30:45.234Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:30:45.234Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:30:45.638Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T07:30:45.824Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:30:45.824Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:30:45.825Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:30:48.325Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:30:48.542Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:30:48.543Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:30:48.543Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:30:50.063Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:30:50.530Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:30:50.530Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:30:50.531Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:31:04.788Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:31:04.882Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:31:04.882Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:31:04.883Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:31:18.094Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:31:18.195Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:31:18.196Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:31:18.196Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:35:26.312Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:35:26.456Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:35:26.456Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:35:26.456Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:37.901Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:37.991Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:37.991Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:37.991Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:40.958Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:41.043Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:41.044Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:41.044Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:41.189Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:41.273Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:41.274Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:41.274Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:42.914Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:43.001Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:43.002Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:43.002Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:45.934Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:46.020Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:46.021Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:46.021Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:50.238Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:50.319Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:50.319Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:50.319Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T07:37:51.461Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T07:37:51.546Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T07:37:51.547Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T07:37:51.547Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:12:22.357Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T08:12:22.442Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:13:06.810Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T08:13:06.906Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:13:06.907Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T08:13:06.907Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:13:07.037Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T08:13:07.130Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:13:07.132Z"}
+{"level":"info","message":"Emitting dataUpdate event to clients","timestamp":"2024-01-30T08:13:07.133Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:22:19.761Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T08:22:19.850Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:22:19.851Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:22:20.007Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T08:22:20.091Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:22:20.092Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:22:21.444Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T08:22:21.527Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:22:21.530Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:22:32.391Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-30T08:22:32.484Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:22:32.485Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:22:32.558Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-30T08:22:32.643Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:22:32.645Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:24:46.599Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-01-30T08:24:46.690Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:24:46.691Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T08:25:24.657Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-01-30T08:25:24.743Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T08:25:24.744Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:44:21.007Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T09:44:21.105Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:44:21.106Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:44:24.600Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T09:44:25.294Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:44:25.297Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:44:29.169Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T09:44:29.278Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:44:29.279Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:44:35.100Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T09:44:35.186Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:44:35.186Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:44:35.332Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T09:44:35.417Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:44:35.417Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T09:45:01.125Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T09:45:01.208Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T09:45:01.209Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T10:16:27.186Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-30T10:16:27.265Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T10:16:27.265Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T10:42:57.571Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T10:42:57.665Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T10:42:57.666Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T10:44:17.548Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T10:44:17.656Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T10:44:17.658Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-30T11:02:40.029Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-30","timestamp":"2024-01-30T11:02:40.120Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-30T11:02:40.121Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:34.336Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-31","timestamp":"2024-01-31T05:01:34.478Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:34.479Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:38.402Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:38.481Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:38.483Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:42.315Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:42.394Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:42.394Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:45.863Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:45.988Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:45.989Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:46.180Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:46.316Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:46.316Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:54.266Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:54.359Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:54.360Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:01:56.492Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:01:56.592Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:01:56.593Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:12:25.401Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:12:25.498Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:12:25.499Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:09.957Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:10.056Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:10.057Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:16.020Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:16.107Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:16.108Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:20.988Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:21.087Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:21.087Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:22.108Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:22.196Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:22.197Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:27.276Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:27.366Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:27.367Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:24:42.945Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:24:43.043Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:24:43.044Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:47:07.719Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:47:07.807Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:47:07.808Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:57:48.371Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:57:48.507Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:57:48.508Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T05:59:55.920Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T05:59:56.006Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T05:59:56.006Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:01:01.613Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:01:01.698Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:01:01.698Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:02:26.475Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:02:26.558Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:02:26.558Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:03:53.912Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:03:53.995Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:03:53.996Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:08:26.152Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:08:26.726Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:08:26.726Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:08:28.401Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:08:29.055Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:08:29.056Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:11:22.493Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:11:22.690Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:11:22.690Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:21:41.336Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:21:41.524Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:21:41.524Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:24:15.216Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:24:15.407Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:24:15.407Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:26:59.709Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:26:59.933Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:26:59.933Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:28:59.355Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:28:59.588Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:28:59.589Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:33:45.122Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:33:46.632Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:33:46.633Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:39:37.763Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:39:38.211Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:39:38.213Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:42:55.607Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:42:55.818Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:42:55.819Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:50:51.440Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:50:51.684Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:50:51.684Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:50:56.051Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:50:56.230Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:50:56.231Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:51:03.243Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:51:03.481Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:51:03.481Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T06:51:03.932Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T06:51:04.128Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T06:51:04.128Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:05:11.524Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:05:12.213Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:05:12.214Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:05:13.775Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:05:14.674Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:05:14.675Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:05:17.347Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:05:17.514Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:05:17.515Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:05:23.384Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:05:23.561Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:05:23.562Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:29:46.768Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:29:47.210Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:29:47.210Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:30:50.846Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:30:51.250Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:30:51.251Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:31:03.839Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:31:04.330Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:31:04.331Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T07:53:27.448Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T07:53:29.398Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T07:53:29.399Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:05:29.993Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:05:30.430Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:05:30.431Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:12:52.210Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:12:53.472Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:12:53.473Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:13:03.669Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:13:04.146Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:13:04.147Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:13:09.850Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:13:10.356Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:13:10.356Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:20:49.487Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:20:49.947Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:20:49.947Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:22:29.464Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:22:29.925Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:22:29.925Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T08:23:45.059Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T08:23:45.502Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T08:23:45.502Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:37:16.532Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:37:16.727Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:37:16.727Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:37:18.495Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:37:18.597Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:37:18.597Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:39:54.757Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:39:54.855Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:39:54.855Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:43:38.223Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:43:38.325Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:43:38.325Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:45:59.896Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:46:00.015Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:46:00.015Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:47:55.405Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:47:55.505Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:47:55.506Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:48:00.342Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-31","timestamp":"2024-01-31T09:48:00.447Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:48:00.448Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:48:05.987Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:48:06.079Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:48:06.079Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:56:22.992Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:56:23.507Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:56:23.508Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:58:10.200Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:58:10.284Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:58:10.285Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T09:59:04.519Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T09:59:04.856Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T09:59:04.856Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:04:43.767Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:04:43.850Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:04:43.850Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:06:40.977Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:06:41.079Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:06:41.080Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:07:49.893Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:07:50.433Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:07:50.434Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:14:32.961Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:14:33.064Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:14:33.064Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:15:00.932Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-03","timestamp":"2024-01-31T10:15:01.047Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:15:01.048Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:16:40.100Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-01-31T10:16:40.197Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:16:40.198Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:16:44.338Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:16:44.427Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:16:44.427Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:48.525Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:48.609Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:48.609Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:52.905Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:52.991Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:52.992Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:54.141Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:54.226Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:54.226Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:55.589Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:55.695Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:55.695Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:55.837Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:55.939Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:55.939Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:56.450Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:56.553Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:56.554Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:24:57.205Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:24:57.300Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:24:57.300Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:25:53.319Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:25:53.401Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:25:53.401Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:25:59.172Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:25:59.259Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:25:59.260Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:26:37.407Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-03","timestamp":"2024-01-31T10:26:37.484Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:26:37.484Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:26:53.489Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:26:53.587Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:26:53.587Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:33:47.561Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:33:47.651Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:33:47.651Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:39:05.574Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:39:05.662Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:39:05.663Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:42:03.076Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:42:03.161Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:42:03.162Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:43:08.434Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:43:08.551Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:43:08.551Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:46:12.802Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:46:12.882Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:46:12.882Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:48:19.909Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:48:20.014Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:48:20.014Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:49:51.941Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:49:52.043Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:49:52.044Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:51:46.754Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:51:46.860Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:51:46.860Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:53:28.567Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:53:28.655Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:53:28.655Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:56:32.935Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:56:33.029Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:56:33.029Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T10:58:10.597Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T10:58:10.670Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T10:58:10.670Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:00:09.043Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:00:09.258Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:00:09.258Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:02:19.266Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:02:19.520Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:02:19.521Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:05:40.214Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:05:40.342Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:05:40.343Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:05:42.743Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:05:42.830Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:05:42.830Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:05:47.653Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-01-31T11:05:47.739Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:05:47.739Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:12:10.494Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-01-31T11:12:10.583Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:12:10.584Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:12:22.336Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-01-31T11:12:22.428Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:12:22.428Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:12:26.853Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:12:26.937Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:12:26.938Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:12:41.498Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:12:41.582Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:12:41.582Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:13:07.515Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:13:07.613Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:13:07.614Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:13:33.234Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:13:33.327Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:13:33.327Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:13:36.962Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:13:37.038Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:13:37.039Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:13:42.919Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:13:43.002Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:13:43.002Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:13:43.146Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:13:43.231Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:13:43.232Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:14:09.869Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:14:09.952Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:14:09.952Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:14:16.023Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-01-31T11:14:16.110Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:14:16.111Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:14:20.846Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:14:20.923Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:14:20.923Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:14:30.006Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-31","timestamp":"2024-01-31T11:14:30.093Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:14:30.093Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:14:32.978Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:14:33.061Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:14:33.061Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:21:53.109Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:21:53.202Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:21:53.203Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:10.242Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:22:10.326Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:10.326Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:15.142Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-13","timestamp":"2024-01-31T11:22:15.227Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:15.228Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:20.444Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-13","timestamp":"2024-01-31T11:22:20.527Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:20.527Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:23.735Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:22:23.811Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:23.811Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:28.536Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-13","timestamp":"2024-01-31T11:22:28.630Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:28.631Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:22:30.873Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:22:31.211Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:22:31.211Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:23:54.804Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:23:54.903Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:23:54.903Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:30:36.429Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:30:36.512Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:30:36.512Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:33:44.521Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:33:44.619Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:33:44.619Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T11:58:46.537Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T11:58:46.627Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T11:58:46.628Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:00:36.386Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:00:36.476Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:00:36.477Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:01:38.547Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:01:38.634Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:01:38.634Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:24:04.437Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:24:04.536Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:24:04.536Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:28:41.381Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-31","timestamp":"2024-01-31T12:28:41.531Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:28:41.532Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:28:54.116Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-31","timestamp":"2024-01-31T12:28:54.248Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:28:54.249Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:28:57.990Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:28:58.072Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:28:58.073Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:28:59.702Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:28:59.783Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:28:59.783Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:29:05.402Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:29:05.481Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:29:05.481Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:29:07.395Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:29:07.472Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:29:07.473Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:29:07.611Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:29:07.696Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:29:07.696Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:47:53.928Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:47:54.003Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:47:54.003Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T12:47:54.158Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T12:47:54.248Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T12:47:54.249Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T13:10:26.297Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T13:10:26.669Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T13:10:26.670Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T13:10:27.050Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T13:10:27.167Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T13:10:27.168Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T13:10:43.103Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T13:10:43.188Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T13:10:43.188Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-01-31T13:10:43.394Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-01-31T13:10:43.479Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-01-31T13:10:43.480Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:04.159Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T04:43:04.246Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:04.247Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:20.511Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T04:43:20.591Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:20.592Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:25.441Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-01T04:43:25.532Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:25.533Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:29.833Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:43:29.911Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:29.912Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:38.601Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:43:38.681Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:38.682Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:43.482Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:43:43.826Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:43.827Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:43:44.011Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:43:44.107Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:43:44.108Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:44:07.843Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:44:07.927Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:44:07.928Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:48:35.275Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:48:35.358Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:48:35.359Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:49:53.350Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:49:53.436Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:49:53.437Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:50:43.505Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:50:43.828Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:50:43.829Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:51:53.289Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:51:53.369Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:51:53.370Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:51:59.532Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:51:59.618Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:51:59.619Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T04:51:59.770Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T04:51:59.859Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T04:51:59.859Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:15:44.669Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T05:15:44.762Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:15:44.764Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:15:44.897Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T05:15:44.973Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:15:44.974Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:15:51.306Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T05:15:51.401Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:15:51.402Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:16:04.481Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T05:16:04.566Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:16:04.568Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:16:34.568Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-01","timestamp":"2024-02-01T05:16:34.656Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:16:34.658Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:16:38.828Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:16:38.908Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:16:38.909Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:18:44.756Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-01T05:18:44.837Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:18:44.838Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:18:50.485Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:18:50.571Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:18:50.571Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:19:07.579Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:19:07.675Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:19:07.676Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:19:13.393Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-01T05:19:13.500Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:19:13.501Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:19:18.788Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:19:18.875Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:19:18.877Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:19:51.902Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:19:52.011Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:19:52.012Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:22:54.858Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:22:54.957Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:22:54.957Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T05:22:55.321Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T05:22:55.418Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T05:22:55.418Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:08:51.630Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:08:51.720Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:08:51.720Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:11:12.649Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:11:12.846Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:11:12.847Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:11:16.052Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:11:16.136Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:11:16.136Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:11:27.404Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:11:27.494Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:11:27.495Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:37:29.286Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:37:29.373Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:37:29.373Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:37:30.488Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:37:30.582Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:37:30.582Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:50:42.642Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:50:42.737Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:50:42.738Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:56:38.186Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:56:38.269Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:56:38.269Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:56:38.415Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:56:38.506Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:56:38.506Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:59:31.660Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:59:31.915Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:59:31.915Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:59:32.071Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:59:32.167Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:59:32.168Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:59:42.004Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:59:42.164Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:59:42.164Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T06:59:52.024Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T06:59:52.117Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T06:59:52.117Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:38.423Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T07:55:38.534Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:38.535Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:38.703Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T07:55:38.787Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:38.789Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:39.932Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T07:55:40.014Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:40.016Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:45.819Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-01T07:55:45.920Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:45.920Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:48.174Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:55:48.263Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:48.264Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:54.687Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:55:54.820Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:54.822Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:55:56.172Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:55:56.256Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:55:56.257Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:56:05.257Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:56:05.344Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:56:05.345Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:56:07.306Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:56:07.407Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:56:07.407Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T07:56:07.601Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T07:56:07.717Z"}
+{"level":"info","message":"Connection Closed","timestamp":"2024-02-01T07:56:07.718Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:22.236Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T08:21:23.146Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:23.146Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:34.426Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T08:21:34.553Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:34.554Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:36.405Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-1","timestamp":"2024-02-01T08:21:36.511Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:36.511Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:46.636Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-01T08:21:46.736Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:46.737Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:50.159Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T08:21:50.261Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:50.263Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:21:59.685Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T08:21:59.792Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:21:59.793Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T08:25:52.717Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T08:25:52.801Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T08:25:52.801Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T09:43:44.603Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T09:43:44.702Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T09:43:44.702Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T09:43:59.521Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T09:43:59.614Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T09:43:59.614Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:15:32.517Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:15:32.626Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:15:32.627Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:15:32.796Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:15:32.898Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:15:32.899Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:15:36.620Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:15:36.731Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:15:36.732Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:15:36.947Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:15:37.053Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:15:37.053Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:17:38.945Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:17:39.066Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:17:39.070Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:17:40.529Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:17:40.621Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:17:40.621Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-01T12:17:50.256Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-01T12:17:50.352Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-01T12:17:50.352Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T04:44:08.961Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-2","timestamp":"2024-02-02T04:44:09.010Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T04:44:09.010Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T04:44:20.198Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-2","timestamp":"2024-02-02T04:44:20.248Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T04:44:20.249Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T05:38:01.879Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T05:38:01.948Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T05:38:01.949Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T08:13:31.343Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T08:13:31.403Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T08:13:31.403Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T08:13:35.225Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T08:13:35.287Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T08:13:35.287Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T08:13:35.381Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T08:13:35.428Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T08:13:35.428Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T08:19:26.509Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T08:19:26.552Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T08:19:26.552Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T08:19:26.638Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T08:19:26.677Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T08:19:26.677Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T09:38:48.687Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T09:38:48.742Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T09:38:48.742Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-02T09:38:58.527Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-02T09:38:58.584Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-02T09:38:58.584Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T05:34:23.173Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T05:34:23.262Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T05:34:23.262Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T05:34:28.334Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-03","timestamp":"2024-02-03T05:34:28.377Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T05:34:28.378Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T05:34:30.579Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T05:34:30.614Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T05:34:30.615Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T05:42:59.883Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T05:42:59.947Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T05:42:59.948Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T05:45:20.767Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T05:45:20.804Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T05:45:20.804Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T07:12:27.566Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T07:12:27.617Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T07:12:27.617Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T07:12:40.548Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T07:12:40.583Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T07:12:40.585Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T07:12:58.332Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T07:12:58.413Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T07:12:58.413Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T07:13:04.115Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-03T07:13:04.165Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T07:13:04.165Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T07:13:06.353Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T07:13:06.399Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T07:13:06.400Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T10:34:55.230Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T10:34:55.324Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T10:34:55.324Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T10:35:07.587Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T10:35:07.897Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T10:35:07.897Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:12:02.117Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T12:12:02.165Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:12:02.166Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:12:42.918Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T12:12:42.965Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:12:42.965Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:14:58.788Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T12:14:58.837Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:14:58.838Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:16:53.849Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T12:16:53.905Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:16:53.905Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:17:46.328Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T12:17:46.371Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:17:46.372Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:17:50.824Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-3","timestamp":"2024-02-03T12:17:50.855Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:17:50.856Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:39:25.766Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-03","timestamp":"2024-02-03T12:39:25.837Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:39:25.838Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:39:32.140Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-03","timestamp":"2024-02-03T12:39:32.182Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:39:32.183Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:39:33.679Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T12:39:33.720Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:39:33.720Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:40:05.855Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-03T12:40:05.886Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:40:05.886Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:40:31.705Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T12:40:31.751Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:40:31.751Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:40:53.349Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:46:59.054Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-03","timestamp":"2024-02-03T12:46:59.100Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:46:59.100Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-03T12:47:06.265Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-03T12:47:06.305Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-03T12:47:06.306Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:57:22.702Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T10:57:22.920Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:57:22.920Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:57:29.954Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T10:57:30.153Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:57:30.154Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:57:34.734Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T10:57:34.905Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:57:34.905Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:57:45.898Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T10:57:46.080Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:57:46.080Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:57:53.591Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T10:57:53.768Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:57:53.769Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:58:01.858Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T10:58:02.058Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:58:02.059Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:58:12.016Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T10:58:12.196Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:58:12.196Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:58:19.610Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-13","timestamp":"2024-02-04T10:58:19.782Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:58:19.783Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T10:58:24.207Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T10:58:24.357Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T10:58:24.357Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:24:20.483Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:24:22.137Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:27:21.453Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:27:21.809Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:29:13.055Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:29:13.236Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:29:13.236Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:29:22.597Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T14:29:22.813Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:29:22.813Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:29:48.369Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:29:48.612Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:29:48.613Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:29:55.181Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T14:29:55.452Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:29:55.452Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:30:06.893Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:30:07.099Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:30:07.100Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:30:14.617Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T14:30:14.843Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:30:14.843Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:34:30.167Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:34:31.632Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:34:31.633Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:35:11.497Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:35:12.078Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:35:12.078Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:35:27.918Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:35:28.125Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:35:28.125Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:35:38.052Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T14:35:38.386Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:35:38.386Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:47:38.189Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:47:38.370Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:47:38.371Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:47:45.270Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:47:46.348Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:47:46.349Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:47:51.879Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T14:47:52.227Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:47:52.227Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T14:55:36.190Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T14:55:36.426Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T14:55:36.426Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T16:47:01.569Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-04T16:47:02.203Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T16:47:02.203Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T16:47:03.926Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T16:47:04.106Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T16:47:04.107Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T16:48:04.515Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T16:48:04.748Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T16:48:04.749Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T16:48:09.615Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-04T16:48:09.883Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T16:48:09.884Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T16:48:11.496Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T16:48:11.706Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T16:48:11.706Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:01:28.814Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T17:01:29.353Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:01:29.353Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:01:35.734Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-04T17:01:35.998Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:01:35.999Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:01:37.500Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T17:01:37.742Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:01:37.745Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:12:13.679Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T17:12:16.270Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:12:16.271Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:12:20.307Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-04T17:12:21.871Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:12:21.873Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:12:36.128Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-04T17:12:36.561Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:12:36.562Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-04T17:19:03.354Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-04T17:19:03.561Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-04T17:19:03.562Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:02:46.154Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-04","timestamp":"2024-02-05T05:02:46.295Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:02:46.295Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:02:51.233Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-05T05:02:51.330Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:02:51.331Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:02:52.582Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:02:52.674Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:02:52.675Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:02:58.414Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-05T05:02:58.494Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:02:58.494Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:02:59.852Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:02:59.937Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:02:59.938Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:03:07.253Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:03:07.352Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:03:07.352Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:03:16.508Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:03:16.838Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:03:16.838Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:03:59.638Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:03:59.732Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:03:59.733Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:19:44.300Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:19:44.390Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:19:44.390Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:20:09.101Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2023-12-06","timestamp":"2024-02-05T05:20:09.186Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:20:09.187Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:00.803Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:00.910Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:00.910Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:14.292Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:14.377Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:14.378Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:16.185Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:16.264Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:16.265Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:25.996Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:26.081Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:26.081Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:27.926Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:28.009Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:28.010Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:21:29.412Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:21:29.499Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:21:29.500Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:22:36.690Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:22:36.779Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:22:36.780Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:22:42.089Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:22:42.178Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:22:42.179Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:22:45.025Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:22:45.124Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:22:45.125Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:22:48.591Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:22:48.668Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:22:48.669Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:04.070Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:04.155Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:04.156Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:12.114Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:12.204Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:12.204Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:13.943Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:14.028Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:14.028Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:18.503Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:18.590Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:18.590Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:20.780Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:20.872Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:20.872Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:26.278Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:26.396Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:26.397Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:23:32.793Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:23:32.868Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:23:32.869Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:24:55.028Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:24:55.455Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:24:55.455Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:48:24.862Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:48:24.963Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:48:24.964Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:48:30.842Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:48:30.948Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:48:30.948Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:48:32.372Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:48:32.461Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:48:32.461Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:54:22.820Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:54:22.912Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:54:22.913Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T05:59:50.477Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T05:59:50.567Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T05:59:50.567Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:00:55.897Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:00:55.984Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:00:55.984Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:03:43.221Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:03:43.311Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:03:43.311Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:03:51.639Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:03:51.730Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:03:51.731Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:08:34.136Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:08:34.227Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:08:34.227Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:12:17.435Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:12:17.619Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:12:17.619Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:14:07.033Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:14:07.122Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:14:07.122Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:16:56.909Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:16:57.063Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:16:57.064Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:17:02.615Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:17:02.706Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:17:02.706Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:19:03.501Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:19:03.607Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:19:03.607Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:22:11.317Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:22:11.414Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:22:11.414Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:24:41.810Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:24:42.075Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:24:42.076Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:26:11.555Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:26:11.651Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:26:11.651Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:26:15.437Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:26:15.527Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:26:15.528Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:26:31.306Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:26:31.445Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:26:31.445Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:28:39.268Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:28:39.361Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:28:39.361Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:30:25.433Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:30:25.571Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:30:25.571Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:35:22.052Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:35:22.135Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:35:22.136Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:36:34.791Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:36:34.882Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:36:34.882Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:24.419Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:24.610Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:24.610Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:36.107Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:36.201Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:36.202Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:41.039Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-05T06:43:41.126Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:41.126Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:42.769Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:42.869Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:42.869Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:44.920Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-05T06:43:44.999Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:44.999Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:46.013Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:46.106Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:46.106Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:48.656Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:48.744Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:48.744Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:43:52.406Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:43:52.500Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:43:52.500Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:44:04.464Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:44:04.550Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:44:04.551Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:49:55.866Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:49:55.970Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:49:55.970Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:50:05.536Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:50:05.627Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:50:05.628Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:51:55.770Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:51:56.156Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:51:56.157Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:51:59.169Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:51:59.258Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:51:59.259Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:05.314Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-09","timestamp":"2024-02-05T06:52:05.395Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:05.395Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:09.022Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:52:09.151Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:09.151Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:12.259Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:52:12.339Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:12.340Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:17.241Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:52:17.319Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:17.320Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:25.499Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:52:25.582Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:25.582Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:52:27.171Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:52:27.254Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:52:27.254Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:02.457Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:02.551Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:02.552Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:06.922Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:07.010Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:07.011Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:10.575Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:10.664Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:10.664Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:15.081Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:15.164Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:15.164Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:21.414Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:21.498Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:21.499Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:55:25.329Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:55:25.438Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:55:25.438Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:56:02.703Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:56:02.825Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:56:02.825Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:56:07.618Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:56:07.707Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:56:07.707Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:56:12.479Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:56:12.597Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:56:12.598Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:57:29.394Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:57:29.480Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:57:29.481Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:57:36.272Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:57:36.354Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:57:36.355Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:57:41.836Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:57:41.947Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:57:41.947Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:57:46.956Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:57:47.042Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:57:47.043Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T06:57:50.633Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T06:57:50.971Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T06:57:50.972Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:02:52.159Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:02:52.272Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:02:52.273Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:02:54.911Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:02:55.001Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:02:55.002Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:05:49.044Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:05:49.492Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:05:49.492Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:11:18.310Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:11:18.747Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:11:18.747Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:11:21.234Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:11:21.323Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:11:21.324Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:22:44.695Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:22:44.786Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:22:44.786Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:25:57.069Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:25:57.161Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:25:57.162Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:38:21.650Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:38:21.745Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:38:21.746Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:38:22.704Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:38:22.786Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:38:22.787Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:38:26.098Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:38:26.176Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:38:26.177Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:38:32.028Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:38:32.110Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:38:32.110Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:41:40.575Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:41:40.674Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:41:40.674Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-05T07:43:19.084Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-05T07:43:19.181Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-05T07:43:19.181Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:51:27.579Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:51:27.650Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:51:27.651Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:51:31.173Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:51:31.233Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:51:31.233Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:51:35.409Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-18","timestamp":"2024-02-06T12:51:35.461Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:51:35.461Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:51:52.623Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:51:52.674Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:51:52.674Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:52:18.167Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:52:18.208Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:52:18.209Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:52:39.150Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:52:39.195Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:52:39.195Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:55:02.044Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:55:02.123Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:55:02.123Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:56:45.281Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-06T12:56:45.334Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:56:45.334Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:56:57.949Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:56:58.015Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:56:58.016Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:57:04.289Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:57:04.421Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:57:04.421Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:57:10.821Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-05","timestamp":"2024-02-06T12:57:10.871Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:57:10.872Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:57:18.692Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:57:18.741Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:57:18.741Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-06T12:58:37.485Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-06T12:58:37.545Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-06T12:58:37.545Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T05:59:12.176Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-02-08","timestamp":"2024-02-08T05:59:12.224Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T05:59:12.225Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T05:59:21.633Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-08","timestamp":"2024-02-08T05:59:21.731Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T05:59:21.732Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T06:00:24.287Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T06:00:24.389Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T06:00:24.390Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T06:00:30.295Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T06:00:30.352Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T06:00:30.353Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T06:00:35.262Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T06:00:35.329Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T06:00:35.329Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:50:51.552Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T10:50:51.619Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:50:51.619Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:50:56.410Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-04","timestamp":"2024-02-08T10:50:56.483Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:50:56.484Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:51:03.435Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T10:51:03.484Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:51:03.484Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:51:06.508Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T10:51:06.547Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:51:06.548Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:51:12.500Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T10:51:12.541Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:51:12.541Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T10:52:04.856Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-08T10:52:04.907Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T10:52:04.907Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T11:35:51.695Z"}
+{"level":"info","message":"Query is INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?) and parameters are Hrishikesh Rajesh Shelar,hrishikesh88@gmail.com,Hrishikesh@88","timestamp":"2024-02-08T11:35:51.739Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T11:35:51.739Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-08T11:36:27.811Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are hrishikesh88@gmail.com,Hrishikesh@88","timestamp":"2024-02-08T11:36:27.864Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-08T11:36:27.864Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T05:14:57.157Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T05:14:57.248Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T05:14:57.248Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T05:21:37.957Z"}
+{"level":"info","message":"Query is SELECT * FROM login WHERE `email`=? AND `password`=? and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T05:21:38.003Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T05:21:38.003Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T05:35:07.033Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T05:35:07.113Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:38:44.009Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T12:38:44.081Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T12:38:44.082Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:50:51.717Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T12:50:51.992Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T12:50:51.992Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:54:37.733Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T12:54:37.777Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T12:54:37.778Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:56:35.425Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are Om5221@gmail.com,Omdali@5221","timestamp":"2024-02-10T12:56:35.472Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T12:56:35.473Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:56:57.007Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-10T12:56:57.054Z"}
+{"level":"info","message":"Connection Released","timestamp":"2024-02-10T12:56:57.055Z"}
+{"level":"info","message":"Connection created","timestamp":"2024-02-10T12:57:12.807Z"}
+{"level":"info","message":"Query is SELECT * FROM  `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-10T12:57:12.852Z"}

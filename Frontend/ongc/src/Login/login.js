@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import validation from '../Utility/loginvalidation';
 
+
 function Login() {
     const [values, setValues] = useState({
         email: '',
@@ -21,12 +22,16 @@ function Login() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setError(validation(values));
+        
         // if (Object.keys(error).length === 0) {
         if (error.email === "" && error.password === "") {
-            axios.post('http://localhost:9000/Login', values)
+            // setValues(prev=>({...prev,password:CryptoJS.SHA256(textToHash).toString(CryptoJS.enc.Hex)}))
+            console.log(values);
+            axios.post('/api/login', values)
                 .then(res => {
-                    if (res.data === "success") {
-                        navigate('/Home');
+                    if (res.data.isLogged === "success") {
+                        localStorage.setItem("token",res.data.token);
+                        navigate('/StaticTable');
                     } else {
                         // navigate('/Signup')
                         alert("NO RECORD EXISTED. PLEASE SIGN UP....");
