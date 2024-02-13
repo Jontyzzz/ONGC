@@ -1,28 +1,7 @@
 
-// const socket = require('socket.io-client')('http://localhost:9000'); // Replace with your Socket.IO server URL
-
-
-// function generateTimestamps(startTime, endTime, interval = 1) {
-//   const timestamps = [];
-//   let currentTimestamp = startTime;
-
-//   while (currentTimestamp <= endTime) {
-//     timestamps.push(currentTimestamp);
-//     currentTimestamp += interval * 60 * 60 * 1000; // Convert hours to milliseconds
-//   }
-
-//   return timestamps;
-// }
-
-
 function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors) {
   const filteredData = rawData.filter((data) => filter_Data.includes(data.ParameterName.trim()));
-  // const startTime = new Date('2024-01-19T00:00:00'); // Assuming YYYY-MM-DDTHH:mm:ss format
-  // const endTime = new Date('2024-01-19T23:59:59');
-  // const timestamps = generateTimestamps(startTime.getTime(), endTime.getTime(), 1);
  
-
-
   if (chartType === 'bar') {
     return {
       labels: filteredData.map(data => data.ParameterName),
@@ -65,8 +44,6 @@ function getDataset(filter_Data, rawData, label_value, chartType = 'bar', colors
   } else if (chartType === 'line') {
     return {
       labels: filteredData.map(data => data.ParameterName),
-          // labels:timestamps,
-          // labels: timestamps.map(timestamp => new Date(timestamp).toLocaleString()), // Format timestamp to a human-readable date
       datasets: [
         {
           type: 'line',

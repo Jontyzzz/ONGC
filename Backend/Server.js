@@ -68,18 +68,19 @@ app.post('/signup', async (req, res) => {
   return res.json(data);
 });
 
-app.post('/login', async (req, res) => {
+app.post('/api/login', async (req, res) => {
   let sql = "select 'success' from login where email=? and password=? ;";
+  console.log("rushyaaaalog")
   let values = [req.body.email, req.body.password];
   let data = await (new Database()).runQuery(sql, values);
   if (data.length > 0) {
-    const token = jwt.sign({ email }, "ONGC", { expiresIn: '1h' });
+    const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
     return res.json({ isLogged: "success", token, isAdmin: true });
   } else {
     return res.json({ error });
   }
 });
-
+ 
 // Other routes...
 
 wss.on("connection", (ws) => {

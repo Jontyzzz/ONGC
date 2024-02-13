@@ -9,3 +9,4 @@
 {"code":"PROTOCOL_CONNECTION_LOST","fatal":true,"level":"error","timestamp":"2024-02-06T12:57:35.666Z"}
 {"code":"PROTOCOL_CONNECTION_LOST","fatal":true,"level":"error","timestamp":"2024-02-08T05:59:43.908Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'Om5221@gmail.com' for key 'email'","sql":"INSERT INTO login (`email`, `password`) VALUES (?,?)","sqlMessage":"Duplicate entry 'Om5221@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-02-10T05:35:07.113Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'pratibha333@gmail.com' for key 'email'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry 'pratibha333@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-02-13T06:38:05.643Z"}

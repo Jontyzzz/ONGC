@@ -29,6 +29,7 @@ function Login() {
             console.log(values);
             axios.post('/api/login', values)
                 .then(res => {
+                     console.log(values);
                     if (res.data.isLogged === "success") {
                         localStorage.setItem("token",res.data.token);
                         navigate('/StaticTable');
