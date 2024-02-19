@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../Navbar/Navbar';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { webSocketUrl } from '../Utility/localstorage';
@@ -18,7 +17,7 @@ function TemperatureLineChart() {
     useEffect(() => {
         const token = localStorage.getItem("token")
         axios.get('/api/fetchData', {
-            'Authorization': `Bearer ${token}`,
+            headers: { Authorization: `Bearer ${token}` }
         })
             .then((res) => {
                 setChartData(res.data);
@@ -28,7 +27,9 @@ function TemperatureLineChart() {
                 setIsLoading(3)
             });
 
-        const ws = new WebSocket(webSocketUrl);
+        // const ws = new WebSocket(webSocketUrl);
+        const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
+
 
         ws.addEventListener('open', () => {
             console.log('WebSocket connection opened');
@@ -38,7 +39,7 @@ function TemperatureLineChart() {
             console.log(`Received message: ${event.data}`);
             const token = localStorage.getItem("token")
             axios.get('/api/fetchData', {
-                'Authorization': `Bearer ${token}`,
+                headers: { Authorization: `Bearer ${token}` }
             })
             .then((res) => {
                 setChartData(res.data);
@@ -110,7 +111,6 @@ function TemperatureLineChart() {
 
     if (isLoading === 1) {
         return (<>
-            <Navbar />
             <LoadingSpinner />
         </>)
     }

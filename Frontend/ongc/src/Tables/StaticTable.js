@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
+import { io } from 'socket.io-client'; // Import the socket.io-client library
 
 
 
@@ -20,7 +21,7 @@ function StaticTable() {
         const token = localStorage.getItem("token")
         // Fetch initial data
         axios.get('/api/getdata?date=' + dateValue, {
-            Authorization: `Bearer ${token}`
+            headers: { Authorization: `Bearer ${token}` }
         })
             .then((res) => {
                 setData(res.data);
@@ -31,51 +32,62 @@ function StaticTable() {
                 setIsLoading(3);
             });
 
-        const ws = new WebSocket(webSocketUrl); // Replace with your WebSocket server URL
+        // Create a socket connection
+        const socket = io(webSocketUrl);
 
         // Set up event listeners
-        ws.addEventListener('open', () => {
-            console.log('WebSocket connection opened');
+        socket.on('connect', () => {
+            console.log('Socket connected');
         });
 
-        ws.addEventListener('message', (event) => {
-            console.log(`Received message: ${event.data}`);
-            const token = localStorage.getItem("token")
-            axios.get('/api/getdata?date=' + dateValue)
+        socket.on('message', (data) => {
+            console.log('Received message:', data);
+
+            // Fetch updated data when a message is received
+            axios
+                .get('/api/getdata?date=' + dateValue, {
+                    headers: { Authorization: `Bearer ${token}` },
+                })
                 .then((res) => {
                     setData(res.data);
-
                 })
-                .catch(err => {
-                    console.log(err)
-                    setIsLoading(3)
+                .catch((err) => {
+                    console.log(err);
+                    setIsLoading(3);
                 });
+        });
 
-            ws.addEventListener('close', () => {
-                console.log('WebSocket connection closed');
-            });
-        })
-        setSocket(ws);
-        // Clean up the WebSocket connection on component unmount
+        socket.on('disconnect', () => {
+            console.log('Socket disconnected');
+        });
 
+        setSocket(socket);
+
+        // Clean up the socket connection on component unmount
         return () => {
-            ws.close();
+            socket.disconnect();
         };
-
-
-    }, [dateValue]); // Empty dependency array means this effect runs once on mount
+    }, [dateValue]);
 
     if (isLoading === 1) {
-        return (<>
-            <Navbar />
-            <LoadingSpinner />
-        </>)
+        return (
+            <>
+                <Navbar />
+                <LoadingSpinner />
+            </>
+        );
     }
+
     if (isLoading === 3) {
         return (
-            <Navigate to="/" />
-        )
+            <>
+                <Navbar />
+                <Navigate to="/StaticTable" />
+            </>
+        );
     }
+
+
 
     return (
         <div className='park'>

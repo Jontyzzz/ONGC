@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import validation from '../Utility/loginvalidation';
 
@@ -12,7 +12,7 @@ function Login() {
     });
 
     const navigate = useNavigate();
-
+    const [isLogged, setIsLogged] = useState(1)
     const [error, setError] = useState({});
     const handleInput = (event) => {
         setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
@@ -22,25 +22,28 @@ function Login() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setError(validation(values));
-        
+
         // if (Object.keys(error).length === 0) {
         if (error.email === "" && error.password === "") {
             // setValues(prev=>({...prev,password:CryptoJS.SHA256(textToHash).toString(CryptoJS.enc.Hex)}))
             console.log(values);
             axios.post('/api/login', values)
                 .then(res => {
-                     console.log(values);
-                    if (res.data.isLogged === "success") {
-                        localStorage.setItem("token",res.data.token);
-                        navigate('/StaticTable');
-                    } else {
-                        // navigate('/Signup')
-                        alert("NO RECORD EXISTED. PLEASE SIGN UP....");
-
-                    }
+                    console.log(values);
+                    console.log(res.data)
+                    localStorage.setItem("token", res.data.token);
+                }).then(res => {
+                    setIsLogged(2)
                 })
-                .catch(err => console.log(err));
+                .catch(err => {
+                    console.log(err)
+                    alert("Please try login again. Either your Password or Email is Incorrect")
+                });
+
         }
+    }
+    if (isLogged == 2) {
+        return (<Navigate to="/StaticTable"></Navigate>)
     }
     return (
         <div className='Signup template d-flex justify-content-center w-100 vh-100  justify-content-center align-items-center containerStyle'>

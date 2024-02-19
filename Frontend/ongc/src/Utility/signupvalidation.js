@@ -18,10 +18,10 @@ function validation(values) {
       error.email = "";
     }
   
-    if (values.password === "") {
+    if (values.password ==="") {
       error.password = "Password shouldn't be Empty";
     } else if (!password_pattern.test(values.password)) {
-      error.password = "Password Didn't match";
+      error.password = "Invalid Password Format";
     } else {
       error.password = "";
     }

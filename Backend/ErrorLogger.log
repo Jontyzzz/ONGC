@@ -10,3 +10,10 @@
 {"code":"PROTOCOL_CONNECTION_LOST","fatal":true,"level":"error","timestamp":"2024-02-08T05:59:43.908Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'Om5221@gmail.com' for key 'email'","sql":"INSERT INTO login (`email`, `password`) VALUES (?,?)","sqlMessage":"Duplicate entry 'Om5221@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-02-10T05:35:07.113Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'pratibha333@gmail.com' for key 'email'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry 'pratibha333@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-02-13T06:38:05.643Z"}
+{"level":"error","message":"Bind parameters must not contain undefined. To pass SQL NULL specify JS null","timestamp":"2024-02-13T12:01:57.850Z"}
+{"code":"PROTOCOL_CONNECTION_LOST","level":"error","message":"Connection lost: The server closed the connection.","timestamp":"2024-02-14T12:54:33.216Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_BLVL already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_BLVL already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-02-18T17:09:35.028Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T07:48:33.877Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T07:58:23.577Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T08:05:50.119Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T08:10:10.982Z"}

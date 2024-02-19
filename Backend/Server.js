@@ -6,36 +6,45 @@ const Database = require("./Database");
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
 const http = require('http');
-const WebSocket = require('ws');
-const { validateAuth } = require('./JWT/middlewareauth');
+const { Server } = require('socket.io'); // Import the Server class from socket.io
 const loggers = require('../Backend/loggers/loggers');
+const {validateAuth} = require('./JWT/middlewareauth')
 
 const app = express();
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+const io = new Server(server); // Create a new instance of the socket.io Server
+
+const port = process.env.PORT || 9000;
+
+// Use environment variables for configuration
+const dbConfig = {
+  connectionLimit: 10,
+  host: process.env.DB_HOST || '103.195.185.168',
+  user: process.env.DB_USER || 'indiscpx_BLVL',
+  password: process.env.DB_PASSWORD || 'indiscpx_BLVL@123',
+  database: process.env.DB_DATABASE || 'indiscpx_BLVL'
+};
+
+// Error handling for Socket.io server
+io.on("error", (error) => {
+  console.error("Socket.io server error:", error);
+});
 
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../Frontend/ongc/build/")));
 app.use(bodyParser.json());
 
-const dbConfig = {
-  connectionLimit: 10,
-  host: '103.195.185.168',
-  user: 'indiscpx_BLVL',
-  password: 'indiscpx_BLVL@123',
-  database: 'indiscpx_BLVL'
-};
-
-app.get('/getdata', validateAuth, async (req, res) => {
+app.get('/api/getdata', validateAuth, async (req, res) => {
   let date = req.query.date;
   let sql = "SELECT * FROM `ParameterColln` WHERE date = ?";
   let data = await (new Database()).runQuery(sql, [date]);
   loggers.socketLogger.log('info', 'Emitting dataUpdate event to clients');
+  io.emit('dataUpdate', data); // Emit a 'dataUpdate' event to all connected clients
   return res.json(data);
 });
 
-app.get('/fetchData', validateAuth, async (req, res) => {
+app.get('/api/fetchData', validateAuth, async (req, res) => {
   let pool;
   try {
     pool = await mysql.createPool(dbConfig);
@@ -55,13 +64,13 @@ app.get('/fetchData', validateAuth, async (req, res) => {
   }
 });
 
-app.get("/getUnits", validateAuth, async (req, res) => {
+app.get("/api/getUnits", validateAuth, async (req, res) => {
   let sql = "SELECT * FROM ongc";
   let data = await (new Database()).runQuery(sql, []);
   return res.json(data);
 });
 
-app.post('/signup', async (req, res) => {
+app.post('/api/signup', async (req, res) => {
   let sql = "INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)";
   let values = [req.body.name, req.body.email, req.body.password];
   let data = await (new Database()).runQuery(sql, values);
@@ -80,24 +89,15 @@ app.post('/api/login', async (req, res) => {
     return res.json({ error });
   }
 });
- 
-// Other routes...
 
-wss.on("connection", (ws) => {
-  ws.on("message", message => {
-    console.log(message.toString('utf8'));
-    wss.clients.forEach((client) => {
-      if (client !== ws && client.readyState === WebSocket.OPEN) {
-        client.send(message);
-      }
-    });
-  });
-
-  ws.on('close', () => {
+io.on("connection", (socket) => {
+  console.log('A client connected');
+  socket.on('disconnect', () => {
     console.log('Client disconnected');
+    // Additional logic for socket closure if needed
   });
 });
 
-server.listen(9000, () => {
-  console.log("Server Started On 9000");
+server.listen(port, () => {
+  console.log(`Server Started On ${port}`);
 });

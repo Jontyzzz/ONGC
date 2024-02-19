@@ -8,7 +8,6 @@ import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
 
-const socket = io('http://localhost:9000'); // Replace with your server URL
 
 function AutomaticLoadingTable() {
   const [Data, setData] = useState([]);
@@ -21,7 +20,7 @@ function AutomaticLoadingTable() {
 
     // Fetch initial data
     axios.get(`/api/getdata?date=${dateValue}`, {
-      Authorization: `Bearer ${token}`
+      headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
         setData(res.data);
@@ -41,7 +40,7 @@ function AutomaticLoadingTable() {
       console.log(`Received message: ${event.data}`)
       const token = localStorage.getItem("token");
       axios.get(`/api/getdata?date=${dateValue}`, {
-        Authorization: `Bearer ${token}`
+        headers: { Authorization: `Bearer ${token}` }
       })
         .then((res) => {
           setData(res.data);

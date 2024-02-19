@@ -1762,3 +1762,345 @@
 {"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T06:32:26.250Z"}
 {"level":"info","message":"Connection pool created","timestamp":"2024-02-13T06:38:05.524Z"}
 {"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T06:38:05.645Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-13T06:39:54.726Z"}
+{"level":"info","message":"Query is INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?) and parameters are Madhura umesh Desai,madhura333@gmail.com,Madhura@333","timestamp":"2024-02-13T06:39:55.010Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T06:39:55.012Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-13T07:14:59.938Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are madhura333@gmail.com,Madhura@333","timestamp":"2024-02-13T07:15:00.095Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T07:15:00.096Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-13T11:35:34.700Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are madhura333@gmail.com,Madhura@333","timestamp":"2024-02-13T11:35:34.844Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T11:35:34.845Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-13T12:01:57.608Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-13T12:01:57.851Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:14:16.430Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-14T12:14:16.615Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-14T12:14:16.619Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:54:12.982Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:54:13.294Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:54:13.868Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-14T12:54:13.934Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-14T12:54:13.936Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:54:14.417Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-14T12:54:15.082Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-14T12:54:15.083Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-14T12:54:16.837Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-14T12:54:33.217Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T07:27:04.632Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T07:27:05.007Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T07:27:05.009Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T07:32:51.801Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T07:32:51.937Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T07:32:51.939Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T07:47:56.801Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T07:47:56.911Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T07:47:56.997Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T07:47:56.999Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T07:47:57.087Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T07:47:57.088Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:08:23.067Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:08:23.214Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:08:23.216Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:13:50.199Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:13:50.329Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:13:50.330Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:13:52.024Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:13:52.133Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:13:52.134Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:13:52.738Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:13:52.847Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:13:52.847Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:13:53.386Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:13:53.476Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:13:53.477Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T08:13:54.392Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T08:13:54.564Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T08:13:54.566Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:37:21.910Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:37:22.065Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:37:22.066Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:38:28.318Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:38:28.529Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:38:28.530Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:38:32.239Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:38:32.398Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:38:32.440Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:38:32.440Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:38:32.593Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:38:32.594Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:42:53.684Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:42:53.808Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:42:54.069Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:42:54.071Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:42:54.912Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:42:54.913Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:48:20.053Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:48:20.285Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:48:20.288Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-15T09:48:20.313Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-15T09:48:20.491Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-15T09:48:20.491Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:00:23.001Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:00:24.832Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:00:24.833Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:07:42.178Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:07:43.596Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:07:43.598Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:12:47.876Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:12:50.319Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:12:50.320Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:14:24.880Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-18T10:14:26.318Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:14:26.319Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:32:30.180Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:32:31.500Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:32:31.501Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:39:43.592Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:39:45.772Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:39:45.773Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:46:21.895Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T10:46:23.330Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:46:23.332Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:46:25.642Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-11","timestamp":"2024-02-18T10:46:27.211Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:46:27.212Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T10:46:46.911Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T10:46:49.514Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T10:46:49.515Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:23:20.369Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T11:23:21.870Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:23:21.871Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:23:22.101Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T11:23:23.615Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:23:23.616Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:27:20.231Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T11:27:21.748Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:27:21.750Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:30:28.479Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T11:30:29.936Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:30:29.938Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:30:30.057Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T11:30:31.373Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:30:31.374Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:36:09.949Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T11:36:11.523Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:36:11.524Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T11:48:13.754Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T11:48:14.335Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T11:48:14.336Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:03:45.838Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:03:45.965Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:03:51.299Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:03:51.305Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:03:51.611Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:03:51.613Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:03:54.452Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:04:00.052Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:04:00.053Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:04:59.454Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:04:59.599Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:05:00.803Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:05:00.951Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:05:02.222Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:03.295Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:03.296Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:03.300Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:03.301Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:05:03.599Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:05:03.621Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:04.496Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:04.499Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:04.737Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:04.738Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:06.097Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:06.098Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:05:06.456Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:06.457Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:05:06.468Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:05:06.472Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:17:46.115Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:17:46.931Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:17:47.094Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:17:47.095Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:17:47.460Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:17:47.688Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:17:47.690Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:17:48.144Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:17:48.145Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:17:57.090Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:17:57.654Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:17:57.655Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:29:57.652Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:29:58.125Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:29:58.126Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:30:17.578Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T12:30:18.026Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:30:18.028Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:30:18.153Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:30:18.594Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:30:18.596Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T12:30:25.244Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T12:30:25.764Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T12:30:25.766Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T17:07:15.873Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T17:07:17.342Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T17:09:22.284Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-18T17:09:22.671Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T17:09:22.673Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T17:09:23.169Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-18T17:09:23.413Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T17:09:23.415Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-18T17:09:34.860Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-18T17:09:35.028Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:16.928Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T05:00:17.443Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:17.445Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:17.753Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-01-14","timestamp":"2024-02-19T05:00:17.977Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:17.978Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:26.527Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:00:26.749Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:26.750Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:33.276Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-01-14","timestamp":"2024-02-19T05:00:33.464Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:33.465Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:36.007Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-02-19T05:00:36.215Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:36.216Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:40.508Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-06","timestamp":"2024-02-19T05:00:40.723Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:40.723Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:42.320Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:00:42.526Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:42.526Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:00:50.720Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:00:50.920Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:00:50.920Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:06:47.695Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T05:06:48.146Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:06:48.148Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:06:48.259Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:06:50.532Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:06:50.533Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:06:53.708Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:06:54.156Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:06:54.157Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:07:07.271Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-03-14","timestamp":"2024-02-19T05:07:07.595Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:07:07.595Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:07:09.541Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:07:09.757Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:07:09.757Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:07:15.788Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:07:16.070Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:07:16.071Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:09:57.140Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T05:09:57.334Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:09:57.335Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:09:57.407Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:09:57.427Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T05:09:57.618Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:09:57.619Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:09:57.632Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:09:57.633Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:10:01.175Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:10:01.386Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:10:01.386Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:10:04.474Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:10:04.685Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:10:04.685Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T05:10:29.139Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T05:10:29.353Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T05:10:29.354Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:14:04.479Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:14:04.499Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T06:14:04.809Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:14:04.810Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T06:14:05.039Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:14:05.040Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:14:05.127Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:14:05.605Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:14:05.605Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:14:11.160Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:14:11.875Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:14:11.875Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:14:20.555Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:14:20.798Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:14:20.801Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:24:13.871Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T06:24:14.091Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:24:14.092Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:24:14.290Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:24:14.536Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:24:14.537Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:24:16.954Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:24:17.176Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:24:17.188Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:24:20.025Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:24:21.267Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:24:21.268Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:29:55.646Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T06:29:55.938Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:29:55.940Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:29:56.169Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:29:56.464Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:29:56.465Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:29:58.597Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:29:58.879Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:29:58.880Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T06:30:01.199Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T06:30:01.460Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T06:30:01.461Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:48:14.506Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:48:14.678Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T07:48:14.934Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:48:14.936Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:48:15.103Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:48:15.560Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:48:15.561Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:48:19.539Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:48:19.885Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:48:19.886Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:48:21.693Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:48:21.916Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:48:21.916Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:48:33.877Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:58:03.940Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:58:04.155Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T07:58:04.205Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:58:04.205Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:58:04.472Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:58:04.736Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:58:04.738Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:58:10.120Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:58:11.152Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:58:11.153Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T07:58:14.535Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T07:58:14.825Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:58:14.826Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T07:58:23.579Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:02:16.298Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T08:02:16.551Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:02:16.552Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:02:16.659Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T08:02:17.150Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:02:17.151Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:02:23.595Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T08:02:23.888Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:02:23.889Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:02:30.719Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T08:02:31.017Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:02:31.017Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:05:30.020Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T08:05:30.309Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:05:30.311Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:05:30.480Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:05:50.120Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:09:43.716Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-02-19T08:09:44.012Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:09:44.013Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:09:44.162Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-02-14","timestamp":"2024-02-19T08:09:44.395Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:09:44.396Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-02-19T08:09:51.648Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-02-19T08:10:10.983Z"}

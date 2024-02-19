@@ -19,7 +19,7 @@ function LiveReports() {
     const token = localStorage.getItem("token");
 
     axios.get('/api/getdata?date=' + dateValue, {
-      Authorization: `Bearer ${token}`
+      headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => {
         setData(res.data);
@@ -30,14 +30,15 @@ function LiveReports() {
         setIsLoading(3);
       });
 
-    const ws = new WebSocket(webSocketUrl);
+    // const ws = new WebSocket(webSocketUrl);
+    const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
 
     ws.addEventListener('open', () => console.log('WebSocket connection opened'));
     ws.addEventListener('message', event => {
       console.log(`Received message: ${event.data}`)
       const token = localStorage.getItem("token");
       axios.get('/api/getdata?date=' + dateValue, {
-        Authorization: `Bearer ${token}`
+        headers: { Authorization: `Bearer ${token}` }
       })
         .then((res) => {
           setData(res.data);

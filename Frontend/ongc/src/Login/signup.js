@@ -19,15 +19,34 @@ function Signup() {
     setErrors(validation({ ...values, [event.target.name]: event.target.value })); // Corrected from 'setError' to 'setErrors'
   };
 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setErrors(validation(values))
+  //   // if (Object.keys(error).length === 0) {
+  //   if (error.name === "" && error.email === "" && error.password === "") {
+  //     setValues(prev => ({
+  //       ...prev, password: sha256(values.password)
+  //     }))
+  //     console.log(values)
+  //     axios.post('/api/signup', values)
+  //       .then(res => {
+  //         console.log("Registered successfully...");
+  //         navigate('/');
+  //       })
+  //       .catch(err => console.log(err));
+  //   }
+  // };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    setErrors(validation(values))
-    // if (Object.keys(error).length === 0) {
+    setErrors(validation(values));
+  
     if (error.name === "" && error.email === "" && error.password === "") {
-      setValues(prev => ({
-        ...prev, password: sha256(values.password)
-      }))
-      console.log(values)
+      const hashedPassword = sha256(values.password).toString(); // Convert hashed password to string
+      console.log('Hashed Password:', hashedPassword);
+      setValues(prev => ({ ...prev, password: hashedPassword }));
+  
+      console.log(values);
       axios.post('/api/signup', values)
         .then(res => {
           console.log("Registered successfully...");
@@ -36,6 +55,10 @@ function Signup() {
         .catch(err => console.log(err));
     }
   };
+  
+
+
+  
 
   return (
     <div className='Signup template d-flex justify-content-center w-100 vh-100 justify-content-center align-items-center containerStyle'>

@@ -8,4 +8,4 @@ export const getItem = (key) => {
 export const removeItem = (key) => {
     localStorage.removeItem(key);
 };
-export const webSocketUrl ="ws://localhost:9000"
+export const webSocketUrl ="http://localhost:8011/socket.io"
