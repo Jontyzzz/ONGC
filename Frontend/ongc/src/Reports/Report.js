@@ -5,9 +5,10 @@ import Chart from '../Charts/Chart';
 import { useSelector } from 'react-redux';
 import { webSocketUrl } from '../Utility/localstorage';
 import { getDataset, getOptionsets } from '../Utility/utilites';
-import Temperature from '../Charts/TemperatureLineChart';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
+import TemperatureLineChart from '../Charts/TemperatureLineChart';
+
 
 function Report() {
   const [socket, setSocket] = useState(null);
@@ -76,7 +77,7 @@ function Report() {
           <div class="roz">
             <Chart
               chartType="bar"
-              data={getDataset(['PT5'], data, "Kg/cm2", 'bar', customBarColorssss)}
+              data={getDataset(['PT5'],data, "Kg/cm2", 'bar', customBarColorssss)}
               options={getOptionsets(" PARAMETERS OF PT5", 250, 'x')}
             />
           </div>
@@ -175,7 +176,7 @@ function Report() {
       {/* Actually what happened is temperature chart component is having navbar too me reflected */}
       {/* <div className="col-md-8 mb-4 mt-4 bg-white"> */}
       <div className='container'>
-       <Temperature/>
+       <TemperatureLineChart/>
       </div>
 
 

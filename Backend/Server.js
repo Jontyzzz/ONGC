@@ -40,7 +40,7 @@ app.get('/api/getdata', validateAuth, async (req, res) => {
   let sql = "SELECT * FROM `ParameterColln` WHERE date = ?";
   let data = await (new Database()).runQuery(sql, [date]);
   loggers.socketLogger.log('info', 'Emitting dataUpdate event to clients');
-  io.emit('dataUpdate', data); // Emit a 'dataUpdate' event to all connected clients
+  // io.emit('dataUpdate', data); // Emit a 'dataUpdate' event to all connected clients
   return res.json(data);
 });
 

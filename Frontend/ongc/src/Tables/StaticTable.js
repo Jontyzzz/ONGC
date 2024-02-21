@@ -82,7 +82,7 @@ function StaticTable() {
         return (
             <>
                 <Navbar />
-                <Navigate to="/StaticTable" />
+                <Navigate to="/" />
             </>
         );
     }

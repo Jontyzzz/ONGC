@@ -15,52 +15,53 @@ function TemperatureLineChart() {
     const [isLoading, setIsLoading] = useState(1);
 
     useEffect(() => {
-        const token = localStorage.getItem("token")
-        axios.get('/api/fetchData', {
-            headers: { Authorization: `Bearer ${token}` }
-        })
-            .then((res) => {
-                setChartData(res.data);
-            })
-            .catch(err => {
-                console.log(err)
-                setIsLoading(3)
-            });
-
-        // const ws = new WebSocket(webSocketUrl);
-        const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
-
-
-        ws.addEventListener('open', () => {
-            console.log('WebSocket connection opened');
-        });
-
-        ws.addEventListener('message', (event) => {
-            console.log(`Received message: ${event.data}`);
-            const token = localStorage.getItem("token")
+        const token = localStorage.getItem("token");
+    
+        // Function to fetch initial data
+        const fetchData = () => {
             axios.get('/api/fetchData', {
                 headers: { Authorization: `Bearer ${token}` }
             })
             .then((res) => {
+                console.log('Data received from server:', res.data);
                 setChartData(res.data);
-
+                setIsLoading(0);
             })
-                .catch(err => {
-                    console.log(err)
-                    setIsLoading(3)
-                });
+            .catch(err => {
+                console.log(err);
+                setIsLoading(3);
+            });
+        };
+    
+        // WebSocket event listener for message
+        const handleWebSocketMessage = (event) => {
+            console.log('WebSocket message received:', event.data);
+            fetchData(); // You can call fetchData or update state based on WebSocket data
+        };
+    
+        // Initialize WebSocket
+        const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
+    
+        // WebSocket event listeners
+        ws.addEventListener('open', () => {
+            console.log('WebSocket connection opened');
         });
-
+    
+        ws.addEventListener('message', handleWebSocketMessage);
+    
         ws.addEventListener('close', () => {
             console.log('WebSocket connection closed');
-          
         });
-
+    
+        // Set the WebSocket and fetch initial data
         setSocket(ws);
-
+        fetchData();
+    
+        // Cleanup function
         return () => {
             ws.close();
         };
+    
 
     }, []);
 
