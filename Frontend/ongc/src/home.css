@@ -336,6 +336,7 @@ p {
   }
 
   .tablet {
+   
     margin-left: 8.6875rem;
   }
 }
@@ -366,6 +367,7 @@ p {
   padding: 6px;
 }
 .Tempp{
+  background-color:wheat;
   margin-left: 90px;
   border: 2px solid #000; /* Replace #000 with the color of your choice */
   padding: 10px; /* Optional: Add padding to create space between content and border */
@@ -378,4 +380,20 @@ p {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+.Temp_Background{
+  background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.Admin_Button{
+  margin-top: 59px;
+  margin-left: 89%;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 140, 0);
+}
+::-webkit-scrollbar-track{
+  background-color: rgba(255, 255, 255, 0.5);
 }

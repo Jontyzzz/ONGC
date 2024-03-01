@@ -7,7 +7,7 @@ import { webSocketUrl } from '../Utility/localstorage';
 import { getDataset, getOptionsets } from '../Utility/utilites';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-import TemperatureLineChart from '../Charts/TemperatureLineChart';
+// import TemperatureLineChart from '../Charts/TemperatureLineChart';
 
 
 function Report() {
@@ -176,7 +176,7 @@ function Report() {
       {/* Actually what happened is temperature chart component is having navbar too me reflected */}
       {/* <div className="col-md-8 mb-4 mt-4 bg-white"> */}
       <div className='container'>
-       <TemperatureLineChart/>
+       {/* <TemperatureLineChart/> */}
       </div>
 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setDateValue } from '../Redux/dateManager';
+import { BiSolidUserRectangle } from "react-icons/bi";
 
 
 
@@ -17,10 +18,10 @@ function Navbar() {
         dispatch(setDateValue(date_one));
         setDate(date_one);
     }
-    
-   
 
-    
+
+
+
 
 
 
@@ -57,7 +58,12 @@ function Navbar() {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.36 6.64a9 9 0 1 1-12.73 0M12 2v10M12 12h.01M12 18v.01"></path>
                         </svg>
                     </a>
-
+                    
+                </div>
+                <div class="Admin_Button">
+                    <a href="/Admin" >
+                        <BiSolidUserRectangle />
+                    </a>
                 </div>
             </nav>
 

@@ -8,6 +8,7 @@ import Signup from '../Login/signup'
 import StaticTable from '../Tables/StaticTable';
 import TemperatureLineChart from '../Charts/TemperatureLineChart';
 import ErrorPage from '../ErrorsPage/ErrorsPage';
+import Admin from '../Login/Admin';
 
 
 
@@ -27,6 +28,7 @@ function RoutersManager() {
           <Route path='/StaticTable' element={<StaticTable />} />
           <Route path='/TemperatureLineChart' element={<TemperatureLineChart />} />
           <Route path='/ErrorsPage' element={<ErrorPage />} />
+          <Route path='/Admin' element={<Admin />} />
          
 
         </Routes>

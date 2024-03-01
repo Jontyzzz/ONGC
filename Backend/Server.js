@@ -20,9 +20,9 @@ const port = process.env.PORT || 9000;
 const dbConfig = {
   connectionLimit: 10,
   host: process.env.DB_HOST || '103.195.185.168',
-  user: process.env.DB_USER || 'indiscpx_BLVL',
+  user: process.env.DB_USER || 'indiscpx_PVP',
   password: process.env.DB_PASSWORD || 'indiscpx_BLVL@123',
-  database: process.env.DB_DATABASE || 'indiscpx_BLVL'
+  database: process.env.DB_DATABASE || 'indiscpx_PVP'
 };
 
 // Error handling for Socket.io server
@@ -49,8 +49,8 @@ app.get('/api/fetchData', validateAuth, async (req, res) => {
   try {
     pool = await mysql.createPool(dbConfig);
     const connection = await pool.getConnection();
-    const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'DateTime'];
-    const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT`, [columns]);
+    const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'ConDate'];
+    const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT WHERE DATE(ConDate) = ?`, [columns, req.query.date]);
     res.json(rows);
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -79,7 +79,6 @@ app.post('/api/signup', async (req, res) => {
 
 app.post('/api/login', async (req, res) => {
   let sql = "select 'success' from login where email=? and password=? ;";
-  console.log("rushyaaaalog")
   let values = [req.body.email, req.body.password];
   let data = await (new Database()).runQuery(sql, values);
   if (data.length > 0) {

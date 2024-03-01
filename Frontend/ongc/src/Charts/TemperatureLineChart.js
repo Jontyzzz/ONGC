@@ -1,70 +1,80 @@
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-import { webSocketUrl } from '../Utility/localstorage';
-import LoadingSpinner from '../Spinners/Spinner';
 import axios from 'axios';
+import io from 'socket.io-client';
+import Navbar from '../Navbar/Navbar';
+import { useSelector } from 'react-redux';
+import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
+
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
 function TemperatureLineChart() {
     const [chartData, setChartData] = useState([]);
     const [socket, setSocket] = useState(null);
-    const [timeGranularity, setTimeGranularity] = useState('hour'); // 'hour' or 'minute'
+    const [timeGranularity, setTimeGranularity] = useState('hour');
     const [isLoading, setIsLoading] = useState(1);
+    const [error, setError] = useState(null);
+    const dateValue = useSelector(state => state.dateManager.value);
 
     useEffect(() => {
+        console.log(dateValue);
         const token = localStorage.getItem("token");
-    
-        // Function to fetch initial data
-        const fetchData = () => {
-            axios.get('/api/fetchData', {
+
+        // const fetchData = () => {
+            axios.get(`/api/fetchData?date=` + dateValue, {
                 headers: { Authorization: `Bearer ${token}` }
             })
-            .then((res) => {
-                console.log('Data received from server:', res.data);
-                setChartData(res.data);
-                setIsLoading(0);
+                .then((res) => {
+                    console.log('Data received from server:', res.data);
+                    setChartData(res.data);
+                    setIsLoading(2);
+                })
+                .catch(err => {
+                    console.error('Error fetching data:', err);
+                    setError('Error fetching data. Please try again.');
+                    setIsLoading(3);
+                });
+        // };
+
+        const socket = io('http://localhost:8011/socket.io');
+
+        socket.on('connect', () => {
+            console.log('Socket.IO connection opened');
+            // fetchData();
+        });
+
+        socket.on('dataUpdate', (data) => {
+            console.log('Real-time data received:', data);
+            // setChartData(data);
+            axios.get(`/api/fetchData?date=` + dateValue, {
+                headers: { Authorization: `Bearer ${token}` }
             })
-            .catch(err => {
-                console.log(err);
-                setIsLoading(3);
-            });
-        };
-    
-        // WebSocket event listener for message
-        const handleWebSocketMessage = (event) => {
-            console.log('WebSocket message received:', event.data);
-            fetchData(); // You can call fetchData or update state based on WebSocket data
-        };
-    
-        // Initialize WebSocket
-        const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
-    
-        // WebSocket event listeners
-        ws.addEventListener('open', () => {
-            console.log('WebSocket connection opened');
+                .then((res) => {
+                    console.log('Data received from server:', res.data);
+                    setChartData(res.data);
+                    
+                })
+                .catch(err => {
+                    console.error('Error fetching data:', err);
+                    setError('Error fetching data. Please try again.');
+                    setIsLoading(3);
+                });
+
         });
-    
-        ws.addEventListener('message', handleWebSocketMessage);
-    
-        ws.addEventListener('close', () => {
-            console.log('WebSocket connection closed');
+
+        socket.on('disconnect', () => {
+            console.log('Socket.IO connection closed');
         });
-    
-        // Set the WebSocket and fetch initial data
-        setSocket(ws);
-        fetchData();
-    
-        // Cleanup function
+
+        setSocket(socket);
+
         return () => {
-            ws.close();
+            socket.disconnect();
         };
-    
-
-    }, []);
-
+    }, [dateValue]);
     const generateDatasets = () => {
         if (!chartData || chartData.length === 0) {
             return [];
@@ -94,12 +104,12 @@ function TemperatureLineChart() {
             return [];
         }
 
-        const timeLabels = chartData.map(entry => {
-            const date = new Date(entry.DateTime);
-            return timeGranularity === 'hour' ? `${date.getHours()}:00` : `${date.getHours()}:${date.getMinutes()}`;
+        const timeLabels = chartData.map((entry) => {
+            const date = new Date(entry.ConDate);
+            return isNaN(date.getTime()) ? '' : timeGranularity === 'hour' ? `${date.getHours()}:00` : `${date.getHours()}:${date.getMinutes()}`;
         });
 
-        return Array.from(new Set(timeLabels)); // Remove duplicates
+        return Array.from(new Set(timeLabels));
     };
 
     const getRandomColor = () => {
@@ -111,66 +121,79 @@ function TemperatureLineChart() {
     };
 
     if (isLoading === 1) {
-        return (<>
-            <LoadingSpinner />
-        </>)
+        return (
+            <>
+                <Navbar />
+                <LoadingSpinner />
+            </>
+        );
     }
+
     if (isLoading === 3) {
         return (
-            <Navigate to="/" />
-        )
+            <>
+                <Navbar />
+                <Navigate to="/" />
+            </>
+        );
     }
 
-    return (
-        <React.Fragment>
-            <div className="container-fluid">
-                <div>
-                    <div className="col-md-10 mb-4 mt-4 ml-4 Tempp">
-                        <Line
-                            data={{
-                                labels: generateTimeLabels(),
-                                datasets: generateDatasets(),
-                            }}
-                            options={{
-                                responsive: true,
-                                plugins: {
-                                    legend: {},
-                                    title: {
-                                        display: true,
-                                        text: `TT1 TO TT7 Parameters - ${timeGranularity.toUpperCase()} wise`,
-                                        font: { size: 25, color: 'rgba(0, 0, 0, 1)' },
-                                    },
-                                },
-                                scales: {
-                                    x: {
-                                        grid: {
-                                            display: true,
-                                        },
-                                        title: {
-                                            display: true,
-                                            text: "Data According to Time",
-                                            font: { size: 20, color: 'rgba(0, 0, 0, 1)' },
-                                        },
-                                    },
-                                    y: {
-                                        grid: {
-                                            display: true,
-                                        },
-                                        title: {
-                                            display: true,
-                                            text: "Data in Range",
-                                            font: { size: 20, color: 'rgba(0, 0, 0, 1)' },
-                                        },
-                                    },
-                                },
-                            }}
-                        />
-                        <button onClick={handleToggleGranularity} className="buttonDecorative" >Minutes OR Hours</button>
-                    </div>
 
+    return (
+        <div className='Temp_Background'>
+            <Navbar />
+            <React.Fragment>
+                <div className="container-fluid">
+                    <div>
+                        <div className="col-md-10 mb-4 mt-4 ml-4 Tempp" style={{ overflowX: 'scroll', height: '600px' }}>
+                            {isLoading && <p>Loading...</p>}
+                            {error && <p style={{ color: 'red' }}>{error}</p>}
+                            <Line
+                                data={{
+                                    labels: generateTimeLabels(),
+                                    datasets: generateDatasets(),
+                                }}
+                                options={{
+                                    responsive: true,
+                                    plugins: {
+                                        legend: {},
+                                        title: {
+                                            display: true,
+                                            text: `TT1 TO TT7 Parameters - ${timeGranularity.toUpperCase()} wise`,
+                                            font: { size: 25, color: 'rgba(0, 0, 0, 1)' },
+                                        },
+                                    },
+                                    scales: {
+                                        x: {
+                                            position: 'bottom',
+                                            grid: {
+                                                display: true,
+                                            },
+                                            title: {
+                                                display: true,
+                                                text: 'Data According to Time',
+                                                font: { size: 20, color: 'rgba(0, 0, 0, 1)' },
+                                            },
+                                        },
+                                        y: {
+                                            grid: {
+                                                display: true,
+                                            },
+                                            title: {
+                                                display: true,
+                                                text: 'Data in Range',
+                                                font: { size: 20, color: 'rgba(0, 0, 0, 1)' },
+                                            },
+                                        },
+                                    },
+                                }}
+                            />
+                            <button onClick={handleToggleGranularity} className="buttonDecorative" >Minutes OR Hours</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </React.Fragment>
+            </React.Fragment>
+        </div>
     );
 }
 
