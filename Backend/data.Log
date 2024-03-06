@@ -2638,3 +2638,9 @@
 {"level":"info","message":"Connection pool created","timestamp":"2024-03-01T05:38:11.655Z"}
 {"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2024-01-06","timestamp":"2024-03-01T05:38:11.738Z"}
 {"level":"info","message":"Connection pool closed","timestamp":"2024-03-01T05:38:11.739Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-03-01T05:54:49.184Z"}
+{"level":"info","message":"Query is select 'success' from login where email=? and password=? ; and parameters are SohamRaju44@gmail.com,SohamRaju@44","timestamp":"2024-03-01T05:54:49.387Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-03-01T05:54:49.391Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-03-01T05:54:49.581Z"}
+{"level":"info","message":"Query is SELECT * FROM `ParameterColln` WHERE date = ? and parameters are 2022-01-01","timestamp":"2024-03-01T05:54:49.691Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-03-01T05:54:49.692Z"}
