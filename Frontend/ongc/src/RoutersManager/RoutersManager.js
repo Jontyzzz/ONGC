@@ -6,9 +6,10 @@ import LiveReports from '../Reports/LiveReports';
 import Login from '../Login/login';
 import Signup from '../Login/signup'
 import StaticTable from '../Tables/StaticTable';
-import TemperatureLineChart from '../Charts/TemperatureLineChart';
+// import TemperatureLineChart from '../Charts/TemperatureLineChart';
 import ErrorPage from '../ErrorsPage/ErrorsPage';
 import Admin from '../Login/Admin';
+import Temperature_works from '../Charts/Temperature_Works';
 
 
 
@@ -26,7 +27,7 @@ function RoutersManager() {
           <Route path='/Report' element={<Report />} />
           <Route path='/LiveReports' element={<LiveReports />} />
           <Route path='/StaticTable' element={<StaticTable />} />
-          <Route path='/TemperatureLineChart' element={<TemperatureLineChart />} />
+          <Route path='/Temperature_Works' element={<Temperature_works />} />
           <Route path='/ErrorsPage' element={<ErrorPage />} />
           <Route path='/Admin' element={<Admin />} />
          

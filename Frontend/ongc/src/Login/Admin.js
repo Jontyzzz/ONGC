@@ -9,10 +9,12 @@ function Admin() {
     const fetchData = async () => {
       try {
         const response = await axios.get('/api/login', {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`,
-          },
-        });
+            baseURL: 'http://localhost:9000',  // Update with your actual server URL
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+          });
+          
         setUserData(response.data);
       } catch (error) {
         console.error('Failed to fetch user data', error);

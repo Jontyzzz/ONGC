@@ -86,7 +86,7 @@ function Navbar() {
                                 <a href="/Report" class="text-gray-900 dark:text-white hover:blink">7_REPORTS</a>
                             </li>
                             <li>
-                                <a href="/TemperatureLineChart" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
+                                <a href="/Temperature_Works" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
                             </li>
 
                         </ul>

@@ -44,25 +44,70 @@ app.get('/api/getdata', validateAuth, async (req, res) => {
   return res.json(data);
 });
 
-app.get('/api/fetchData', validateAuth, async (req, res) => {
-  let pool;
+// app.get('/api/fetchData', validateAuth, async (req, res) => {
+//   let pool;
+//   try {
+//     pool = await mysql.createPool(dbConfig);
+//     const connection = await pool.getConnection();
+//     const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'ConDate'];
+//     const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT WHERE DATE(ConDate) = ?`, [columns, req.query.date]);
+//     res.json(rows);
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//     res.status(500).json({ error: 'Internal Server Error' });
+//   } finally {
+//     try {
+//       if (pool) pool.end();
+//     } catch (err) {
+//       console.error('Error releasing pool:', err);
+//     }
+//   }
+// });
+
+
+// Temperature_Works_API//
+
+app.get('/api/fetchData', async (req, res) => {
+  let pool, connection; 
+
   try {
-    pool = await mysql.createPool(dbConfig);
+    // Create a pool
+    pool = await mysql.createPool(dbConfig);  
+
+    // Acquire a connection from the pool
     const connection = await pool.getConnection();
-    const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'ConDate'];
-    const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT WHERE DATE(ConDate) = ?`, [columns, req.query.date]);
+
+    // Columns to select
+    const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'DateTime'];
+
+    // Adjust the query to include a WHERE clause for the date
+    // const [rows, fields] = await connection.query(
+    //   'SELECT ?? FROM ONGC_IOT WHERE DATE(DateTime) = ?',
+    //   [columns, req.query.date]
+    // );   
+    
+    const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT`, [columns]);
+
+    // Send the results as JSON
     res.json(rows);
   } catch (error) {
     console.error('Error fetching data:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   } finally {
     try {
-      if (pool) pool.end();
+      if (pool) {
+        // Release the connection
+        if (connection) {
+          connection.release();
+        }
+      }
     } catch (err) {
-      console.error('Error releasing pool:', err);
-    }
-  }
+      console.error('Error releasing connection:', err);
+    }
+  }
 });
+
+
 
 app.get("/api/getUnits", validateAuth, async (req, res) => {
   let sql = "SELECT * FROM ongc";
