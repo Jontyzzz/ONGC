@@ -367,10 +367,10 @@ p {
   padding: 6px;
 }
 .Tempp{
-  background-color:wheat;
+  background-color:white;
   margin-left: 90px;
   border: 2px solid #000; /* Replace #000 with the color of your choice */
-  padding: 10px; /* Optional: Add padding to create space between content and border */
+  
 }
 .buttonDecorative {
   padding: 5px 4px;
@@ -383,6 +383,12 @@ p {
 }
 .Temp_Background{
   background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.BGTemp{
+  background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Admin_Button{
   margin-top: 59px;

@@ -17,3 +17,5 @@
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T07:58:23.577Z"}
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T08:05:50.119Z"}
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T08:10:10.982Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-03-06T07:46:56.385Z"}
+{"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-03-06T07:55:49.623Z"}
