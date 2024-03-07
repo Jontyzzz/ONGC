@@ -19,3 +19,4 @@
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-02-19T08:10:10.982Z"}
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-03-06T07:46:56.385Z"}
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-03-06T07:55:49.623Z"}
+{"code":"EHOSTUNREACH","errno":-4073,"level":"error","message":"connect EHOSTUNREACH 103.195.185.168:3306","timestamp":"2024-03-06T12:31:46.237Z"}

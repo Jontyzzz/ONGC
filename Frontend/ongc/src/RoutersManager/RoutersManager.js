@@ -10,6 +10,7 @@ import StaticTable from '../Tables/StaticTable';
 import ErrorPage from '../ErrorsPage/ErrorsPage';
 import Admin from '../Login/Admin';
 import Temperature_works from '../Charts/Temperature_Works';
+import Employee from '../Login/Employee';
 
 
 
@@ -30,6 +31,7 @@ function RoutersManager() {
           <Route path='/Temperature_Works' element={<Temperature_works />} />
           <Route path='/ErrorsPage' element={<ErrorPage />} />
           <Route path='/Admin' element={<Admin />} />
+          <Route path='/Employee' element={<Employee />} />
          
 
         </Routes>

@@ -6,6 +6,7 @@ import { io } from 'socket.io-client';
 import Navbar from '../Navbar/Navbar';
 import 'chartjs-plugin-zoom';
 import { grey } from '@mui/material/colors';
+import { format, parseISO } from 'date-fns';
 
 function Temperature_works() {
     const [chartData, setChartData] = useState([]);
@@ -95,22 +96,60 @@ function Temperature_works() {
         return datasets;
     };
 
+    // const generateTimeLabels = () => {
+    //     if (!chartData || chartData.length === 0) {
+    //         return [];
+    //     }
+
+    //     const timeLabels = [];
+    // const step = timeGranularity === 'hour' ? 1 : 0.5;
+
+    // for (let hour = 0; hour < 24; hour += step) {
+    //     const formattedHour = hour < 10 ? `0${hour}` : hour;
+    //     timeLabels.push(`${formattedHour}:00`);
+    // }
+
+    // return timeLabels;
+    //     for (let i = 0; i < chartData.length; i++) {
+    //         const timestamp = chartData[i].timestamp; // Assuming timestamp is in minutes
+    //         const hour = Math.floor(timestamp / 60);
+    //         const minute = timestamp % 60;
+
+    //         const formattedHour = hour < 10 ? `0${hour}` : hour;
+    //         const formattedMinute = minute < 10 ? `0${minute}` : minute;
+
+    //         timeLabels.push(`${formattedHour}:${formattedMinute}`);
+    //     }
+
+    //     return timeLabels;
+    // };
+
+
     const generateTimeLabels = () => {
         if (!chartData || chartData.length === 0) {
             return [];
         }
-
-        const timeLabels = [];
-        const step = timeGranularity === 'hour' ? 1 : 0.5;
-
-        for (let hour = 0; hour < 24; hour += step) {
-            const formattedHour = hour < 10 ? `0${hour}` : hour;
-            timeLabels.push(`${formattedHour}:00`);
-        }
-
+    
+        const timeLabels = chartData.slice(visibleRange.min, visibleRange.max + 1).map((entry) => {
+            const dateTimeString = entry.DateTime;
+    
+            if (!dateTimeString) {
+                return '';
+            }
+    
+            try {
+                const date = parseISO(dateTimeString); // Parse the datetime string
+                const formattedTime = format(date, 'HH:mm'); // Format the time part
+    
+                return formattedTime;
+            } catch (error) {
+                console.error(`Error parsing datetime: ${dateTimeString}`, error);
+                return ''; // Handle parsing errors
+            }
+        });
+    
         return timeLabels;
     };
-
     //   const handleWheelScroll = (e) => {
     //     const dataLength = chartData.length;
     //     const { min, max } = visibleRange;
@@ -161,10 +200,10 @@ function Temperature_works() {
                         {error && <p style={{ color: 'red' }}>{error}</p>}
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <button onClick={handleScrollUp} className="buttonDecorative" style={{ marginRight: '8px', backgroundColor: 'grey', color: 'black' }}>
-                                {'>>'}
+                                {'<<'}
                             </button>
                             <button onClick={handleScrollDown} className="buttonDecorative" style={{ backgroundColor: 'grey', color: 'black' }}>
-                                {'<<'}
+                                {'>>'}
                             </button>
                         </div>
                         <div>
