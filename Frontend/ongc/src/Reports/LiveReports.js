@@ -31,8 +31,8 @@ function LiveReports() {
         setIsLoading(3);
       });
 
-    // const ws = new WebSocket(webSocketUrl);
-    const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
+    const ws = new WebSocket(webSocketUrl);
+
 
     ws.addEventListener('open', () => console.log('WebSocket connection opened'));
     ws.addEventListener('message', event => {

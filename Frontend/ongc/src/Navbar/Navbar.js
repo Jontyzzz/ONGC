@@ -1,8 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setDateValue } from '../Redux/dateManager';
 import { BiSolidUserRectangle } from "react-icons/bi";
+// import jwt from 'jsonwebtoken';
+// import axios from 'axios';
+// import { useHistory } from 'react-router-dom';
+// import 'crypto-browserify';
+
 
 
 
@@ -18,6 +23,67 @@ function Navbar() {
         dispatch(setDateValue(date_one));
         setDate(date_one);
     }
+
+// on button click events code //
+// const history = useHistory();
+//   const [user, setUser] = useState(null);
+
+//   useEffect(() => {
+//     const storedToken = localStorage.getItem('token');
+
+//     const fetchUserRole = async (email) => {
+//       try {
+//         const response = await axios.get(`/api/getUserRole?email=${email}`);
+//         const role = response.data.role;
+
+//         // Check the role and navigate accordingly
+//         if (role === 'admin') {
+//           history.push('/Admin');
+//         } else if (role === 'employee') {
+//           history.push('/Employee');
+//         } else {
+//           console.error('Unknown or unsupported role:', role);
+//         }
+//       } catch (error) {
+//         console.error('Error fetching user role:', error);
+//       }
+//     };
+
+//     if (storedToken) {
+//       try {
+//         const decodedToken = jwt.decode(storedToken);
+
+//         if (decodedToken && decodedToken.email) {
+//           setUser(decodedToken);
+
+//           // If the token doesn't contain the role, fetch it from the server
+//           if (!decodedToken.role) {
+//             fetchUserRole(decodedToken.email);
+//           }
+//         } else {
+//           console.error('Invalid token or missing required information');
+//         }
+//       } catch (error) {
+//         console.error('Error decoding token:', error.message);
+//       }
+//     }
+//   }, [history]);
+
+//   const handleUserButtonClick = () => {
+//     if (user && user.role) {
+//       // If the role is available in the user state, navigate accordingly
+//       if (user.role === 'admin') {
+//         history.push('/Admin');
+//       } else if (user.role === 'employee') {
+//         history.push('/Employee');
+//       } else {
+//         console.error('Unknown or unsupported role:', user.role);
+//       }
+//     } else {
+//       // If the role is not available, fetch it from the server
+//       fetchUserRole(user.email); // Assuming fetchUserRole is defined
+//     }
+//   };
 
 
 
@@ -58,13 +124,17 @@ function Navbar() {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.36 6.64a9 9 0 1 1-12.73 0M12 2v10M12 12h.01M12 18v.01"></path>
                         </svg>
                     </a>
-                    
+
                 </div>
+                {/* <div className="User_Button" onClick={handleUserButtonClick}>
+                    <BiSolidUserRectangle />
+                </div>  */}
                 <div class="Admin_Button">
-                    <a href="/Admin" >
+                    <a href="/Employee" >
                         <BiSolidUserRectangle />
                     </a>
                 </div>
+
             </nav>
 
 

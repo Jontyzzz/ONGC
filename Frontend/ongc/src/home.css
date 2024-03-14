@@ -391,9 +391,17 @@ p {
   background-repeat: no-repeat;
 }
 .Admin_Button{
-  margin-top: 59px;
+  margin-top: 55px;
   margin-left: 89%;
+  font-size: x-large;
+  
 }
+
+/* .User_button{
+  margin-top: 55px;
+  margin-left: 89%;
+  font-size: x-large;
+} */
 ::-webkit-scrollbar{
   width: 8px;
 }

@@ -96,74 +96,38 @@ function Temperature_works() {
         return datasets;
     };
 
-    // const generateTimeLabels = () => {
-    //     if (!chartData || chartData.length === 0) {
-    //         return [];
-    //     }
-
-    //     const timeLabels = [];
-    // const step = timeGranularity === 'hour' ? 1 : 0.5;
-
-    // for (let hour = 0; hour < 24; hour += step) {
-    //     const formattedHour = hour < 10 ? `0${hour}` : hour;
-    //     timeLabels.push(`${formattedHour}:00`);
-    // }
-
-    // return timeLabels;
-    //     for (let i = 0; i < chartData.length; i++) {
-    //         const timestamp = chartData[i].timestamp; // Assuming timestamp is in minutes
-    //         const hour = Math.floor(timestamp / 60);
-    //         const minute = timestamp % 60;
-
-    //         const formattedHour = hour < 10 ? `0${hour}` : hour;
-    //         const formattedMinute = minute < 10 ? `0${minute}` : minute;
-
-    //         timeLabels.push(`${formattedHour}:${formattedMinute}`);
-    //     }
-
-    //     return timeLabels;
-    // };
-
-
     const generateTimeLabels = () => {
         if (!chartData || chartData.length === 0) {
             return [];
         }
-    
+
         const timeLabels = chartData.slice(visibleRange.min, visibleRange.max + 1).map((entry) => {
             const dateTimeString = entry.DateTime;
-    
+
             if (!dateTimeString) {
                 return '';
             }
-    
+
             try {
                 const date = parseISO(dateTimeString); // Parse the datetime string
-                const formattedTime = format(date, 'HH:mm'); // Format the time part
-    
+                let formattedTime = '';
+
+                if (timeGranularity === 'hour') {
+                    formattedTime = format(date, 'HH:mm'); // Format only hours and minutes
+                } else {
+                    formattedTime = format(date, 'HH:mm:ss'); // Format hours, minutes, and seconds
+                }
+
                 return formattedTime;
             } catch (error) {
                 console.error(`Error parsing datetime: ${dateTimeString}`, error);
                 return ''; // Handle parsing errors
             }
         });
-    
+
         return timeLabels;
     };
-    //   const handleWheelScroll = (e) => {
-    //     const dataLength = chartData.length;
-    //     const { min, max } = visibleRange;
 
-    //     if (e.deltaY > 0) {
-    //       if (max < dataLength - 1) {
-    //         setVisibleRange((prevRange) => ({ min: prevRange.min + 1, max: prevRange.max + 1 }));
-    //       }
-    //     } else if (e.deltaY < 0) {
-    //       if (min > 0) {
-    //         setVisibleRange((prevRange) => ({ min: prevRange.min - 1, max: prevRange.max - 1 }));
-    //       }
-    //     }
-    //   };
 
     const handleScrollUp = () => {
         const { min, max } = visibleRange;

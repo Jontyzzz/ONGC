@@ -11,7 +11,7 @@ import ErrorPage from '../ErrorsPage/ErrorsPage';
 import Admin from '../Login/Admin';
 import Temperature_works from '../Charts/Temperature_Works';
 import Employee from '../Login/Employee';
-
+import Demo from '../Login/Demo'
 
 
 
@@ -32,6 +32,7 @@ function RoutersManager() {
           <Route path='/ErrorsPage' element={<ErrorPage />} />
           <Route path='/Admin' element={<Admin />} />
           <Route path='/Employee' element={<Employee />} />
+          <Route path='/Demo' element={<Demo />} />
          
 
         </Routes>

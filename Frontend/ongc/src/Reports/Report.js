@@ -7,7 +7,6 @@ import { webSocketUrl } from '../Utility/localstorage';
 import { getDataset, getOptionsets } from '../Utility/utilites';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-// import TemperatureLineChart from '../Charts/TemperatureLineChart';
 
 
 function Report() {
@@ -55,7 +54,7 @@ function Report() {
 
 
   const getRunningHour = () => data.find(obj => obj.ParameterName === "Running_Hour")?.ParameterValue || 0;
-  const getRunningTime = () => data.find(obj => obj.ParameterName === "Running_Minute")?.ParameterValue || 0;
+  const getRunningMinute = () => data.find(obj => obj.ParameterName === "Running_Minute")?.ParameterValue || 0;
 
   if (isLoading === 1) {
     return (<>
@@ -153,7 +152,7 @@ function Report() {
             <div className='Runn2'>
               <p><b>RunningTime</b>: <input
                 type="text"
-                value={getRunningTime()}
+                value={getRunningMinute()}
                 readOnly
               /></p>
             </div>
