@@ -130,7 +130,7 @@ function Navbar() {
                     <BiSolidUserRectangle />
                 </div>  */}
                 <div class="Admin_Button">
-                    <a href="/Admin" >
+                    <a href="/Employee" >
                         <BiSolidUserRectangle />
                     </a>
                 </div>

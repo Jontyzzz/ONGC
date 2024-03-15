@@ -1,10 +1,17 @@
 .cont_ainer{
-    border: 2px solid #ccc;
+    border: 2px solid #bababa;
     border-radius: 6px;
-    box-shadow: 0 0 43px #0000001a;
+    box-shadow: 0 0 50px #0000001a;
     margin: 8px auto;
     max-width: 827px;
     padding: 20px;
+    border-style: inset;
+    margin-top: 41px;
+    border-width: 6px;
+  }
+  .FBH{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   h1 {
@@ -36,8 +43,14 @@
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
+   
   }
-  
+
+  .INPB{
+    border-style: inset;
+    border: 2px solid #bababa
+  }
+
   .MY_PROFILE{
     color: black;
     /* border: 1px solid #252424;

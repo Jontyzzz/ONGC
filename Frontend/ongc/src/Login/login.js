@@ -11,7 +11,7 @@ function Login() {
         password: ''
     });
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [isLogged, setIsLogged] = useState(1)
     const [error, setError] = useState({});
     const handleInput = (event) => {
@@ -42,7 +42,7 @@ function Login() {
 
         }
     }
-    if (isLogged == 2) {
+    if (isLogged === 2) {
         return (<Navigate to="/StaticTable"></Navigate>)
     }
     return (

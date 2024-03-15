@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import { io } from 'socket.io-client';
 import Navbar from '../Navbar/Navbar';
 import 'chartjs-plugin-zoom';
-import { grey } from '@mui/material/colors';
 import { format, parseISO } from 'date-fns';
 
 function Temperature_works() {

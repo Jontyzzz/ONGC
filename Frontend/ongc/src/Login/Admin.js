@@ -114,7 +114,6 @@ function Admin() {
           </tbody>
         </table>
       </div>
-
       <input type="text" value={emailInput} readOnly />
     </div>
   );

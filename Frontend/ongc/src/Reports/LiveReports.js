@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-import Navigation from '../Navbar/Navigate';
+
 
 function LiveReports() {
   const [Data, setData] = useState([]);

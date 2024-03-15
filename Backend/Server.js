@@ -119,14 +119,19 @@ app.post('/api/login', async (req, res) => {
 // });
 
 // employee page api 
-app.get('/api/employees', async (req, res) => {
-  let pool, connection;
 
+app.get('/api/employees', async (req, res) => {
+  const { email } = req.query;
   try {
     pool = await mysql.createPool(dbConfig);
     connection = await pool.getConnection();
-    const [rows, fields] = await connection.query('SELECT * FROM login');
-    res.json(rows);
+    const [rows, fields] = await connection.query('SELECT * FROM login WHERE email = ?', [email]);
+    if (rows.length > 0) {
+      const user = rows[0]; // Assuming only one user matches the email
+      res.json(user);
+    } else {
+      res.status(404).json({ error: 'User not found' });
+    }
   } catch (error) {
     console.error('Error executing MySQL query:', error);
     res.status(500).json({ error: 'Internal Server Error' });
