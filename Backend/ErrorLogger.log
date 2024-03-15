@@ -21,3 +21,6 @@
 {"code":"ECONNRESET","errno":-4077,"level":"error","message":"read ECONNRESET","timestamp":"2024-03-06T07:55:49.623Z"}
 {"code":"EHOSTUNREACH","errno":-4073,"level":"error","message":"connect EHOSTUNREACH 103.195.185.168:3306","timestamp":"2024-03-06T12:31:46.237Z"}
 {"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-13T11:21:20.714Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-15T06:13:58.357Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-15T06:28:11.482Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-15T06:42:21.334Z"}

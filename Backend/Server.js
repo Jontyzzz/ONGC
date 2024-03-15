@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 app.get('/api/getdata', validateAuth, async (req, res) => {
   try {
     let date = req.query.date;
-    let sql = "SELECT * FROM `ParameterColln` WHERE date = ?";
+    let sql = "SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ?";
     let data = await (new Database()).runQuery(sql, [date]);
 
     // Emit a 'dataUpdate' event to all connected clients
@@ -88,16 +88,35 @@ app.post('/api/signup', async (req, res) => {
 });
 
 app.post('/api/login', async (req, res) => {
-  let sql = "select 'success' from login where email=? and password=? ;";
+  let sql = "SELECT 'success' FROM login WHERE email = ? AND password = ?";
   let values = [req.body.email, req.body.password];
-  let data = await (new Database()).runQuery(sql, values);
-  if (data.length > 0) {
-    const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
-    return res.json({ isLogged: "success", token, isAdmin: true });
-  } else {
-    return res.json({ error });
+  
+  try {
+    let data = await (new Database()).runQuery(sql, values);
+    
+    if (data.length > 0) {
+      const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
+      return res.json({ isLogged: "success", token, isAdmin: true });
+    } else {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    return res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+// app.post('/api/login', async (req, res) => {
+//   let sql = "select 'success' from login where email=? and password=? ;";
+//   let values = [req.body.email, req.body.password];
+//   let data = await (new Database()).runQuery(sql, values);
+//   if (data.length > 0) {
+//     const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
+//     return res.json({ isLogged: "success", token, isAdmin: true });
+//   } else {
+//     return res.json({ error });
+//   }
+// });
 
 // employee page api 
 app.get('/api/employees', async (req, res) => {
@@ -121,19 +140,68 @@ app.get('/api/employees', async (req, res) => {
     }
   }
 });
-// app.get('/api/employees/current', validateAuth, async (req, res) => {
-//   const userId = req.user.id; // Assuming your authentication middleware adds user information to the request
 
-//   try {
-//     let sql = "SELECT name, email FROM login WHERE id = ?";
-//     let data = await (new Database()).runQuery(sql, [userId]);
+// Admin api to fetch data//
+  app.get('/api/Admin', async (req, res) => {
+    let pool, connection;
 
-//     return res.json(data);
-//   } catch (error) {
-//     console.error('Error fetching data:', error);
-//     res.status(500).json({ error: 'Internal Server Error' });
-//   }
-// });
+    try {
+      pool = await mysql.createPool(dbConfig);
+      connection = await pool.getConnection();
+      const [rows, fields] = await connection.query('SELECT id, name, email, password, Role, status FROM login');
+      res.json(rows);
+    } catch (error) {
+      console.error('Error executing MySQL query:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    } finally {
+      try {
+        if (pool && connection) {
+          connection.release();
+        }
+      } catch (err) {
+        console.error('Error releasing connection:', err);
+      }
+    }
+  });
+// Route to handle DELETE requests to delete a user
+app.delete('/api/users/:id', async (req, res) => {
+  const userId = req.params.id; // Get the user ID from the request URL
+
+  let pool, connection;
+
+  try {
+    // Create a MySQL connection pool using the provided database configuration
+    pool = await mysql.createPool(dbConfig);
+    // Get a connection from the pool
+    connection = await pool.getConnection();
+
+    // Execute the DELETE query to remove the user with the specified ID
+    const [result] = await connection.query('DELETE FROM login WHERE id = ?', [userId]);
+
+    // Check if any rows were affected by the query
+    if (result.affectedRows === 0) {
+      // If no rows were affected, the user with the specified ID was not found
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Respond with a success message
+    res.json({ message: 'User deleted successfully' });
+  } catch (error) {
+    // If an error occurs, log the error and respond with a 500 Internal Server Error
+    console.error('Error executing MySQL query:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  } finally {
+    // Release the connection back to the pool
+    try {
+      if (pool && connection) {
+        connection.release();
+      }
+    } catch (err) {
+      console.error('Error releasing connection:', err);
+    }
+  }
+});
+
 
 io.on("connection", (socket) => {
   console.log('A client connected');

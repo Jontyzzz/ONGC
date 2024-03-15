@@ -29,7 +29,7 @@ function Employee() {
     <div>
       <Navbar />
       <span >
-        <h1 className="MY_PROFILE">My Profile</h1>
+        <h1 className="MY_PROFILE">Employee Profile</h1>
       </span>
       <div className="cont_ainer">
         <form>

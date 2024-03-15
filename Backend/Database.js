@@ -10,11 +10,11 @@ class Database {
         try {
             // Use a connection pool for better performance and management
             pool = await mysql.createPool({
-                connectionLimit: 10, // Adjust based on your application's needs
-                host: '103.195.185.168',
-                user: 'indiscpx_BLVL',
-                password: "indiscpx_BLVL@123",
-                database: 'indiscpx_BLVL'
+                connectionLimit: 10,
+                host: process.env.DB_HOST || '103.195.185.168',
+                user: process.env.DB_USER || 'indiscpx_PVP',
+                password: process.env.DB_PASSWORD || 'indiscpx_BLVL@123',
+                database: process.env.DB_DATABASE || 'indiscpx_PVP'
             });
 
             loggers.dataLogger.log('info', `Connection pool created`);
