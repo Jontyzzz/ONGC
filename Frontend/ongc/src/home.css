@@ -390,18 +390,19 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-.Admin_Button{
+/* .Admin_Button{
   margin-top: 55px;
   margin-left: 89%;
   font-size: x-large;
   
-}
+} */
 
-/* .User_button{
+.User_Button{
   margin-top: 55px;
   margin-left: 89%;
   font-size: x-large;
-} */
+  color:blue;
+}
 ::-webkit-scrollbar{
   width: 8px;
 }

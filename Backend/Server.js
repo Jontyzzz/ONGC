@@ -24,6 +24,25 @@ const dbConfig = {
   database: process.env.DB_DATABASE || 'indiscpx_PVP'
 };
 
+// Function to decode JWT token
+const decodeJwtToken = (token) => {
+  if (token) {
+      try {
+          const payloadBase64 = token.split('.')[1];
+          const decodedPayload = JSON.parse(atob(payloadBase64));
+          return decodedPayload;
+      } catch (error) {
+          console.error('Error decoding JWT token:', error);
+          return null;
+      }
+  } else {
+      console.error('Token is undefined or null');
+      return null;
+  }
+};
+
+
+
 io.on("error", (error) => {
   console.error("Socket.io server error:", error);
 });
@@ -206,6 +225,46 @@ app.delete('/api/users/:id', async (req, res) => {
     }
   }
 });
+
+
+// Route to retrieve user role based on email
+const pool = mysql.createPool(dbConfig);
+app.get('/api/getUserRole', async (req, res) => {
+  try {
+    // Extract the token from the Authorization header
+    const token = req.headers.authorization;
+
+    // Decode the JWT token to get the user's email
+    const decodedToken = decodeJwtToken(token);
+
+    if (!decodedToken || !decodedToken.email) {
+      return res.status(400).json({ error: 'Invalid token or missing email' });
+    }
+
+    // Query the database to retrieve the user's role based on their email
+    const email = decodedToken.email;
+    const sql = "SELECT Role FROM login WHERE email = ?";
+    pool.query(sql, [email], (error, results) => {
+      if (error) {
+        console.error('Error fetching user role:', error);
+        return res.status(500).json({ error: 'Internal Server Error' });
+      }
+
+      // Check if the user was found
+      if (results.length === 0) {
+        return res.status(404).json({ error: 'User not found' });
+      }
+
+      // Return the user's role
+      const role = results[0].Role;
+      res.json({ role });
+    });
+  } catch (error) {
+    console.error('Error fetching user role:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 
 
 io.on("connection", (socket) => {

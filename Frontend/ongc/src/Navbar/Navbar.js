@@ -1,15 +1,28 @@
 import React from 'react'
-import { useState , useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setDateValue } from '../Redux/dateManager';
 import { BiSolidUserRectangle } from "react-icons/bi";
-// import jwt from 'jsonwebtoken';
-// import axios from 'axios';
-// import { useHistory } from 'react-router-dom';
-// import 'crypto-browserify';
+import axios from 'axios';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
-
+//Function to decode JWT token
+const decodeJwtToken = (token) => {
+    if (token) {
+        try {
+            const payloadBase64 = token.split('.')[1];
+            const decodedPayload = JSON.parse(atob(payloadBase64));
+            return decodedPayload;
+        } catch (error) {
+            console.error('Error decoding JWT token:', error);
+            return null;
+        }
+    } else {
+        console.error('Token is undefined or null');
+        return null;
+    }
+};
 
 
 function Navbar() {
@@ -24,71 +37,45 @@ function Navbar() {
         setDate(date_one);
     }
 
-// on button click events code //
-// const history = useHistory();
-//   const [user, setUser] = useState(null);
 
-//   useEffect(() => {
-//     const storedToken = localStorage.getItem('token');
+    const Navigate = useNavigate();
 
-//     const fetchUserRole = async (email) => {
-//       try {
-//         const response = await axios.get(`/api/getUserRole?email=${email}`);
-//         const role = response.data.role;
-
-//         // Check the role and navigate accordingly
-//         if (role === 'admin') {
-//           history.push('/Admin');
-//         } else if (role === 'employee') {
-//           history.push('/Employee');
-//         } else {
-//           console.error('Unknown or unsupported role:', role);
-//         }
-//       } catch (error) {
-//         console.error('Error fetching user role:', error);
-//       }
-//     };
-
-//     if (storedToken) {
-//       try {
-//         const decodedToken = jwt.decode(storedToken);
-
-//         if (decodedToken && decodedToken.email) {
-//           setUser(decodedToken);
-
-//           // If the token doesn't contain the role, fetch it from the server
-//           if (!decodedToken.role) {
-//             fetchUserRole(decodedToken.email);
-//           }
-//         } else {
-//           console.error('Invalid token or missing required information');
-//         }
-//       } catch (error) {
-//         console.error('Error decoding token:', error.message);
-//       }
-//     }
-//   }, [history]);
-
-//   const handleUserButtonClick = () => {
-//     if (user && user.role) {
-//       // If the role is available in the user state, navigate accordingly
-//       if (user.role === 'admin') {
-//         history.push('/Admin');
-//       } else if (user.role === 'employee') {
-//         history.push('/Employee');
-//       } else {
-//         console.error('Unknown or unsupported role:', user.role);
-//       }
-//     } else {
-//       // If the role is not available, fetch it from the server
-//       fetchUserRole(user.email); // Assuming fetchUserRole is defined
-//     }
-//   };
-
-
-
-
-
+    // on button click events code //
+    const handleButtonClick = () => {
+        const token = localStorage.getItem('token');
+        console.log("entered handle button click function")
+        // Decode token to extract user information
+        const decodedToken = decodeJwtToken(token);
+        console.log('Decoded Token:', decodedToken);
+        console.log("entered handle button click function")
+    
+        if (!decodedToken || !decodedToken.email) {
+            console.error('Invalid token or missing email');
+            return;
+        }
+    
+        // Query database to retrieve user role based on email
+        axios.get(`/api/getUserRole`, {
+            headers: {
+                'Authorization': token
+            }
+        })
+            .then(response => {
+                const role = response.data.role;
+                console.log( response.data.role)
+                // Route user based on role
+                if (role === 'employee') {
+                    Navigate('/Employee'); // Use history.push to navigate
+                } else if (role === 'admin') {
+                    Navigate('/Admin'); // Use history.push to navigate
+                } else {
+                    console.error('Unknown or unsupported role:', role);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching user role:', error);
+            });
+    }
 
 
     return (
@@ -126,14 +113,15 @@ function Navbar() {
                     </a>
 
                 </div>
-                {/* <div className="User_Button" onClick={handleUserButtonClick}>
+                <div className="User_Button" onClick={handleButtonClick}>
                     <BiSolidUserRectangle />
-                </div>  */}
-                <div class="Admin_Button">
+                </div>
+
+                {/* <div class="Admin_Button">
                     <a href="/Employee" >
                         <BiSolidUserRectangle />
                     </a>
-                </div>
+                </div> */}
 
             </nav>
 
