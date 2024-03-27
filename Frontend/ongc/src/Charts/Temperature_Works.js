@@ -2,72 +2,87 @@ import React, { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
-import { io } from 'socket.io-client';
 import Navbar from '../Navbar/Navbar';
 import 'chartjs-plugin-zoom';
 import { format, parseISO } from 'date-fns';
 
 function Temperature_works() {
     const [chartData, setChartData] = useState([]);
-    const [socket, setSocket] = useState(null);
     const [timeGranularity, setTimeGranularity] = useState('hour');
-    const [loading, setIsLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const dateValue = useSelector((state) => state.dateManager.value);
     const [visibleRange, setVisibleRange] = useState({ min: 0, max: 11 });
     const [lineColors, setLineColors] = useState({});
 
+    // useEffect(() => {
+    //     const token = localStorage.getItem('token');
+
+    //     const fetchData = async () => {
+    //         setLoading(true);
+    //         setError(null);
+
+    //         try {
+    //             const response = await axios.get('/api/fetchData?date=' + dateValue, {
+    //                 headers: { Authorization: `Bearer ${token}` },
+    //             });
+
+    //             const initialLineColors = {};
+    //             for (let i = 1; i <= 7; i++) {
+    //                 const label = `TT${i}`;
+    //                 initialLineColors[label] = getRandomColor();
+    //             }
+
+    //             setLineColors(initialLineColors);
+    //             setChartData(response.data);
+    //             setLoading(false);
+    //         } catch (err) {
+    //             setError('Error fetching data. Please try again.');
+    //             setLoading(false);
+    //         }
+    //     };
+
+    //     fetchData(); // Fetch initial data
+
+    //     const interval = setInterval(fetchData, 3000); // Fetch data every 1 minute
+
+    //     return () => {
+    //         clearInterval(interval); // Cleanup interval on component unmount
+    //     };
+    // }, [dateValue]);
     useEffect(() => {
         const token = localStorage.getItem('token');
-
+    
         const fetchData = async () => {
-            setIsLoading(true);
+            setLoading(true);
             setError(null);
-
+    
             try {
                 const response = await axios.get('/api/fetchData?date=' + dateValue, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-
+    
                 const initialLineColors = {};
                 for (let i = 1; i <= 7; i++) {
                     const label = `TT${i}`;
                     initialLineColors[label] = getRandomColor();
                 }
-
+    
                 setLineColors(initialLineColors);
                 setChartData(response.data);
-                setIsLoading(false);
+                setLoading(false);
             } catch (err) {
                 setError('Error fetching data. Please try again.');
-                setIsLoading(false);
+                setLoading(false);
             }
         };
-
-        const initializeSocket = () => {
-            const socket = io();
-
-            socket.on('connect', () => {
-                console.log('Socket connected');
-            });
-
-            socket.on('message', (data) => {
-                console.log('Received message:', data);
-                fetchData(); // Refetch data on socket message
-            });
-
-            socket.on('disconnect', () => {
-                console.log('Socket disconnected');
-            });
-
-            setSocket(socket);
-        };
-
-        initializeSocket();
-        fetchData();
-
+    
+        fetchData(); // Fetch initial data
+    
+        const intervalId = setInterval(fetchData, 3000); // Fetch data every 3 seconds
+    
         return () => {
-            socket && socket.close();
+            clearInterval(intervalId); // Cleanup interval on component unmount
         };
     }, [dateValue]);
 
@@ -127,7 +142,6 @@ function Temperature_works() {
         return timeLabels;
     };
 
-
     const handleScrollUp = () => {
         const { min, max } = visibleRange;
         const dataLength = chartData.length;
@@ -144,6 +158,7 @@ function Temperature_works() {
             setVisibleRange((prevRange) => ({ min: prevRange.min - 1, max: prevRange.max - 1 }));
         }
     };
+
     const getRandomColor = () => {
         return '#' + Math.floor(Math.random() * 16777215).toString(16);
     };
@@ -153,6 +168,7 @@ function Temperature_works() {
             prevGranularity === 'hour' ? 'minute' : 'hour'
         );
     };
+
     return (
         <div className='BGTemp'>
             <Navbar />

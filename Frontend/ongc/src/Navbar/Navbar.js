@@ -38,7 +38,7 @@ function Navbar() {
     }
 
 
-    const Navigate = useNavigate();
+    const navigateFunction = useNavigate();
 
     // on button click events code //
     const handleButtonClick = () => {
@@ -55,27 +55,60 @@ function Navbar() {
         }
     
         // Query database to retrieve user role based on email
-        axios.get(`/api/getUserRole`, {
+        axios.get('/api/getUserRole', {
             headers: {
-                'Authorization': token
+                'Authorization': `Bearer ${token}`
             }
         })
             .then(response => {
                 const role = response.data.role;
-                console.log( response.data.role)
+                console.log("User Role : ", role)
                 // Route user based on role
                 if (role === 'employee') {
-                    Navigate('/Employee'); // Use history.push to navigate
+                    navigateFunction('/Employee'); 
                 } else if (role === 'admin') {
-                    Navigate('/Admin'); // Use history.push to navigate
+                    navigateFunction('/Admin'); 
                 } else {
                     console.error('Unknown or unsupported role:', role);
                 }
             })
             .catch(error => {
                 console.error('Error fetching user role:', error);
-            });
+            });
+
     }
+
+const handleLogoutButtonClick = () => {
+    const token = localStorage.getItem('token');
+    console.log("entered handle button click function");
+
+    // Decode token to extract user information
+    const decodedToken = decodeJwtToken(token);
+    console.log('Decoded Token:', decodedToken);
+
+    if (!decodedToken || !decodedToken.email) {
+        console.error('Invalid token or missing email');
+        return;
+    }
+
+    // Update status in the remote MySQL database
+    const updateStatus = () => {
+        axios.post('/api/updateStatus', {
+            email: decodedToken.email,
+            newStatus: 'Offline'
+        })
+        .then(response => {
+            console.log("Status updated successfully:", response.data);
+        })
+        .catch(error => {
+            console.error('Error updating status:', error);
+        });
+    };
+
+    // Call the updateStatus function
+    updateStatus();
+    };
+
 
 
     return (
@@ -105,7 +138,7 @@ function Navbar() {
                     <img class="imgs" src="./Images/ONGC_1.png" alt="ONGC Logo" />
                 </div>
                 {/* ------------------------------------------------------------------- */}
-                <div class="right-components ongcbtnmain">
+                <div class="right-components ongcbtnmain" onClick={handleLogoutButtonClick}>
                     <a href="/" class="text-sm text-blue-700 dark:text-blue-600  ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="red">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.36 6.64a9 9 0 1 1-12.73 0M12 2v10M12 12h.01M12 18v.01"></path>
@@ -144,7 +177,7 @@ function Navbar() {
                                 <a href="/Report" class="text-gray-900 dark:text-white hover:blink">7_REPORTS</a>
                             </li>
                             <li>
-                                <a href="/Temperature_Works" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
+                                <a href="/Demo" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
                             </li>
 
                         </ul>

@@ -4,59 +4,36 @@ import React, { useState, useEffect } from 'react';
 import { getDataset, getOptionsets } from '../Utility/utilites';
 import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
-import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-
 
 function LiveReports() {
   const [Data, setData] = useState([]);
   const dateValue = useSelector(state => state.dateManager.value);
-  const [socket, setSocket] = useState(null);
   const [isLoading, setIsLoading] = useState(1);
 
-
   useEffect(() => {
-    const token = localStorage.getItem("token");
-
-    axios.get('/api/getdata?date=' + dateValue, {
-      headers: { Authorization: `Bearer ${token}` }
-    })
-      .then((res) => {
-        setData(res.data);
-        setIsLoading(2);
-      })
-      .catch(err => {
-        console.log(err)
-        setIsLoading(3);
-      });
-
-    const ws = new WebSocket(webSocketUrl);
-
-
-    ws.addEventListener('open', () => console.log('WebSocket connection opened'));
-    ws.addEventListener('message', event => {
-      console.log(`Received message: ${event.data}`)
-      const token = localStorage.getItem("token");
-      axios.get('/api/getdata?date=' + dateValue, {
-        headers: { Authorization: `Bearer ${token}` }
-      })
-        .then((res) => {
-          setData(res.data);
-          setIsLoading(2);
-        })
-        .catch(err => {
-          console.log(err)
-          setIsLoading(3);
+    const fetchData = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        const response = await axios.get(`/api/getdata?date=${dateValue}`, {
+          headers: { Authorization: `Bearer ${token}` }
         });
+        setData(response.data);
+        setIsLoading(2);
+      } catch (err) {
+        console.log(err);
+        setIsLoading(3);
+      }
+    };
 
-    });
-    ws.addEventListener('close', () => console.log('WebSocket connection closed'));
+    fetchData();
 
-    setSocket(ws);
+    const interval = setInterval(fetchData, 60000); // Fetch data every minute
 
-    return () => ws.close();
+    return () => clearInterval(interval); // Cleanup interval on unmount
   }, [dateValue]);
+
 
   const customBarColor = ["red"];
   const customBarColorr = ["rgba(255,0,255,0.6)"];

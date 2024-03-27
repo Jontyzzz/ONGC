@@ -25,3 +25,21 @@
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-15T06:28:11.482Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-15T06:42:21.334Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-16T10:17:57.978Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-23T07:18:43.509Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '2147483647' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '2147483647' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-23T07:21:27.221Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry '' for key 'PRIMARY'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry '' for key 'PRIMARY'","sqlState":"23000","timestamp":"2024-03-23T07:38:15.612Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:11.069Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:14.064Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:15.370Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:21.099Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:24.096Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:25.278Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:25.386Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:26.043Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T05:00:46.791Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:09.046Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:19.083Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:29.111Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:38.341Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:39.128Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'donald333@gmail.com' for key 'email'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry 'donald333@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-03-27T07:08:06.800Z"}

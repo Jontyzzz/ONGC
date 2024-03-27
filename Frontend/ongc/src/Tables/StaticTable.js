@@ -1,72 +1,46 @@
-
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
-import Navbar from '../Navbar/Navbar'
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
-import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-import { io } from 'socket.io-client'; // Import the socket.io-client library
-
-
 
 function StaticTable() {
-
     const [Data, setData] = useState([]);
     const dateValue = useSelector(state => state.dateManager.value);
-    const [socket, setSocket] = useState(null);
-    const [isLoading, setIsLoading] = useState(1)
+    const [isLoading, setIsLoading] = useState(1);
+    const [lastUpdated, setLastUpdated] = useState(null);
+
     useEffect(() => {
         console.log(dateValue);
-        const token = localStorage.getItem("token")
-        // Fetch initial data
-        axios.get('/api/getdata?date=' + dateValue, {
-            headers: { Authorization: `Bearer ${token}` }
+        const token = localStorage.getItem("token");
+
+        // Function to fetch data
+        // Function to fetch data
+const fetchData = () => {
+    console.log('Fetching data...'); // Log each time data is fetched
+    axios.get('/api/getdata?date=' + dateValue, {
+        headers: { Authorization: `Bearer ${token}` }
+    })
+        .then((res) => {
+            setData(res.data);
+            setLastUpdated(new Date().toLocaleTimeString()); // Update timestamp
+            setIsLoading(false);
+            console.log('Fetched data:', res.data); // Log fetched data to console
         })
-            .then((res) => {
-                setData(res.data);
-                setIsLoading(2);
-            })
-            .catch(err => {
-                console.log(err)
-                setIsLoading(3);
-            });
-
-        // Create a socket connection
-        const socket = io(webSocketUrl);
-
-        // Set up event listeners
-        socket.on('connect', () => {
-            console.log('Socket connected');
+        .catch(err => {
+            console.log(err)
+            setIsLoading(false);
         });
+};
+        // Fetch initial data
+        fetchData();
 
-        socket.on('message', (data) => {
-            console.log('Received message:', data);
+        // Set interval to fetch data every 1 minute
+        const interval = setInterval(fetchData, 3000);
 
-            // Fetch updated data when a message is received
-            axios
-                .get('/api/getdata?date=' + dateValue, {
-                    headers: { Authorization: `Bearer ${token}` },
-                })
-                .then((res) => {
-                    setData(res.data);
-                })
-                .catch((err) => {
-                    console.log(err);
-                    setIsLoading(3);
-                });
-        });
-
-        socket.on('disconnect', () => {
-            console.log('Socket disconnected');
-        });
-
-        setSocket(socket);
-
-        // Clean up the socket connection on component unmount
-        return () => {
-            socket.disconnect();
-        };
+        // Clear interval on component unmount
+        return () => clearInterval(interval);
     }, [dateValue]);
 
     if (isLoading === 1) {
@@ -88,12 +62,12 @@ function StaticTable() {
     }
 
 
-
     return (
         <div className='park'>
             <Navbar />
 
             <div class="tbl col-8 bark " alignment="center" >
+            <p>Last Updated: {lastUpdated}</p>
                 <table alignment="center" className='tablet'>
                     <tr class='header'>
                         <th ALIGN='CENTER'>Machine PID</th>

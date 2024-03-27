@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import validation from '../Utility/signupvalidation';
 import sha256 from 'crypto-js/sha256'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
 function Signup() {
@@ -12,6 +14,7 @@ function Signup() {
     password: ''
   });
   const [error, setErrors] = useState({}); // Corrected from 'setErrors' to 'setErrors'
+  const [showPassword, setShowPassword] = useState(false); // State to track password visibility
   const navigate = useNavigate();
 
   const handleInput = (event) => {
@@ -56,7 +59,9 @@ function Signup() {
     }
   };
   
-
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
+  };
 
   
 
@@ -77,8 +82,13 @@ function Signup() {
           </div>
           <div className='mb-3'>
             <label htmlFor='password'><strong>Password</strong></label>
-            <input type='password' title='Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number'
-              placeholder='Enter password' name='password' className='form-control rounded-0' onChange={handleInput} />
+            <div className='input-group'>
+              <input type={showPassword ? 'text' : 'password'} title='Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number'
+                placeholder='Enter password' name='password' className='form-control rounded-0' onChange={handleInput} />
+              <button type='button' className='btn btn-outline-secondary' onClick={togglePasswordVisibility}>
+                <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+              </button>
+            </div>
             {error.password && <span className='text-danger'>{error.password}</span>}
           </div>
           <button type='submit' className='btn btn-success w-100 rounded-0'>Signup</button>

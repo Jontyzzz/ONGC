@@ -3,47 +3,40 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Chart from '../Charts/Chart';
 import { useSelector } from 'react-redux';
-import { webSocketUrl } from '../Utility/localstorage';
 import { getDataset, getOptionsets } from '../Utility/utilites';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
 
-
 function Report() {
-  const [socket, setSocket] = useState(null);
-  const [data, setData] = useState([]);
-  const dateValue = useSelector(state => state.dateManager.value);
-  const [isLoading, setIsLoading] = useState(1);
+    const [data, setData] = useState([]);
+    const dateValue = useSelector(state => state.dateManager.value);
+    const [isLoading, setIsLoading] = useState(1);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        const response = await axios.get(`/api/getdata?date=${dateValue}`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`/api/getdata?date=${dateValue}`, {
+                    headers: { Authorization: `Bearer ${token}` }
+                });
 
-        setData(response.data);
-        setIsLoading(2);
-      } catch (err) {
-        console.log(err);
-        setIsLoading(3);
-      }
-    }; // Closing brace for fetchData function
+                setData(response.data);
+                setIsLoading(2);
+            } catch (err) {
+                console.log(err);
+                setIsLoading(3);
+            }
+        };
 
-    // const ws = new WebSocket(webSocketUrl);
-    const ws = new WebSocket(webSocketUrl.replace(/^http/, 'ws'));
+        // Fetch data initially
+        fetchData();
 
+        // Set interval to fetch data every minute
+        const interval = setInterval(fetchData, 60000);
 
-    ws.addEventListener('open', () => console.log('WebSocket connection opened'));
-    ws.addEventListener('message', () => fetchData());
-    ws.addEventListener('close', () => console.log('WebSocket connection closed'));
-
-    fetchData();
-
-    setSocket(ws);
-    return () => ws.close();
-  }, [dateValue]);
+        // Clear interval on component unmount
+        return () => clearInterval(interval);
+    }, [dateValue]);
 
   const customBarColors = ["rgba(255, 0, 0, 0.7)"];
   const customBarColorss = ["rgba(255,255,0,0.7)"];

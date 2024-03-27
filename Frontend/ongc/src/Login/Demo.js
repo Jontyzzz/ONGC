@@ -1,71 +1,30 @@
-// import React, { useEffect, useState } from 'react';
-// import jwt from 'jsonwebtoken';
-// import axios from 'axios';
-// import { useHistory } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import './Demo.css';
 
-// function AuthenticatedComponent() {
-//   const [user, setUser] = useState(null);
-//   const history = useHistory();
+const MyComponent = () => {
+  const [time, setTime] = useState(new Date());
 
-//   const handleButtonClick = async () => {
-//     // Retrieve the token from localStorage
-//     const storedToken = localStorage.getItem('token');
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
 
-//     const fetchUserRole = async (email) => {
-//       try {
-//         const response = await axios.get(`/api/getUserRole?email=${email}`, {
-//           // Add any necessary headers, like Authorization with the token
-//         });
+    return () => clearInterval(intervalId);
+  }, []);
 
-//         const role = response.data.role;
+  return (
+    <div className="digital-watch">
+      <div className="digit">
+        {('0' + time.getHours()).slice(-2)}:
+      </div>
+      <div className="digit">
+        {('0' + time.getMinutes()).slice(-2)}:
+      </div>
+      <div className="digit">
+        {('0' + time.getSeconds()).slice(-2)}
+      </div>
+    </div>
+  );
+};
 
-//         // Check the role and navigate accordingly
-//         if (role === 'admin') {
-//           history.push('/admin');
-//         } else if (role === 'employee') {
-//           history.push('/employee');
-//         } else {
-//           // Unknown or unsupported role
-//           console.error('Unknown or unsupported role:', role);
-//         }
-//       } catch (error) {
-//         console.error('Error fetching user role:', error);
-//       }
-//     };
-
-//     if (storedToken) {
-//       // Decode the token
-//       try {
-//         const decodedToken = jwt.decode(storedToken);
-
-//         // Verify that the token is valid and contains necessary information
-//         if (decodedToken && decodedToken.email) {
-//           console.log('Decoded Token:', decodedToken); // Log the decoded token
-//           setUser(decodedToken);
-
-//           // If the token doesn't contain the role, fetch it from the server
-//           if (!decodedToken.role) {
-//             fetchUserRole(decodedToken.email);
-//           }
-//         } else {
-//           // Invalid token or missing required information
-//           console.error('Invalid token or missing required information');
-//         }
-//       } catch (error) {
-//         console.error('Error decoding token:', error.message);
-//       }
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <button onClick={handleButtonClick} className="buttonDecorative">
-//         Lets check what happens?
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default AuthenticatedComponent;
-
-
+export default MyComponent;

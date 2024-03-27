@@ -49,9 +49,7 @@ io.on("error", (error) => {
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../Frontend/ongc/build/")));
 app.use(bodyParser.json());
-
 app.get('/api/getdata', validateAuth, async (req, res) => {
   try {
     let date = req.query.date;
@@ -125,45 +123,100 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
-// app.post('/api/login', async (req, res) => {
-//   let sql = "select 'success' from login where email=? and password=? ;";
-//   let values = [req.body.email, req.body.password];
-//   let data = await (new Database()).runQuery(sql, values);
-//   if (data.length > 0) {
-//     const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
-//     return res.json({ isLogged: "success", token, isAdmin: true });
-//   } else {
-//     return res.json({ error });
-//   }
-// });
 
-// employee page api 
+// Define the POST endpoint for updating status
+app.post('/api/updateStatus', async (req, res) => {
+  // Extract email and newStatus from request body
+  const { email, newStatus } = req.body;
 
+  // Define pool and connection variables
+  let pool, connection;
+
+  try {
+    // Create a connection pool
+    pool = await mysql.createPool(dbConfig);
+
+    // Get a connection from the pool
+    connection = await pool.getConnection();
+
+    // Update the status in the database
+    const query = 'UPDATE login SET status = ? WHERE email = ?';
+    const [results] = await connection.query(query, [newStatus, email]);
+
+    console.log('Status updated successfully');
+    res.json({ message: 'Status updated successfully' });
+  } catch (error) {
+    console.error('Error updating status:', error);
+    res.status(500).json({ error: 'Error updating status' });
+  } finally {
+    // Release the connection back to the pool
+    if (connection) {
+      connection.release();
+    }
+  }
+});
+
+
+// employee page api
 app.get('/api/employees', async (req, res) => {
   const { email } = req.query;
   try {
-    pool = await mysql.createPool(dbConfig);
-    connection = await pool.getConnection();
-    const [rows, fields] = await connection.query('SELECT * FROM login WHERE email = ?', [email]);
+    const pool = await mysql.createPool(dbConfig);
+    const connection = await pool.getConnection();
+    const [rows, fields] = await connection.query('SELECT name, email FROM login WHERE email = ?', [email]);
     if (rows.length > 0) {
-      const user = rows[0]; // Assuming only one user matches the email
+      const user = rows[0];
       res.json(user);
     } else {
       res.status(404).json({ error: 'User not found' });
     }
+    connection.release();
   } catch (error) {
     console.error('Error executing MySQL query:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  } finally {
-    try {
-      if (pool && connection) {
-        connection.release();
-      }
-    } catch (err) {
-      console.error('Error releasing connection:', err);
-    }
-  }
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
+
+app.get('/api/getUserRole', async (req, res) => {
+  try {
+    // Extract the token from the Authorization header
+    const token = req.headers.authorization;
+
+    if (!token || !token.startsWith('Bearer ')) {
+      return res.status(400).json({ error: 'Invalid or missing token' });
+    }
+
+    // Extract the JWT token from the Authorization header
+    const tokenParts = token.split(' ');
+    const jwtToken = tokenParts[1];
+
+    // Decode the JWT token to get the user's email
+    const decodedToken = decodeJwtToken(jwtToken);
+
+    if (!decodedToken || !decodedToken.email) {
+      return res.status(400).json({ error: 'Invalid token or missing email' });
+    }
+
+    // Query the database to retrieve the user's role based on their email
+    const email = decodedToken.email;
+    const sql = "SELECT Role FROM login WHERE email = ?";
+    const [results, fields] = await pool.query(sql, [email]); // Destructure results and fields
+
+    // Check if the user was found
+    if (results.length === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Return the user's role
+    const role = results[0].Role;
+    res.json({ role });
+  } catch (error) {
+    console.error('Error fetching user role:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
 
 // Admin api to fetch data//
   app.get('/api/Admin', async (req, res) => {
@@ -229,6 +282,41 @@ app.delete('/api/users/:id', async (req, res) => {
 
 // Route to retrieve user role based on email
 const pool = mysql.createPool(dbConfig);
+// app.get('/api/getUserRole', async (req, res) => {
+//   try {
+//     // Extract the token from the Authorization header
+//     const token = req.headers.authorization;
+
+//     // Decode the JWT token to get the user's email
+//     const decodedToken = decodeJwtToken(token);
+
+//     if (!decodedToken || !decodedToken.email) {
+//       return res.status(400).json({ error: 'Invalid token or missing email' });
+//     }
+
+//     // Query the database to retrieve the user's role based on their email
+//     const email = decodedToken.email;
+//     const sql = "SELECT Role FROM login WHERE email = ?";
+//     pool.query(sql, [email], (error, results) => {
+//       if (error) {
+//         console.error('Error fetching user role:', error);
+//         return res.status(500).json({ error: 'Internal Server Error' });
+//       }
+
+//       // Check if the user was found
+//       if (results.length === 0) {
+//         return res.status(404).json({ error: 'User not found' });
+//       }
+
+//       // Return the user's role
+//       const role = results[0].Role;
+//       res.json({ role });
+//     });
+//   } catch (error) {
+//     console.error('Error fetching user role:', error);
+//     res.status(500).json({ error: 'Internal Server Error' });
+//   }
+// });
 app.get('/api/getUserRole', async (req, res) => {
   try {
     // Extract the token from the Authorization header
@@ -241,8 +329,10 @@ app.get('/api/getUserRole', async (req, res) => {
       return res.status(400).json({ error: 'Invalid token or missing email' });
     }
 
-    // Query the database to retrieve the user's role based on their email
+    // Extract email from decoded token
     const email = decodedToken.email;
+
+    // Query the database to retrieve the user's role based on their email
     const sql = "SELECT Role FROM login WHERE email = ?";
     pool.query(sql, [email], (error, results) => {
       if (error) {
@@ -267,6 +357,7 @@ app.get('/api/getUserRole', async (req, res) => {
 
 
 
+
 io.on("connection", (socket) => {
   console.log('A client connected');
   socket.on('disconnect', () => {
@@ -274,6 +365,7 @@ io.on("connection", (socket) => {
     // Additional logic for socket closure if needed
   });
 });
+
 
 server.listen(port, () => {
   console.log(`Server Started On ${port}`);
