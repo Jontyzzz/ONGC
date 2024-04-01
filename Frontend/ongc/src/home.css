@@ -22,6 +22,8 @@ th {
   text-align: left;
   background-color: #2d2d2d;
   color: white;
+  position: sticky;
+  top: 0;
 }
 
 /* Add hover effect for better user interaction */
@@ -163,6 +165,9 @@ a:active {
 .backend {
   background: url('https://images.unsplash.com/photo-1530177150700-84cd9a3b059b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
   background-color: #8B4513;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* Set the opacity to 50% */
   background-color: rgba(139, 69, 19, 0.5);
 }
@@ -176,6 +181,9 @@ a:active {
 
 .Backenddd {
   background-image: url("https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card-body {
@@ -278,9 +286,12 @@ p {
 }
 
 .nav2flex {
-  margin-top: 7px;
-  margin-left: 42.5625rem;
-
+  /* margin-top: 7px;
+  margin-left: 42.5625rem; */
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 20px;
 }
 
 /* -----hover------ */
@@ -325,14 +336,20 @@ p {
   opacity: 93%;
 }
 
-
+.date-time-selector.RD {
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+}
 
 
 /* media query */
 @media (max-width: 768px) {
   .nav2flex {
-    margin-left: 0.5625rem;
-    margin-top: 6px;
+    /* margin-left: 0.5625rem;
+    margin-top: 6px; */
+    justify-content: flex-end;
+    margin-right: 20px;
   }
 
   .tablet {
@@ -350,13 +367,13 @@ p {
 
 .tablet {
   margin-left: 13.6875rem;
-
-  
 }
 
 .park{
   background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .bark{
   border:1px solid black;
@@ -364,7 +381,7 @@ p {
 .RM2{
   border: 2px solid #686868;
   background-color: #FFA500;
-  padding: 6px;
+ height: 10%;
 }
 .Tempp{
   background-color:white;
@@ -410,5 +427,5 @@ p {
   background-color: rgb(255, 140, 0);
 }
 ::-webkit-scrollbar-track{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }

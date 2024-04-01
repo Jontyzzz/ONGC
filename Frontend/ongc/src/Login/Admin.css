@@ -31,4 +31,10 @@
   
   .ATH{
     background-color: #343434;
+    position:sticky;
+  }
+  .BTH{
+    background-color: #343434;
+    position:sticky;
+    z-index: 1;
   }

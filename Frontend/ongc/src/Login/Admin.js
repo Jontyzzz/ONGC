@@ -86,7 +86,7 @@ function Admin() {
               <th className='ATH'>ID</th>
               <th className='ATH'>Name</th>
               <th className='ATH'>Email</th>
-              <th className='ATH'>Password</th>
+              <th className='BTH'>Password</th>
               <th className='ATH'>Status</th>
               <th className='ATH'>Delete_User</th>
             </tr>

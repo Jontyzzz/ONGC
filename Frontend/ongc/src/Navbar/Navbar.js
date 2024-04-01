@@ -166,7 +166,7 @@ const handleLogoutButtonClick = () => {
             <nav class="RM2">
                 <div class="max-w-screen-xl px-0 py-1 mx-auto flex">
                     <div class="flex1 items-Left">
-                        <ul class="flex flex-row font-medium mt-3 space-x-8 rtl:space-x-reverse text-sm">
+                        <ul class="flex flex-row font-medium mt-2 space-x-6 rtl:space-x-reverse text-sm">
                             <li>
                                 <a href="/StaticTable" class="text-gray-900 dark:text-white hover:blink" aria-current="page">Report</a>
                             </li>
@@ -177,8 +177,11 @@ const handleLogoutButtonClick = () => {
                                 <a href="/Report" class="text-gray-900 dark:text-white hover:blink">7_REPORTS</a>
                             </li>
                             <li>
-                                <a href="/Demo" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
+                                <a href="/Temperature_Works" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
                             </li>
+                            {/* <li>
+                                <a href="/AutomaticLoadingTable" class="text-gray-900 dark:text-white hover:blink">A</a>
+                            </li> */}
 
                         </ul>
                     </div>

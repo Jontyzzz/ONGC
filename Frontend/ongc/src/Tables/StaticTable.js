@@ -4,6 +4,8 @@ import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
+import * as XLSX from 'xlsx';
+import 'jspdf-autotable';
 
 function StaticTable() {
     const [Data, setData] = useState([]);
@@ -14,34 +16,76 @@ function StaticTable() {
     useEffect(() => {
         console.log(dateValue);
         const token = localStorage.getItem("token");
-
+         
+    
         // Function to fetch data
-        // Function to fetch data
-const fetchData = () => {
-    console.log('Fetching data...'); // Log each time data is fetched
-    axios.get('/api/getdata?date=' + dateValue, {
-        headers: { Authorization: `Bearer ${token}` }
-    })
-        .then((res) => {
-            setData(res.data);
-            setLastUpdated(new Date().toLocaleTimeString()); // Update timestamp
-            setIsLoading(false);
-            console.log('Fetched data:', res.data); // Log fetched data to console
-        })
-        .catch(err => {
-            console.log(err)
-            setIsLoading(false);
-        });
-};
+        const fetchData = () => {
+            console.log('Fetching data...'); // Log each time data is fetched
+            axios.get('/api/getdata?date=' + dateValue, {
+                headers: { Authorization: `Bearer ${token}` }
+            })
+                .then((res) => {
+                    setData(res.data);
+                    setLastUpdated(new Date().toLocaleTimeString()); // Update timestamp
+                    setIsLoading(false);
+                    console.log('Fetched data:', res.data); // Log fetched data to console
+                })
+                .catch(err => {
+                    console.log(err)
+                    setIsLoading(false);
+                });
+        };
+    
         // Fetch initial data
         fetchData();
-
-        // Set interval to fetch data every 1 minute
-        const interval = setInterval(fetchData, 3000);
-
-        // Clear interval on component unmount
-        return () => clearInterval(interval);
+    
+        // Check if the selected date is today's date
+        const isToday = dateValue === new Date().toISOString().slice(0, 10);
+    
+        // Start setInterval only if it's today's date
+        if (isToday) {
+            // Set interval to fetch data every 1 minute
+            const interval = setInterval(() => {
+                fetchData();
+            }, 60000);
+    
+            // Clear interval on component unmount
+            return () => clearInterval(interval);
+        }
     }, [dateValue]);
+    
+    
+    const downloadExcel = () => {
+        const ws = XLSX.utils.json_to_sheet(Data);
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "Data");
+        XLSX.writeFile(wb, "data.xlsx");
+    };
+    // const downloadPDF = () => {
+    //     const doc = new jsPDF();
+    
+    //     // Add title
+    //     doc.setFontSize(18);
+    //     doc.text("Spectron_ONGC Report", 105, 20, { align: "center" });
+    
+    //     // Add date/time
+    //     doc.setFontSize(12);
+    //     doc.text(new Date().toLocaleString(), 10, 10);
+    
+    //     // Add table data
+    //     let y = 30; // Initial y position for table data
+    //     Data.forEach(row => {
+    //         Object.values(row).forEach((value, index) => {
+    //             doc.text(value.toString(), index * 50, y);
+    //         });
+    //         y += 10; // Increment y position for each row
+    //     });
+    
+    //     // Save the PDF
+    //     doc.save('data.pdf');
+    // };
+   
+    
 
     if (isLoading === 1) {
         return (
@@ -67,7 +111,8 @@ const fetchData = () => {
             <Navbar />
 
             <div class="tbl col-8 bark " alignment="center" >
-            <p>Last Updated: {lastUpdated}</p>
+            <button style={{ backgroundColor: 'green', color: 'white' }} onClick={downloadExcel}>Download Report</button>
+            {/* <p>Last Updated: {lastUpdated}</p> */}
                 <table alignment="center" className='tablet'>
                     <tr class='header'>
                         <th ALIGN='CENTER'>Machine PID</th>

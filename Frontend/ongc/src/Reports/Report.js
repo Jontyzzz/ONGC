@@ -8,35 +8,45 @@ import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
 
 function Report() {
-    const [data, setData] = useState([]);
-    const dateValue = useSelector(state => state.dateManager.value);
-    const [isLoading, setIsLoading] = useState(1);
+  const [data, setData] = useState([]);
+  const dateValue = useSelector(state => state.dateManager.value);
+  const [isLoading, setIsLoading] = useState(1);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const token = localStorage.getItem("token");
-                const response = await axios.get(`/api/getdata?date=${dateValue}`, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });
+  // Function to fetch data
+  const fetchData = async () => {
+      try {
+          const token = localStorage.getItem("token");
+          const response = await axios.get(`/api/getdata?date=${dateValue}`, {
+              headers: { Authorization: `Bearer ${token}` }
+          });
 
-                setData(response.data);
-                setIsLoading(2);
-            } catch (err) {
-                console.log(err);
-                setIsLoading(3);
-            }
-        };
+          setData(response.data);
+          setIsLoading(2);
+          console.log('Fetched data:',response.data); 
+      } catch (err) {
+          console.log(err);
+          setIsLoading(3);
+      }
+  };
 
-        // Fetch data initially
-        fetchData();
+  useEffect(() => {
+      // Fetch data initially
+      fetchData();
 
-        // Set interval to fetch data every minute
-        const interval = setInterval(fetchData, 60000);
+      // Check if the selected date is today's date
+      const isToday = dateValue === new Date().toISOString().slice(0, 10);
 
-        // Clear interval on component unmount
-        return () => clearInterval(interval);
-    }, [dateValue]);
+      // Start setInterval only if it's today's date
+      if (isToday) {
+          // Set interval to fetch data every 1 minute
+          const interval = setInterval(() => {
+              fetchData();
+          }, 60000);
+
+          // Clear interval on component unmount
+          return () => clearInterval(interval);
+      }
+  }, [dateValue]);
 
   const customBarColors = ["rgba(255, 0, 0, 0.7)"];
   const customBarColorss = ["rgba(255,255,0,0.7)"];
@@ -60,6 +70,7 @@ function Report() {
       <Navigate to="/" />
     )
   }
+
 
   return (
     <div className='Backenddd'>

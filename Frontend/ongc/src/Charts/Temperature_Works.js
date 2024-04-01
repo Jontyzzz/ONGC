@@ -5,42 +5,19 @@ import { useSelector } from 'react-redux';
 import Navbar from '../Navbar/Navbar';
 import 'chartjs-plugin-zoom';
 import { format, parseISO } from 'date-fns';
+import "./Temperature_work.css";
 
 function Temperature_works() {
     const [chartData, setChartData] = useState([]);
     const [timeGranularity, setTimeGranularity] = useState('hour');
     const [loading, setLoading] = useState(true);
+    const [progressPercentage, setProgressPercentage] = useState(0);
     const [error, setError] = useState(null);
     const dateValue = useSelector((state) => state.dateManager.value);
     const [visibleRange, setVisibleRange] = useState({ min: 0, max: 11 });
     const [lineColors, setLineColors] = useState({});
 
-    // useEffect(() => {
-    //     const token = localStorage.getItem('token');
 
-    //     const fetchData = async () => {
-    //         setLoading(true);
-    //         setError(null);
-
-    //         try {
-    //             const response = await axios.get('/api/fetchData?date=' + dateValue, {
-    //                 headers: { Authorization: `Bearer ${token}` },
-    //             });
-
-    //             const initialLineColors = {};
-    //             for (let i = 1; i <= 7; i++) {
-    //                 const label = `TT${i}`;
-    //                 initialLineColors[label] = getRandomColor();
-    //             }
-
-    //             setLineColors(initialLineColors);
-    //             setChartData(response.data);
-    //             setLoading(false);
-    //         } catch (err) {
-    //             setError('Error fetching data. Please try again.');
-    //             setLoading(false);
-    //         }
-    //     };
 
     //     fetchData(); // Fetch initial data
 
@@ -52,22 +29,22 @@ function Temperature_works() {
     // }, [dateValue]);
     useEffect(() => {
         const token = localStorage.getItem('token');
-    
+
         const fetchData = async () => {
             setLoading(true);
             setError(null);
-    
+
             try {
                 const response = await axios.get('/api/fetchData?date=' + dateValue, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-    
+
                 const initialLineColors = {};
                 for (let i = 1; i <= 7; i++) {
                     const label = `TT${i}`;
                     initialLineColors[label] = getRandomColor();
                 }
-    
+
                 setLineColors(initialLineColors);
                 setChartData(response.data);
                 setLoading(false);
@@ -76,15 +53,34 @@ function Temperature_works() {
                 setLoading(false);
             }
         };
-    
+
         fetchData(); // Fetch initial data
-    
-        const intervalId = setInterval(fetchData, 3000); // Fetch data every 3 seconds
-    
+
+        const intervalId = setInterval(fetchData, 60000); // Fetch data every 3 seconds
+
         return () => {
             clearInterval(intervalId); // Cleanup interval on component unmount
         };
     }, [dateValue]);
+
+    useEffect(() => {
+        // Update progress percentage based on loading state
+        if (loading) {
+            const intervalId = setInterval(() => {
+                setProgressPercentage(prevPercentage => {
+                    if (prevPercentage < 100) {
+                        return prevPercentage + 5; // Increment progress by 5% every second until it reaches 100%
+                    } else {
+                        clearInterval(intervalId); // Stop interval when progress reaches 100%
+                        return prevPercentage;
+                    }
+                });
+            }, 1000);
+            return () => clearInterval(intervalId); // Cleanup interval on component unmount or when loading is done
+        } else {
+            setProgressPercentage(0); // Reset progress percentage when loading is complete
+        }
+    }, [loading]);
 
     const generateDatasets = () => {
         if (!chartData || chartData.length === 0) {
@@ -175,8 +171,15 @@ function Temperature_works() {
             <div className="container-fluid ">
                 <div>
                     <div className="col-md-10 mb-4 mt-4 ml-4 Tempp" style={{ overflowX: 'auto' }}>
-                        {loading && <p>Loading...</p>}
+                    {loading && (
+                            <div className="line-progress-bar">
+                                <div className="line-progress-bar-fill" style={{ width: `${progressPercentage}%` }}>
+                                    {progressPercentage !== 0 && `${progressPercentage}%`} {/* Display progress percentage if not zero */}
+                                </div>
+                            </div>
+                        )}
                         {error && <p style={{ color: 'red' }}>{error}</p>}
+
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <button onClick={handleScrollUp} className="buttonDecorative" style={{ marginRight: '8px', backgroundColor: 'grey', color: 'black' }}>
                                 {'<<'}

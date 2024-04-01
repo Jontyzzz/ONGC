@@ -7,6 +7,9 @@ import { useSelector } from 'react-redux';
 import { webSocketUrl } from '../Utility/localstorage';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
+
 
 
 function AutomaticLoadingTable() {
@@ -58,6 +61,39 @@ function AutomaticLoadingTable() {
     return () => ws.close();
 
   }, [dateValue]); // Empty dependency array means this effect runs once on mount
+  const downloadPDF = () => {
+    const doc = new jsPDF();
+
+    // Add title
+    doc.setFontSize(18);
+    doc.text("Spectron_ONGC Report", 105, 20, { align: "center" });
+
+    // Add date/time
+    doc.setFontSize(12);
+    doc.text(new Date().toLocaleString(), 10, 10);
+
+    // Add table headers
+    const headers = [['Machine PID', 'Parameter Name', 'Parameter Value', 'Unit']];
+
+    // Map Data array to match the expected structure for autoTable
+    const tableData = Data.map(row => [row.machinePID, row.parameterName, row.parameterValue, row.unit]);
+
+    // Combine headers and table data
+    const allData = [...headers, ...tableData];
+
+    // Add table using autoTable
+    doc.autoTable({
+        startY: 30, // Initial y position for table
+        head: allData.slice(0, 1), // Extract headers
+        body: allData.slice(1), // Extract table data excluding headers
+        theme: 'grid', // Optional: set table theme
+        styles: { overflow: 'linebreak' } // Optional: handle long text
+    });
+
+    // Save the PDF
+    doc.save('data.pdf');
+};
+
   if (isLoading === 1) {
     return (<>
       <Navbar />
@@ -75,6 +111,7 @@ function AutomaticLoadingTable() {
       <Navbar />
       <div className='center2'>
         <div className='col-15 color ' alignment="center"></div>
+        <button style={{ backgroundColor: 'red', color: 'white' }}onClick={downloadPDF}>Download PDF</button>
         <div class="tbl col-15 " alignment="center">
           <table alignment="center">
             <tr class='header'>

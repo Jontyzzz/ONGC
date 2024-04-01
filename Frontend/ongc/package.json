@@ -21,6 +21,8 @@
     "express": "^4.18.3",
     "flowbite": "^2.2.1",
     "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-charts": "^3.0.0-beta.57",
@@ -32,10 +34,12 @@
     "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
     "react-scrollbars-custom": "^4.1.1",
+    "react-spinners": "^0.13.8",
     "socket.io": "^4.7.4",
     "socket.io-client": "^4.7.4",
     "web-vitals": "^2.1.4",
-    "ws": "^8.16.0"
+    "ws": "^8.16.0",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",

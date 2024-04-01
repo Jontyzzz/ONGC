@@ -91,11 +91,6 @@ app.get('/api/fetchData', async (req, res) => {
   }
 });
 
-app.get("/api/getUnits", validateAuth, async (req, res) => {
-  let sql = "SELECT * FROM ongc";
-  let data = await (new Database()).runQuery(sql, []);
-  return res.json(data);
-});
 
 app.post('/api/signup', async (req, res) => {
   let sql = "INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)";

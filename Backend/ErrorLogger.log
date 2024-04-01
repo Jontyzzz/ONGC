@@ -43,3 +43,10 @@
 {"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:38.341Z"}
 {"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-27T06:47:39.128Z"}
 {"code":"ER_DUP_ENTRY","errno":1062,"level":"error","message":"Duplicate entry 'donald333@gmail.com' for key 'email'","sql":"INSERT INTO login (`name`, `email`, `password`) VALUES (?,?,?)","sqlMessage":"Duplicate entry 'donald333@gmail.com' for key 'email'","sqlState":"23000","timestamp":"2024-03-27T07:08:06.800Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-03-28T11:14:20.592Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-28T12:19:04.505Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-03-30T05:43:34.619Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-03-30T05:53:24.579Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-03-30T05:55:24.513Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-04-01T06:26:20.622Z"}
+{"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-04-01T06:26:20.850Z"}
