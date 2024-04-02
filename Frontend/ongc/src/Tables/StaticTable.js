@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-import * as XLSX from 'xlsx';
+// import * as XLSX from 'xlsx';
 import 'jspdf-autotable';
 
 function StaticTable() {
@@ -55,17 +55,17 @@ function StaticTable() {
     }, [dateValue]);
     
     
-    const downloadExcel = () => {
-        const ws = XLSX.utils.json_to_sheet(Data);
-        const wb = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(wb, ws, "Data");
-        XLSX.writeFile(wb, "data.xlsx");
-    };
+    // const downloadExcel = () => {
+    //     const ws = XLSX.utils.json_to_sheet(Data);
+    //     const wb = XLSX.utils.book_new();
+    //     XLSX.utils.book_append_sheet(wb, ws, "Data");
+    //     XLSX.writeFile(wb, "data.xlsx");
+    // };
     // const downloadPDF = () => {
-    //     const doc = new jsPDF();
+    //      doc = new jsPDF();
     
     //     // Add title
-    //     doc.setFontSize(18);
+    //     doc.seconsttFontSize(18);
     //     doc.text("Spectron_ONGC Report", 105, 20, { align: "center" });
     
     //     // Add date/time
@@ -111,7 +111,7 @@ function StaticTable() {
             <Navbar />
 
             <div class="tbl col-8 bark " alignment="center" >
-            <button style={{ backgroundColor: 'green', color: 'white' }} onClick={downloadExcel}>Download Report</button>
+            {/* <button style={{ backgroundColor: 'green', color: 'white' }} onClick={downloadExcel}>Download Report</button> */}
             {/* <p>Last Updated: {lastUpdated}</p> */}
                 <table alignment="center" className='tablet'>
                     <tr class='header'>

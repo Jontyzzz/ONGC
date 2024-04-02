@@ -50,3 +50,5 @@
 {"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-03-30T05:55:24.513Z"}
 {"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-04-01T06:26:20.622Z"}
 {"code":"ETIMEDOUT","level":"error","message":"connect ETIMEDOUT","timestamp":"2024-04-01T06:26:20.850Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-04-02T05:59:36.178Z"}
+{"code":"ER_TOO_MANY_USER_CONNECTIONS","errno":1203,"level":"error","message":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlMessage":"User indiscpx_PVP already has more than 'max_user_connections' active connections","sqlState":"42000","timestamp":"2024-04-02T05:59:39.771Z"}

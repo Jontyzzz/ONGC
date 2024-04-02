@@ -35,10 +35,10 @@ function Temperature_works() {
             setError(null);
 
             try {
-                const response = await axios.get('/api/fetchData?date=' + dateValue, {
+                const response = await axios.get('/api/fetchData?selectedDate=' + dateValue, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
-
+                console.log('Fetched data for the selected date:', response.data);
                 const initialLineColors = {};
                 for (let i = 1; i <= 7; i++) {
                     const label = `TT${i}`;
@@ -171,7 +171,7 @@ function Temperature_works() {
             <div className="container-fluid ">
                 <div>
                     <div className="col-md-10 mb-4 mt-4 ml-4 Tempp" style={{ overflowX: 'auto' }}>
-                    {loading && (
+                        {loading && (
                             <div className="line-progress-bar">
                                 <div className="line-progress-bar-fill" style={{ width: `${progressPercentage}%` }}>
                                     {progressPercentage !== 0 && `${progressPercentage}%`} {/* Display progress percentage if not zero */}

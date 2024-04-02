@@ -291,7 +291,7 @@ p {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-  margin-right: 20px;
+  margin-right: -31px;
 }
 
 /* -----hover------ */
@@ -407,12 +407,25 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* .Admin_Button{
-  margin-top: 55px;
-  margin-left: 89%;
-  font-size: x-large;
-  
-} */
+.download-button{
+  size: 5%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.download{
+  height: 1.5rem;
+  width: 3rem;
+}
+.no-margin-left{
+  margin-left: -56px;
+}
+.top_left{
+  height: 5px;
+}
+.mt-2 {
+  margin-top: 0.2rem !important;
+}
+
 
 .User_Button{
   margin-top: 55px;

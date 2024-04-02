@@ -68,15 +68,54 @@ app.get('/api/getdata', validateAuth, async (req, res) => {
   }
 });
 
+// app.get('/api/fetchData', async (req, res) => {
+//   let pool, connection;
+
+//   try {
+//     pool = await mysql.createPool(dbConfig);
+//     connection = await pool.getConnection();
+//     const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'DateTime'];
+//     const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT`, [columns]);
+//     res.json(rows);
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//     res.status(500).json({ error: 'Internal Server Error' });
+//   } finally {
+//     try {
+//       if (pool && connection) {
+//         connection.release();
+//       }
+//     } catch (err) {
+//       console.error('Error releasing connection:', err);
+//     }
+//   }
+// });
+
+
 app.get('/api/fetchData', async (req, res) => {
   let pool, connection;
 
   try {
     pool = await mysql.createPool(dbConfig);
     connection = await pool.getConnection();
-    const columns = ['TT1', 'TT2', 'TT3', 'TT4', 'TT5', 'TT6', 'TT7', 'DateTime'];
-    const [rows, fields] = await connection.query(`SELECT ?? FROM ONGC_IOT`, [columns]);
+
+    // Get the date from the frontend datepicker
+    const selectedDate = req.query.selectedDate; // Assuming the frontend sends the selected date as a query parameter
+    
+    // Construct the SQL query with the dynamic date parameter and time
+    const sqlQuery = `
+      SELECT * FROM ONGC_IOT 
+      WHERE DateTime >= ? 
+      AND DateTime < DATE_ADD(?, INTERVAL 1 DAY)
+    `;
+
+    // Concatenate time part to the selected date
+    const selectedDateTime = `${selectedDate} 00:00:00`;
+
+    // Execute the SQL query with the dynamic date parameter and time
+    const [rows, fields] = await connection.query(sqlQuery, [selectedDateTime, selectedDate]);
     res.json(rows);
+    console.log(`${selectedDate} TT data fetched..`);
   } catch (error) {
     console.error('Error fetching data:', error);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -87,8 +126,8 @@ app.get('/api/fetchData', async (req, res) => {
       }
     } catch (err) {
       console.error('Error releasing connection:', err);
-    }
-  }
+    }
+  }
 });
 
 
