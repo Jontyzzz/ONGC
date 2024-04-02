@@ -8,6 +8,8 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import { BiDownload } from "react-icons/bi";
 import * as XLSX from 'xlsx';
 import 'jspdf-autotable';
+import './styles.css'; // Adjust the path as per your file structure
+
 
 
 //Function to decode JWT token
@@ -36,11 +38,16 @@ function Navbar() {
     // console.log(dateValue)
     const dispatch = useDispatch();
     const [date, setDate] = useState(dateValue);
+    
+    useEffect(() => {
+        const today = new Date().toISOString().split('T')[0];
+        dispatch(setDateValue(today));
+    }, [dispatch]);
+
     const dateChange = (e) => {
-        let date_one = e.target.value
-        // console.log(date_one);
-        dispatch(setDateValue(date_one));
-        setDate(date_one);
+        const newDate = e.target.value;
+        dispatch(setDateValue(newDate));
+        setDate(newDate);
     }
 
 
@@ -223,7 +230,10 @@ function Navbar() {
                     {/* <div class="max-w-screen-sm mx-auto flex flex1 items-Right ml-auto"> */}
 
                     <div class="nav2flex items-Right">
-                        <div className="download-button" onClick={() => setShowDropdown(!showDropdown)}>
+                        <div className="download-button" onClick={() => {
+                            console.log('Clicked on download button');
+                            setShowDropdown(!showDropdown);
+                        }}>
                             <BiDownload className='download' />
                             {showDropdown && (
                                 <div className="dropdown-menu">

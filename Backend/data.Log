@@ -9305,3 +9305,9 @@
 {"level":"info","message":"Connection pool closed","timestamp":"2024-04-02T05:59:36.179Z"}
 {"level":"info","message":"Connection pool created","timestamp":"2024-04-02T05:59:39.593Z"}
 {"level":"info","message":"Connection pool closed","timestamp":"2024-04-02T05:59:39.771Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-02T06:00:13.827Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-02T06:00:14.031Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-02T06:00:14.033Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-02T06:00:14.130Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-01","timestamp":"2024-04-02T06:00:14.518Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-02T06:00:14.519Z"}
