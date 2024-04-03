@@ -12,6 +12,10 @@ import Admin from '../Login/Admin';
 import Temperature_works from '../Charts/Temperature_Works';
 import Employee from '../Login/Employee';
 import Demo from '../Login/Demo'
+import Hourly from '../Charts/Hourly';
+import Minutely from '../Charts/Minutely';
+
+
 
 
 
@@ -33,6 +37,8 @@ function RoutersManager() {
           <Route path='/Admin' element={<Admin />} />
           <Route path='/Employee' element={<Employee />} />
           <Route path='/Demo' element={<Demo />} />
+          <Route path='/Hourly' element={<Hourly />} />
+          <Route path='/Minutely' element={<Minutely />} />
          
 
         </Routes>

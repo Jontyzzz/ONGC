@@ -4,7 +4,6 @@ import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
 import LoadingSpinner from '../Spinners/Spinner';
 import { Navigate } from 'react-router-dom';
-// import * as XLSX from 'xlsx';
 import 'jspdf-autotable';
 
 function StaticTable() {
@@ -113,13 +112,15 @@ function StaticTable() {
             <div class="tbl col-8 bark " alignment="center" >
             {/* <button style={{ backgroundColor: 'green', color: 'white' }} onClick={downloadExcel}>Download Report</button> */}
             {/* <p>Last Updated: {lastUpdated}</p> */}
-                <table alignment="center" className='tablet'>
+                <table alignment="center"id='Static-Table' className='tablet'>
+                <thead>
                     <tr class='header'>
-                        <th ALIGN='CENTER'>Machine PID</th>
-                        <th align='right'>Parameter Name</th>
-                        <th>Parameter Value</th>
-                        <th>Unit</th>
+                        <th className='stth' ALIGN='CENTER'>Machine PID</th>
+                        <th className='stth' align='right'>Parameter Name</th>
+                        <th className='stth' >Parameter Value</th>
+                        <th className='stth' >Unit</th>
                     </tr>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>1</td>

@@ -102,22 +102,31 @@ app.get('/api/fetchData', async (req, res) => {
     // Get the date from the frontend datepicker
     const selectedDate = req.query.selectedDate; // Assuming the frontend sends the selected date as a query parameter
     
-    // Construct the SQL query with the dynamic date parameter and time
+    // Construct the SQL query to fetch unique hourly data for the selected date
     const sqlQuery = `
-      SELECT * FROM ONGC_IOT 
-      WHERE DateTime >= ? 
-      AND DateTime < DATE_ADD(?, INTERVAL 1 DAY)
+      SELECT 
+        DATE_FORMAT(DateTime, '%Y-%m-%d %H:00:00') AS HourlyDateTime,
+        AVG(TT1) AS TT1,
+        AVG(TT2) AS TT2,
+        AVG(TT3) AS TT3,
+        AVG(TT4) AS TT4,
+        AVG(TT5) AS TT5,
+        AVG(TT6) AS TT6,
+        AVG(TT7) AS TT7
+      FROM 
+        ONGC_IOT 
+      WHERE 
+        DATE(DateTime) = ?
+      GROUP BY 
+        HourlyDateTime
     `;
 
-    // Concatenate time part to the selected date
-    const selectedDateTime = `${selectedDate} 00:00:00`;
-
-    // Execute the SQL query with the dynamic date parameter and time
-    const [rows, fields] = await connection.query(sqlQuery, [selectedDateTime, selectedDate]);
+    // Execute the SQL query with the selected date
+    const [rows, fields] = await connection.query(sqlQuery, [selectedDate]);
     res.json(rows);
-    console.log(`${selectedDate} TT data fetched..`);
+    // console.log(`${selectedDate} hourly data fetched..`);
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error('Error fetching hourly data:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   } finally {
     try {
@@ -126,8 +135,55 @@ app.get('/api/fetchData', async (req, res) => {
       }
     } catch (err) {
       console.error('Error releasing connection:', err);
-    }
-  }
+    }
+  }
+});
+
+app.get('/api/fetchMinutelyData', async (req, res) => {
+  let pool, connection;
+
+  try {
+    pool = await mysql.createPool(dbConfig);
+    connection = await pool.getConnection();
+
+    // Get the date from the frontend datepicker
+    const selectedDate = req.query.selectedDate; // Assuming the frontend sends the selected date as a query parameter
+    
+    // Construct the SQL query to fetch unique minutely data for the selected date
+    const sqlQuery = `
+      SELECT 
+        DATE_FORMAT(DateTime, '%Y-%m-%d %H:%i:00') AS MinutelyDateTime,
+        AVG(TT1) AS TT1,
+        AVG(TT2) AS TT2,
+        AVG(TT3) AS TT3,
+        AVG(TT4) AS TT4,
+        AVG(TT5) AS TT5,
+        AVG(TT6) AS TT6,
+        AVG(TT7) AS TT7
+      FROM 
+        ONGC_IOT 
+      WHERE 
+        DATE(DateTime) = ?
+      GROUP BY 
+        MinutelyDateTime
+    `;
+
+    // Execute the SQL query with the selected date
+    const [rows, fields] = await connection.query(sqlQuery, [selectedDate]);
+    res.json(rows);
+    // console.log(`${selectedDate} minutely data fetched..`);
+  } catch (error) {
+    console.error('Error fetching minutely data:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  } finally {
+    try {
+      if (pool && connection) {
+        connection.release();
+      }
+    } catch (err) {
+      console.error('Error releasing connection:', err);
+    }
+  }
 });
 
 

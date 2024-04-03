@@ -1,18 +1,20 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { BiDownload } from "react-icons/bi";
+import axios from 'axios';
+import * as XLSX from 'xlsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { setDateValue } from '../Redux/dateManager';
 import { BiSolidUserRectangle } from "react-icons/bi";
-import axios from 'axios';
 import { Navigate, useNavigate } from 'react-router-dom';
-import { BiDownload } from "react-icons/bi";
-import * as XLSX from 'xlsx';
-import 'jspdf-autotable';
-import './styles.css'; // Adjust the path as per your file structure
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable'
+import { Link } from 'react-router-dom';
 
 
 
-//Function to decode JWT token
+
+
+// Function to decode JWT token
 const decodeJwtToken = (token) => {
     if (token) {
         try {
@@ -29,20 +31,33 @@ const decodeJwtToken = (token) => {
     }
 };
 
-
-
 function Navbar() {
     const dateValue = useSelector(state => state.dateManager.value);
     const [showDropdown, setShowDropdown] = useState(false);
-
-    // console.log(dateValue)
-    const dispatch = useDispatch();
     const [date, setDate] = useState(dateValue);
-    
+    const dispatch = useDispatch();
+    const navigateFunction = useNavigate();
+
+
+
     useEffect(() => {
         const today = new Date().toISOString().split('T')[0];
         dispatch(setDateValue(today));
     }, [dispatch]);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            const dropdownMenu = document.querySelector('.dropdown-menu');
+            if (dropdownMenu && !dropdownMenu.contains(event.target)) {
+                setShowDropdown(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside); // Listen for mousedown events
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside); // Cleanup on unmount
+        };
+    }, []);
 
     const dateChange = (e) => {
         const newDate = e.target.value;
@@ -50,14 +65,9 @@ function Navbar() {
         setDate(newDate);
     }
 
-
-    const navigateFunction = useNavigate();
-
-    // on button click events code //
     const handleButtonClick = () => {
         const token = localStorage.getItem('token');
         console.log("entered handle button click function")
-        // Decode token to extract user information
         const decodedToken = decodeJwtToken(token);
         console.log('Decoded Token:', decodedToken);
         console.log("entered handle button click function")
@@ -67,7 +77,6 @@ function Navbar() {
             return;
         }
 
-        // Query database to retrieve user role based on email
         axios.get('/api/getUserRole', {
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -76,7 +85,6 @@ function Navbar() {
             .then(response => {
                 const role = response.data.role;
                 console.log("User Role : ", role)
-                // Route user based on role
                 if (role === 'employee') {
                     navigateFunction('/Employee');
                 } else if (role === 'admin') {
@@ -88,14 +96,12 @@ function Navbar() {
             .catch(error => {
                 console.error('Error fetching user role:', error);
             });
-
     }
 
     const handleLogoutButtonClick = () => {
         const token = localStorage.getItem('token');
         console.log("entered handle button click function");
 
-        // Decode token to extract user information
         const decodedToken = decodeJwtToken(token);
         console.log('Decoded Token:', decodedToken);
 
@@ -104,7 +110,6 @@ function Navbar() {
             return;
         }
 
-        // Update status in the remote MySQL database
         const updateStatus = () => {
             axios.post('/api/updateStatus', {
                 email: decodedToken.email,
@@ -118,30 +123,26 @@ function Navbar() {
                 });
         };
 
-        // Call the updateStatus function
         updateStatus();
     };
 
     const handleDownload = (fileType) => {
-        const token = localStorage.getItem('token'); // Retrieve the token from localStorage
-
-        // Make an HTTP GET request to fetch the data from the backend with the date parameter and authorization token
+        const token = localStorage.getItem('token');
         axios.get('/api/getdata', {
-            params: { date: dateValue }, // Pass date as a query parameter
-            headers: { Authorization: `Bearer ${token}` } // Include authorization token in headers
+            params: { date: dateValue },
+            headers: { Authorization: `Bearer ${token}` }
         })
             .then(response => {
-                // Once the data is successfully fetched, proceed with generating the file based on selected fileType
-                const data = response.data; // Assuming the response contains the data in the expected format
+                const data = response.data;
                 if (fileType === 'Excel') {
                     const ws = XLSX.utils.json_to_sheet(data);
                     const wb = XLSX.utils.book_new();
                     XLSX.utils.book_append_sheet(wb, ws, "Data");
                     XLSX.writeFile(wb, "Report.xlsx");
-                } else if (fileType === 'PDF') {
-                    // Generate PDF logic here
-                    // Example: You can use a library like jsPDF to generate PDF
-                } else {
+                    // } else if (fileType === 'PDF') {
+                    //     // Logic to generate PDF
+
+                    // } else {
                     console.error('Invalid fileType:', fileType);
                 }
             })
@@ -150,7 +151,30 @@ function Navbar() {
             });
     };
 
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+   
+    const handleDownloadpdf = () => {
+    const doc = new jsPDF()
+    //Title 
+    doc.setFontSize(16);
+    doc.text("Spectron_ONGC Report", 105,18,{ align: "center" });
 
+    // Add date/time
+    doc.setFontSize(12);
+    doc.text(new Date().toLocaleString(), 10, 10);
+
+    
+    autoTable(doc,{html:'#Static-Table',theme:'grid',styles: { halign:'center' },margin:{top:25}})
+    doc.save('Live Table.pdf')
+    }
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdownn = (e) => {
+        e.preventDefault();
+        setIsOpen(!isOpen);
+    };
 
 
     return (
@@ -218,9 +242,20 @@ function Navbar() {
                             <li>
                                 <a href="/Report" class="text-gray-900 dark:text-white hover:blink">7_REPORTS</a>
                             </li>
-                            <li>
-                                <a href="/Temperature_Works" class="text-gray-900 dark:text-white hover:blink">TemperatureLineChart</a>
-                            </li>
+                            <a href="/Temperature_Works" className="text-gray-900 dark:text-white hover:blink" onClick={toggleDropdownn}>
+                                TemperatureLineChart
+                            </a>
+                            {isOpen && (
+                                <ul className="TempDropdown">
+                                    <li>
+                                        <Link to="/Hourly" className="block px-4 py-2 text-gray-900">Hourly</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/Minutely" className="block px-4 py-2 text-gray-900 ">Minutely</Link>
+                                    </li>
+
+                                </ul>
+                            )}
                             {/* <li>
                                 <a href="/AutomaticLoadingTable" class="text-gray-900 dark:text-white hover:blink">A</a>
                             </li> */}
@@ -230,15 +265,12 @@ function Navbar() {
                     {/* <div class="max-w-screen-sm mx-auto flex flex1 items-Right ml-auto"> */}
 
                     <div class="nav2flex items-Right">
-                        <div className="download-button" onClick={() => {
-                            console.log('Clicked on download button');
-                            setShowDropdown(!showDropdown);
-                        }}>
+                        <div className="download-button" onClick={toggleDropdown}>
                             <BiDownload className='download' />
                             {showDropdown && (
                                 <div className="dropdown-menu">
                                     <button onClick={() => handleDownload('Excel')}>Excel</button>
-                                    <button onClick={() => handleDownload('PDF')}>PDF</button>
+                                    <button onClick={() => handleDownloadpdf('PDF')}>PDF</button>
                                 </div>
                             )}
                         </div>

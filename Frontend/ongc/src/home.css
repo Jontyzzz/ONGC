@@ -18,7 +18,7 @@ td {
   background-color: white
 }
 
-th {
+.stth {
   text-align: left;
   background-color: #2d2d2d;
   color: white;
@@ -212,7 +212,7 @@ a:active {
   /* You can adjust the width and color as needed */
   padding: 5px;
   /* Optional: Add padding for better appearance */
-  background-color: hsl(78, 70%, 69%);
+  background-color: hsl(78, 70%, 69%); 
 }
 
 
@@ -330,6 +330,9 @@ p {
 /* login signup bg */
 .containerStyle {
   background-image: url('https://images.unsplash.com/photo-1539186607619-df476afe6ff1?q=80&w=1470&auto=foyat&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .upacity {
@@ -400,6 +403,9 @@ p {
 }
 .Temp_Background{
   background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .BGTemp{
   background-image: url('https://images.unsplash.com/photo-1493476523860-a6de6ce1b0c3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -445,13 +451,13 @@ p {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 19%;
+  left: 1123px;
   z-index: 1000;
   display: block;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 1px;
 }
 
 .dropdown-menu button {
@@ -464,5 +470,28 @@ p {
 }
 
 .dropdown-menu button:hover {
-  background-color: #f0f0f0;
+  background-color: #d60303;
+}
+
+.BsFastForwardCircleFill{
+  width: 4em;
+  margin-left: -11px;
+}
+.BsRewindCircleFill{
+  width: 2em;
+}
+.TempDropdown{
+  
+  position: absolute;
+  top: 19%;
+  left: 91px;
+  z-index: 1000;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1px;
+
+}
+.TempDropdown button:hover {
+  background-color: #d60303;
 }
