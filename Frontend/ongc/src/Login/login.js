@@ -43,66 +43,49 @@ function Login() {
     }
 
 
-    const handleSubmit = (event) => {
+
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        setError(validation(values));
+        const validationErrors = validation(values); // Perform validation
+        setError(validationErrors); // Update error state
 
-        // if (Object.keys(error).length === 0) {
-        if (error.email === "" && error.password === "") {
-            // setValues(prev=>({...prev,password:CryptoJS.SHA256(textToHash).toString(CryptoJS.enc.Hex)}))
-            console.log(values);
-            axios.post('/api/login', values)
-                .then(res => {
-                    console.log(values);
-                    console.log(res.data)
-                    localStorage.setItem("token", res.data.token);
-                }).then(res => {
-                    setIsLogged(2)
-                })
-                .catch(err => {
-                    console.log(err)
-                    alert("Please try login again. Either your Password or Email is Incorrect")
+        // Check if there are no validation errors
+        if (Object.values(validationErrors).every(error => error === "")) {
+            try {
+                const res = await axios.post('/api/login', values);
+                console.log("Form Input :", values);
+                console.log("/api/login Response :", res.data);
+                localStorage.setItem("token", res.data.token);
+
+                // Decode token to extract user information
+                const decodedToken = decodeJwtToken(res.data.token);
+                console.log('Decoded Token:', decodedToken);
+
+                if (!decodedToken || !decodedToken.email) {
+                    console.error('Invalid token or missing email');
+                    return;
+                }
+
+                // Update status in the remote MySQL database
+                const response = await axios.post('/api/updateStatus', {
+                    email: decodedToken.email,
+                    newStatus: 'Online'
                 });
-
+                console.log("Status updated successfully:", response.data);
+                setIsLogged(2); // Set isLogged state to trigger navigation
+            } catch (err) {
+                console.error(err);
+                alert("Please try login again. Either your Password or Email is Incorrect");
+            }
         }
-    }
-
-    const handleLoginButtonClick = () => {
-        const token = localStorage.getItem('token');
-        console.log("entered handle button click function");
-
-        // Decode token to extract user information
-        const decodedToken = decodeJwtToken(token);
-        console.log('Decoded Token:', decodedToken);
-
-        if (!decodedToken || !decodedToken.email) {
-            console.error('Invalid token or missing email');
-            return;
-        }
-
-        // Update status in the remote MySQL database
-        const updateStatus = () => {
-            axios.post('/api/updateStatus', {
-                email: decodedToken.email,
-                newStatus: 'Online'
-            })
-                .then(response => {
-                    console.log("Status updated successfully:", response.data);
-                })
-                .catch(error => {
-                    console.error('Error updating status:', error);
-                });
-        };
-
-        // Call the updateStatus function
-        updateStatus();
     };
+
     const togglePasswordVisibility = () => {
         setShowPassword(prevState => !prevState);
     };
 
     if (isLogged === 2) {
-        return (<Navigate to="/StaticTable"></Navigate>)
+        return (<Navigate to="/LiveReports"></Navigate>)
     }
     return (
         <div className='Signup template d-flex justify-content-center w-100 vh-100  justify-content-center align-items-center containerStyle'>
@@ -136,7 +119,7 @@ function Login() {
                         {error.password && <span className='text-danger'>{error.password}</span>}
                     </div>
                     <h6 className='Paragraph'>You agree to the terms and conditions + policies</h6>
-                    <button type='submit' className='btn btn-success w-100 rounded-0 text-decoration-none' onClick={handleLoginButtonClick}>Login.</button><h6 className='Paragraph'>you need to create account</h6>
+                    <button type='submit' className='btn btn-success w-100 rounded-0 text-decoration-none'>Login.</button><h6 className='Paragraph'>you need to create account</h6>
                     <Link to='/signup' className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
                 </form>
             </div>

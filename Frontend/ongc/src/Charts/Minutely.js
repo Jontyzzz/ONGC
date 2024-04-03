@@ -150,7 +150,7 @@ function Minutely() {
                                         legend: {},
                                         title: {
                                             display: true,
-                                            text: 'TT1 toTT8 Parameters Minutely',
+                                            text: 'TT1 toTT8 Parameters Minute Wise Data',
                                             font: { size: 25, color: 'rgba(0, 0, 0, 1)' },
                                         },
                                         zoom: {

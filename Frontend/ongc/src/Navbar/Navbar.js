@@ -233,25 +233,23 @@ function Navbar() {
                 <div class="max-w-screen-xl px-0 py-1 mx-auto flex">
                     <div class="flex1 items-Left top_left">
                         <ul class="flex flex-row font-medium mt-2 space-x-6 rtl:space-x-reverse text-sm no-margin-left">
+                           
                             <li>
-                                <a href="/StaticTable" class="text-gray-900 dark:text-white hover:blink" aria-current="page">Report</a>
+                                <a href="/LiveReports" class="dashboard-button">Dashboard</a>
                             </li>
                             <li>
-                                <a href="/LiveReports" class="text-gray-900 dark:text-white hover:blink">LIVE_REPORTS</a>
+                                <a href="/Report" class="dashboard-button" >SP_Dashboard</a>
                             </li>
-                            <li>
-                                <a href="/Report" class="text-gray-900 dark:text-white hover:blink">7_REPORTS</a>
-                            </li>
-                            <a href="/Temperature_Works" className="text-gray-900 dark:text-white hover:blink" onClick={toggleDropdownn}>
-                                TemperatureLineChart
+                            <a href="/Temperature_Works" class="dashboard-button" onClick={toggleDropdownn}>
+                                Temperature
                             </a>
                             {isOpen && (
-                                <ul className="TempDropdown">
+                                <ul className="dropdown2-menu">
                                     <li>
-                                        <Link to="/Hourly" className="block px-4 py-2 text-gray-900">Hourly</Link>
+                                        <Link to="/Hourly" className="block px-4 py-2 text-gray-900">Hour Wise</Link>
                                     </li>
                                     <li>
-                                        <Link to="/Minutely" className="block px-4 py-2 text-gray-900 ">Minutely</Link>
+                                        <Link to="/Minutely" className="block px-4 py-2 text-gray-900 ">Minute Wise</Link>
                                     </li>
 
                                 </ul>
@@ -259,6 +257,9 @@ function Navbar() {
                             {/* <li>
                                 <a href="/AutomaticLoadingTable" class="text-gray-900 dark:text-white hover:blink">A</a>
                             </li> */}
+                            <li>
+                                <a href="/StaticTable" class="dashboard-button" aria-current="page">Report</a>
+                            </li>
 
                         </ul>
                     </div>

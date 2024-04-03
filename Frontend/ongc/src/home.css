@@ -480,18 +480,49 @@ p {
 .BsRewindCircleFill{
   width: 2em;
 }
-.TempDropdown{
-  
+
+
+
+.dropdown2-menu {
   position: absolute;
   top: 19%;
-  left: 91px;
+  left: 13%;
   z-index: 1000;
   display: block;
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 1px;
-
 }
-.TempDropdown button:hover {
-  background-color: #d60303;
+
+.dropdown2-menu li {
+  list-style: none; /* Remove default list style */
+}
+
+.dropdown2-menu li a {
+  display: block;
+  padding: 5px 10px;
+  color: #000; /* Set link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.dropdown2-menu li a:hover {
+  background-color: #d60303; /* Change background color on hover */
+  color: #000000; /* Change text color on hover */
+}
+
+.dashboard-button {
+  display: inline-block;
+  padding: 0px 7px; /* Adjust padding as needed */
+  background-color: rgb(207, 203, 197); /* Set button background color */
+  color: rgb(8, 8, 8); /* Set text color */
+  border: outset; /* Set button border style to outset */
+  border-radius: 2px; /* Add border radius for rounded corners */
+  text-decoration: none; /* Remove default underline */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Add transition for smoother hover effect */
+  margin-top: -5px;
+}
+
+.dashboard-button:hover {
+  background-color: rgb(198, 118, 22); /* Change background color on hover */
 }
