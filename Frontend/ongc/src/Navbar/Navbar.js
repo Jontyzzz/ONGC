@@ -34,9 +34,12 @@ const decodeJwtToken = (token) => {
 function Navbar() {
     const dateValue = useSelector(state => state.dateManager.value);
     const [showDropdown, setShowDropdown] = useState(false);
+    const [showDropdown2, setShowDropdown2] = useState(false);
     const [date, setDate] = useState(dateValue);
     const dispatch = useDispatch();
     const navigateFunction = useNavigate();
+    
+
 
 
 
@@ -48,9 +51,15 @@ function Navbar() {
     useEffect(() => {
         function handleClickOutside(event) {
             const dropdownMenu = document.querySelector('.dropdown-menu');
+            const dropdown2Menu = document.querySelector('.dropdown2-menu');
+
             if (dropdownMenu && !dropdownMenu.contains(event.target)) {
                 setShowDropdown(false);
             }
+            if (dropdown2Menu && !dropdown2Menu.contains(event.target)) {
+                setShowDropdown2(false);
+            }
+
         }
 
         document.addEventListener("mousedown", handleClickOutside); // Listen for mousedown events
@@ -153,7 +162,14 @@ function Navbar() {
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
+        // setShowDropdown(false); 
     };
+
+    const toggleDropdown2 = () => {
+        setShowDropdown2(!showDropdown2);
+        // setShowDropdown(false); 
+    };
+
    
     const handleDownloadpdf = () => {
     const doc = new jsPDF()
@@ -169,12 +185,12 @@ function Navbar() {
     autoTable(doc,{html:'#Static-Table',theme:'grid',styles: { halign:'center' },margin:{top:25}})
     doc.save('Live Table.pdf')
     }
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggleDropdownn = (e) => {
-        e.preventDefault();
-        setIsOpen(!isOpen);
-    };
+    // const toggleDropdown2 = (e) => {
+    //     e.preventDefault();
+    //     setIsOpen(!isOpen);
+    // };
 
 
     return (
@@ -235,15 +251,15 @@ function Navbar() {
                         <ul class="flex flex-row font-medium mt-2 space-x-6 rtl:space-x-reverse text-sm no-margin-left">
                            
                             <li>
-                                <a href="/LiveReports" class="dashboard-button">Dashboard</a>
+                                <Link to="/LiveReports" class="dashboard-button">Overview_Dashboard</Link>
                             </li>
                             <li>
-                                <a href="/Report" class="dashboard-button" >SP_Dashboard</a>
+                                <Link to="/Report" class="dashboard-button" >Analytics_Dashboard</Link>
                             </li>
-                            <a href="/Temperature_Works" class="dashboard-button" onClick={toggleDropdownn}>
+                            <a  class="dashboard-button tempbar " onClick={toggleDropdown2}>
                                 Temperature
                             </a>
-                            {isOpen && (
+                            {showDropdown2 && (
                                 <ul className="dropdown2-menu">
                                     <li>
                                         <Link to="/Hourly" className="block px-4 py-2 text-gray-900">Hour Wise</Link>
@@ -258,7 +274,7 @@ function Navbar() {
                                 <a href="/AutomaticLoadingTable" class="text-gray-900 dark:text-white hover:blink">A</a>
                             </li> */}
                             <li>
-                                <a href="/StaticTable" class="dashboard-button" aria-current="page">Report</a>
+                                <Link to ="/StaticTable" class="dashboard-button" aria-current="page">Report</Link>
                             </li>
 
                         </ul>
@@ -275,7 +291,7 @@ function Navbar() {
                                 </div>
                             )}
                         </div>
-                        <input onChange={e => { dateChange(e) }} value={date} type="date" id="datetimeInput" name="datetimeInput" style={{ fontSize: '0.9rem', width: '150px', height: '20px' }} />
+                        <input onChange={e => { dateChange(e) }} value={date} type="date" id="datetimeInput" name="datetimeInput" style={{ fontSize: '0.9rem', width: '150px', height: '27px' }} />
                     </div>
                 </div>
             </nav>
