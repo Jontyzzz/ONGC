@@ -11306,3 +11306,162 @@
 {"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T08:25:26.948Z"}
 {"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T08:25:27.123Z"}
 {"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T08:25:27.123Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:31.469Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:31.940Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T10:13:32.152Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:13:32.154Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:33.183Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T10:13:33.487Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:13:33.488Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T10:13:34.522Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:13:34.522Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:46.620Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T10:13:47.929Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:13:47.930Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:53.846Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T10:13:54.781Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:13:54.782Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:13:58.759Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T10:14:06.107Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:14:06.107Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T10:14:06.164Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T10:14:07.101Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T10:14:07.102Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:38:38.933Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:38:40.658Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:38:40.663Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:38:41.503Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:38:42.165Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:38:42.167Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:39:42.570Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:39:44.298Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:39:44.299Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:40:41.762Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:40:42.994Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:40:42.996Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:40:57.916Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:40:59.182Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:40:59.183Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:45:45.005Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:45:45.558Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:45:45.559Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:46:45.835Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:46:46.425Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:46:46.426Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:47:45.932Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:47:46.437Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:47:46.437Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:48:46.215Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:48:48.035Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:48:48.035Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:49:48.106Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:49:49.336Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:49:49.337Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:51:10.195Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:51:10.831Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:51:10.832Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:51:30.762Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:51:31.155Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:51:31.155Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:51:31.274Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:51:31.564Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:51:31.713Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:51:31.714Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:51:31.732Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:51:31.979Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:51:31.984Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:51:32.212Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:51:32.213Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:52:31.840Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:52:33.242Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:52:33.243Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:53:31.862Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:53:33.277Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:53:33.278Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:54:31.860Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:54:32.432Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:54:32.433Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:55:32.140Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:55:32.575Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:55:32.576Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:56:32.163Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:56:32.574Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:56:32.575Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:58:05.342Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:58:05.685Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:58:05.686Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:58:17.010Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:58:17.222Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:58:17.245Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:58:17.245Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:58:17.550Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:58:18.018Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:58:18.019Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T11:58:18.536Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:58:18.537Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T11:59:17.912Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T11:59:18.289Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T11:59:18.290Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:00:17.839Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:00:18.394Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:00:18.394Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:01:17.854Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:01:18.286Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:01:18.286Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:02:20.578Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:02:23.229Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:02:23.229Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:03:50.421Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:03:51.201Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:03:51.202Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:03:55.606Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:03:55.809Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T12:03:55.856Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:03:55.857Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:03:56.390Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T12:03:56.667Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:03:56.668Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:03:56.821Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:03:56.822Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:03:59.719Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:04:01.670Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:04:01.670Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:04:33.798Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:04:35.210Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:04:35.211Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:05:34.319Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:05:34.831Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:05:34.832Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:08:50.665Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:08:51.610Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:08:51.611Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:08:58.344Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:08:59.274Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:08:59.275Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:09:13.619Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:09:14.478Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:09:14.478Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:48:27.098Z"}
+{"level":"info","message":"Query is SELECT 'success' FROM login WHERE email = ? AND password = ? and parameters are jonty333@gmail.com,Jonty@333","timestamp":"2024-04-04T12:48:27.384Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:48:27.386Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:48:28.024Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:48:28.855Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:48:28.857Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:49:17.008Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:49:17.329Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:49:17.330Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:51:29.347Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:51:29.864Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:51:29.865Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:51:36.113Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:51:36.602Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:51:36.610Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:52:30.170Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:52:31.545Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:52:31.546Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:53:05.423Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:53:05.774Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:53:05.775Z"}
+{"level":"info","message":"Connection pool created","timestamp":"2024-04-04T12:54:05.580Z"}
+{"level":"info","message":"Query is SELECT * FROM `HRN_ONGC_UPDATE` WHERE date = ? and parameters are 2024-04-04","timestamp":"2024-04-04T12:54:05.899Z"}
+{"level":"info","message":"Connection pool closed","timestamp":"2024-04-04T12:54:05.904Z"}

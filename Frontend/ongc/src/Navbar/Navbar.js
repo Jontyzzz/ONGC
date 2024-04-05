@@ -38,7 +38,7 @@ function Navbar() {
     const [date, setDate] = useState(dateValue);
     const dispatch = useDispatch();
     const navigateFunction = useNavigate();
-    
+
 
 
 
@@ -58,7 +58,7 @@ function Navbar() {
             }
             if (dropdown2Menu && !dropdown2Menu.contains(event.target)) {
                 setShowDropdown2(false);
-            }
+            }
 
         }
 
@@ -168,22 +168,22 @@ function Navbar() {
     const toggleDropdown2 = () => {
         setShowDropdown2(!showDropdown2);
         // setShowDropdown(false); 
-    };
+    };
 
-   
+
     const handleDownloadpdf = () => {
-    const doc = new jsPDF()
-    //Title 
-    doc.setFontSize(16);
-    doc.text("Spectron_ONGC Report", 105,18,{ align: "center" });
+        const doc = new jsPDF()
+        //Title 
+        doc.setFontSize(16);
+        doc.text("Spectron_ONGC Report", 105, 18, { align: "center" });
 
-    // Add date/time
-    doc.setFontSize(12);
-    doc.text(new Date().toLocaleString(), 10, 10);
+        // Add date/time
+        doc.setFontSize(12);
+        doc.text(new Date().toLocaleString(), 10, 10);
 
-    
-    autoTable(doc,{html:'#Static-Table',theme:'grid',styles: { halign:'center' },margin:{top:25}})
-    doc.save('Live Table.pdf')
+
+        autoTable(doc, { html: '#Static-Table', theme: 'grid', styles: { halign: 'center' }, margin: { top: 25 } })
+        doc.save('Live Table.pdf')
     }
     // const [isOpen, setIsOpen] = useState(false);
 
@@ -249,14 +249,14 @@ function Navbar() {
                 <div class="max-w-screen-xl px-0 py-1 mx-auto flex">
                     <div class="flex1 items-Left top_left">
                         <ul class="flex flex-row font-medium mt-2 space-x-6 rtl:space-x-reverse text-sm no-margin-left">
-                           
+
                             <li>
                                 <Link to="/LiveReports" class="dashboard-button">Overview_Dashboard</Link>
                             </li>
                             <li>
                                 <Link to="/Report" class="dashboard-button" >Analytics_Dashboard</Link>
                             </li>
-                            <a  class="dashboard-button tempbar " onClick={toggleDropdown2}>
+                            <a class="dashboard-button tempbar " onClick={toggleDropdown2}>
                                 Temperature
                             </a>
                             {showDropdown2 && (
@@ -274,7 +274,7 @@ function Navbar() {
                                 <a href="/AutomaticLoadingTable" class="text-gray-900 dark:text-white hover:blink">A</a>
                             </li> */}
                             <li>
-                                <Link to ="/StaticTable" class="dashboard-button" aria-current="page">Report</Link>
+                                <Link to="/StaticTable" class="dashboard-button" aria-current="page">Report</Link>
                             </li>
 
                         </ul>
@@ -287,7 +287,7 @@ function Navbar() {
                             {showDropdown && (
                                 <div className="dropdown-menu">
                                     <button onClick={() => handleDownload('Excel')}>Excel</button>
-                                    <button onClick={() => handleDownloadpdf('PDF')}>PDF</button>
+                                    <button onClick={(e) => { handleDownloadpdf('PDF'); e.stopPropagation(); }}>PDF</button>
                                 </div>
                             )}
                         </div>
@@ -295,8 +295,6 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
-
-
         </div>
     )
 }
