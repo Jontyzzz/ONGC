@@ -342,7 +342,7 @@ p {
 .date-time-selector.RD {
   display: flex;
   justify-content: center; /* Horizontally centers the content */
-  align-items: center; /* Vertically centers the content */
+  align-items: center; /* Vertically centers the content */
 }
 
 
@@ -424,7 +424,7 @@ p {
 
 .download{
   height: 1.5rem;
-  width: 3rem;
+  width: 2rem;
 
 }
 .no-margin-left{
@@ -451,7 +451,7 @@ p {
   background-color: rgb(255, 140, 0);
 }
 ::-webkit-scrollbar-track{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .dropdown-menu {
@@ -512,7 +512,7 @@ p {
 
 .dropdown2-menu li a:hover {
   background-color: #d60303; /* Change background color on hover */
-  color: #000000; /* Change text color on hover */
+  color: #000000; /* Change text color on hover */
 }
 
 .dashboard-button {
@@ -538,3 +538,19 @@ p {
 .tempbar{
   margin-top: -3px;
 }
+
+
+
+.popup-contents {
+  padding: 20px; /* Optional: Add padding inside the popup content */
+  width: 70%;
+  height: 35%;
+  margin: auto;
+}
+
+/* #updatebtn{
+padding: auto;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+} */

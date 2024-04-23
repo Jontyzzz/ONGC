@@ -1,3 +1,4 @@
+
 const express = require("express");
 const mysql = require("mysql2/promise");
 const cors = require("cors");
@@ -195,15 +196,16 @@ app.post('/api/signup', async (req, res) => {
 });
 
 app.post('/api/login', async (req, res) => {
-  let sql = "SELECT 'success' FROM login WHERE email = ? AND password = ?";
+  let sql = "SELECT Role FROM login WHERE email = ? AND password = ?";
   let values = [req.body.email, req.body.password];
   
   try {
     let data = await (new Database()).runQuery(sql, values);
     
     if (data.length > 0) {
-      const token = jwt.sign({ email: req.body.email }, "ONGC", { expiresIn: '1h' });
-      return res.json({ isLogged: "success", token, isAdmin: true });
+      const role = data[0].Role; 
+      const token = jwt.sign({ email: req.body.email, role }, "ONGC", { expiresIn: '1h' });
+      return res.json({ isLogged: "success", token, isAdmin: role === 'admin' });
     } else {
       return res.status(401).json({ error: "Invalid email or password" });
     }
@@ -212,6 +214,7 @@ app.post('/api/login', async (req, res) => {
     return res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
 
 
 // Define the POST endpoint for updating status
@@ -242,8 +245,8 @@ app.post('/api/updateStatus', async (req, res) => {
     // Release the connection back to the pool
     if (connection) {
       connection.release();
-    }
-  }
+    }
+  }
 });
 
 
@@ -263,8 +266,8 @@ app.get('/api/employees', async (req, res) => {
     connection.release();
   } catch (error) {
     console.error('Error executing MySQL query:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
 app.get('/api/getUserRole', async (req, res) => {
@@ -302,8 +305,8 @@ app.get('/api/getUserRole', async (req, res) => {
     res.json({ role });
   } catch (error) {
     console.error('Error fetching user role:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
 
@@ -442,6 +445,45 @@ app.get('/api/getUserRole', async (req, res) => {
   } catch (error) {
     console.error('Error fetching user role:', error);
     res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+////Update
+// Update user password endpoint
+app.put('/api/users/:id/password', async (req, res) => {
+  const userId = req.params.id;
+  const newPassword = req.body.newPassword;
+
+  let connection;
+
+  try {
+    // Create a MySQL connection using the provided database configuration
+    const pool = mysql.createPool(dbConfig);
+
+    // Get a connection from the pool
+    connection = await pool.getConnection();
+
+    // Execute the SQL query to update the user's password
+    const [result] = await connection.execute(
+      'UPDATE login SET password = ? WHERE id = ?',
+      [newPassword, userId]
+    );
+
+    // Check if any rows were affected
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    // Password updated successfully
+    res.json({ message: 'Password updated successfully' });
+  } catch (error) {
+    console.error('Error updating password:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  } finally {
+    // Release the connection back to the pool
+    if (connection) {
+      connection.release();
+    }
   }
 });
 

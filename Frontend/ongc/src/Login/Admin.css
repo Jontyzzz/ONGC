@@ -38,3 +38,19 @@
     position:sticky;
     z-index: 1;
   }
+
+/* .element.style{
+  position: fixed;
+  inset: 0px;
+  display: flex;
+  z-index: 999;
+  pointer-events: auto;
+  background-color: rebeccapurple;
+  width: 45%;
+  height: 55%;
+  margin-left: 383px;
+  top: 25%;
+} */
+
+
+
